@@ -1,15 +1,18 @@
-name: Your New Jekyll Site
-description: Blogging about stuffs
-meta_description: "Your New Jekyll Site, Blogging about stuffs"
+name: Jordan Kobellarz
+description: open innovation developer
+meta_description: ""
 
 markdown: redcarpet
 highlighter: pygments
-logo: false
+logo: true
 paginate: 15
 baseurl: /
-domain_name: 'http://yourblog-domain.com'
+domain_name: 'http://jordankobellarz.github.com'
 google_analytics: 'UA-XXXXXXXX-X'
 
 # Details for the RSS feed generator
-url:            'blog url'
-author:         'Your Name'
+url:            'http://jordankobellarz.github.com'
+author:         'Jordan Kobellarz'
+bio:            'Desenvolvedor web usando tecnologias abertas para criar soluções inovadoras. Concilia a vida no escritório com o amor pela sua namorada, ciclismo, corrida e o curso de Sistemas de Informação na UTFPR.'
+
+img_path: /assets/images/
