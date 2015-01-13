@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+  xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+  <channel>
+    <title>Jordan Kobellarz</title>
+    <link>http://jordankobellarz.github.com</link>
+    <description>open innovation developer</description>
+    <pubDate>Sun, 12 Jan 2014 10:25:00 -0200</pubDate>
+    <item>
+      <title>Meu primeiro post</title>
+      <link>http://jordankobellarz.github.com/javascript/node.js/2014/01/12/hello-world.html</link>
+      <description>&lt;p&gt;You&amp;#39;ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory - edit this post and re-build (or run with the &lt;code&gt;-w&lt;/code&gt; switch) to see your changes!
+To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention: YYYY-MM-DD-name-of-post.ext.&lt;/p&gt;
+</description>
+      <pubDate>Sun, 12 Jan 2014 10:25:00 -0200</pubDate>
+      <dc:date>2014-01-12T10:25:00-02:00</dc:date>
+    </item>
+    <item>
+      <title>Welcome to Jekyll!</title>
+      <link>http://jordankobellarz.github.com/thriller/comedy/horror/2013/11/10/welcome-to-jekyll.html</link>
+      <description>&lt;p&gt;You&amp;#39;ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory - edit this post and re-build (or run with the &lt;code&gt;-w&lt;/code&gt; switch) to see your changes!
+To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention: YYYY-MM-DD-name-of-post.ext.&lt;/p&gt;
+</description>
+      <pubDate>Sun, 10 Nov 2013 08:18:00 -0200</pubDate>
+      <dc:date>2013-11-10T08:18:00-02:00</dc:date>
+    </item>
+    <dc:date>2014-01-12T10:25:00-02:00</dc:date>
+  </channel>
+</rss>
