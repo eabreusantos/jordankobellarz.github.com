@@ -25,7 +25,7 @@ Jekyll also offers powerful support for code snippets:
     * You might want to consider making a new list.
 3. Item 3
 
-{% highlight ruby %}
+{% highlight php startinline linenos=table %}
 // comment out the following two lines when deployed to production
 defined('YII_DEBUG') or define('YII_DEBUG', true);
 defined('YII_ENV') or define('YII_ENV', 'dev');

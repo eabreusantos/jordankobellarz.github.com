@@ -1,18 +1,18 @@
 ---
 layout: default
 title: Home
-cover: /assets/images/background.png
+cover: http://funmozar.com/wp-content/uploads/2014/08/Landscape-Wallpaper-13.jpg
 about: 'about.html'
 ---
 
 <header class="main-header {% if page.cover %}" style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
     <nav class="main-nav overlay clearfix">
-            {% if page.logo %}
+            {% if site.logo %}
                 <a class="blog-logo" href="{{ site.baseurl }}">
-                    <img src="{{ page.logo }}" alt="Blog Logo" />
+                    <img src="{{ site.logo }}" alt="Jordan Kobellarz profile photo" />
                 </a>
             {% endif %}
-        <!-- <a class="subscribe-button icon-feed" href="{{ site.baseurl }}rss.xml">Subscribe</a> -->
+            <a class="subscribe-button icon-feed" href="{{ site.baseurl }}rss.xml">Feed RSS</a>
     </nav>
     <div class="vertical">
         <div class="main-header-content inner">
@@ -45,7 +45,7 @@ about: 'about.html'
         </section>
         <footer class="post-meta">
             {% if site.author %}
-                <img class="author-thumb" src="/assets/images/profile.png" alt="Author's profile picture" nopin="nopin" />
+                <img class="author-thumb" src="{{site.logo}}" alt="Author's profile picture" nopin="nopin" />
                 {{ site.author }}
             {% endif %}
             {% if post.categories.size > 0 %} 

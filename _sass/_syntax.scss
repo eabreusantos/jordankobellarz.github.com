@@ -1,6 +1,15 @@
+.highlighttable{
+    font-size: 0.85em;
+    tr{
+        td.linenodiv pre code{color: #444444 !important}
+        td{
+            padding: 0px;
+            pre{ border-radius: 0px; margin: 0px; padding: 20px 10px; background: #272822; border: 0 }
+        }
+    }
+}
 
 .highlight {
-	  background: #272822;
      .c { color: #75715e } /* Comment */
      .err { color: #960050; background-color: #1e0010 } /* Error */
      .k { color: #66d9ef } /* Keyword */

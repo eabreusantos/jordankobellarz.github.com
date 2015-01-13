@@ -44,7 +44,7 @@
 <!--         <header class="post-header">
             <a id="blog-logo" href="http://jordankobellarz.github.com">
                 
-                    <img src="true" alt="Jordan Kobellarz" />
+                    <img src="/assets/images/profile.jpg" alt="Jordan Kobellarz" />
                  
             </a>
         </header> -->
@@ -91,16 +91,27 @@ To add new posts, simply add a file in the <code>_posts</code> directory that fo
 <li>Item 3</li>
 </ol>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="sr">//</span> <span class="n">comment</span> <span class="n">out</span> <span class="n">the</span> <span class="n">following</span> <span class="n">two</span> <span class="n">lines</span> <span class="k">when</span> <span class="n">deployed</span> <span class="n">to</span> <span class="n">production</span>
-<span class="n">defined</span><span class="p">(</span><span class="s1">&#39;YII_DEBUG&#39;</span><span class="p">)</span> <span class="ow">or</span> <span class="n">define</span><span class="p">(</span><span class="s1">&#39;YII_DEBUG&#39;</span><span class="p">,</span> <span class="kp">true</span><span class="p">);</span>
-<span class="n">defined</span><span class="p">(</span><span class="s1">&#39;YII_ENV&#39;</span><span class="p">)</span> <span class="ow">or</span> <span class="n">define</span><span class="p">(</span><span class="s1">&#39;YII_ENV&#39;</span><span class="p">,</span> <span class="s1">&#39;dev&#39;</span><span class="p">);</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><code class="language-php" data-lang="php"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</code></pre></div></td><td class="code"><div class="highlight"><pre><span class="c1">// comment out the following two lines when deployed to production</span>
+<span class="nb">defined</span><span class="p">(</span><span class="s1">&#39;YII_DEBUG&#39;</span><span class="p">)</span> <span class="k">or</span> <span class="nb">define</span><span class="p">(</span><span class="s1">&#39;YII_DEBUG&#39;</span><span class="p">,</span> <span class="k">true</span><span class="p">);</span>
+<span class="nb">defined</span><span class="p">(</span><span class="s1">&#39;YII_ENV&#39;</span><span class="p">)</span> <span class="k">or</span> <span class="nb">define</span><span class="p">(</span><span class="s1">&#39;YII_ENV&#39;</span><span class="p">,</span> <span class="s1">&#39;dev&#39;</span><span class="p">);</span>
 
-<span class="nb">require</span><span class="p">(</span><span class="n">__DIR__</span> <span class="o">.</span> <span class="s1">&#39;/../vendor/autoload.php&#39;</span><span class="p">);</span>
-<span class="nb">require</span><span class="p">(</span><span class="n">__DIR__</span> <span class="o">.</span> <span class="s1">&#39;/../vendor/yiisoft/yii2/Yii.php&#39;</span><span class="p">);</span>
+<span class="k">require</span><span class="p">(</span><span class="nx">__DIR__</span> <span class="o">.</span> <span class="s1">&#39;/../vendor/autoload.php&#39;</span><span class="p">);</span>
+<span class="k">require</span><span class="p">(</span><span class="nx">__DIR__</span> <span class="o">.</span> <span class="s1">&#39;/../vendor/yiisoft/yii2/Yii.php&#39;</span><span class="p">);</span>
 
-<span class="vg">$config</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="n">__DIR__</span> <span class="o">.</span> <span class="s1">&#39;/../config/web.php&#39;</span><span class="p">);</span>
+<span class="nv">$config</span> <span class="o">=</span> <span class="k">require</span><span class="p">(</span><span class="nx">__DIR__</span> <span class="o">.</span> <span class="s1">&#39;/../config/web.php&#39;</span><span class="p">);</span>
 
-<span class="p">(</span><span class="kp">new</span> <span class="n">yii</span><span class="p">\</span><span class="n">web</span><span class="p">\</span><span class="no">Application</span><span class="p">(</span><span class="vg">$config</span><span class="p">))</span><span class="o">-&gt;</span><span class="n">run</span><span class="p">();</span></code></pre></div>
+<span class="p">(</span><span class="k">new</span> <span class="nx">yii\web\Application</span><span class="p">(</span><span class="nv">$config</span><span class="p">))</span><span class="o">-&gt;</span><span class="na">run</span><span class="p">();</span>
+</pre></div>
+</td></tr></table>
 
 <p>Check out the <a href="http://jekyllrb.com">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/mojombo/jekyll">Jekyll&#39;s GitHub repo</a>.</p>
 
@@ -112,7 +123,7 @@ To add new posts, simply add a file in the <code>_posts</code> directory that fo
             <!-- If we want to display author's name and bio -->
             
                 <figure class="author-image">
-                    <a class="img" href="/" style="background-image: url(/assets/images/profile.png)">
+                    <a class="img" href="/" style="background-image: url(/assets/images/profile.jpg)">
                     <span class="hidden">Jordan Kobellarz's Picture</span></a>
                 </figure>
                 <section class="author">
