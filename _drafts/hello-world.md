@@ -1,20 +1,36 @@
 ---
 layout: post
-title:  "Meu primeiro post"
-date:   2014-01-12 12:25:00
-categories: ['javascript', 'node.js']
+title:  "Hello World!"
+date:   2015-01-12 12:25:00
+categories: ['jordan', 'desenvolvedor']
 ---
 
-You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
-To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
+Como todo site pessoal, é de costume darmos as boas vindas ao público e aproveitar
+para vender as ideias que irei propor aqui.
 
-Jekyll also offers powerful support for code snippets:
+{% highlight javascript linenos=table %}
+console.log('Hello World!');
+{% endhighlight %}
 
-> ei! esse é um bloquote
+{% highlight php linenos=table %}
+<?php echo 'Hello, world!'; ?>
+{% endhighlight %}
 
-# heading 1
-## heading 2
-### heading 3
+Gosto de *PHP* e *javascript*, mas não me limito a essas linguagens, pois, aliás, 
+a dinâmica das tecnologias web emergentes faz com que sejamos agnósticos.
+
+Comecei a escrever pela necessidade de espalhar conhecimento em língua portuguesa para
+a área de desenvolvimento e, também, para melhorar minhas habilidades pessoais, pois consigo 
+absorver conteúdos complexos com maior facilidade quando escrevo.
+
+> reter conhecimento em meio a tantas tecnologias requer um esforço cada vez maior. Melhor
+começar agora do que tarde!
+
+## Apenas sobre desenvolvimento?
+
+Não. Sobre tudo! Até sobre minha vida, mas sempre voltado aos desenvolvedores.
+
+
 
 1. Item 1
   1. A corollary to the above item.
@@ -25,7 +41,7 @@ Jekyll also offers powerful support for code snippets:
     * You might want to consider making a new list.
 3. Item 3
 
-{% highlight ruby linenos %}
+{% highlight php startinline linenos=table %}
 // comment out the following two lines when deployed to production
 defined('YII_DEBUG') or define('YII_DEBUG', true);
 defined('YII_ENV') or define('YII_ENV', 'dev');

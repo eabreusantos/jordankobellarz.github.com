@@ -4,14 +4,17 @@
 
 .highlighttable {
   font-size: 0.85em; }
-  .highlighttable tr td.linenodiv pre code {
+  .highlighttable tr td.code {
+    width: calc(100% - 40px); }
+  .highlighttable tr td.linenos {
+    width: 40px;
+    text-align: center;
     color: #444444 !important; }
   .highlighttable tr td {
     padding: 0px; }
     .highlighttable tr td pre {
       border-radius: 0px;
       margin: 0px;
-      padding: 20px 10px;
       background: #272822;
       border: 0; }
 
