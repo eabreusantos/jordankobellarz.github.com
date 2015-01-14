@@ -1,18 +1,27 @@
 name: Jordan Kobellarz
 description: open innovation developer
-meta_description: ""
 
 markdown: redcarpet
-highlighter: rouge
-logo: /assets/images/profile.jpg
+highlighter: pygments
 paginate: 15
 baseurl: /
 domain_name: 'http://jordankobellarz.github.com'
-google_analytics: 'UA-XXXXXXXX-X'
+google_analytics: 'UA-58555211-1'
 
 # Details for the RSS feed generator
-url:            'http://jordankobellarz.github.com'
-author:         'Jordan Kobellarz'
-bio:            'Desenvolvedor web usando tecnologias abertas para criar soluções inovadoras. Concilia a vida no escritório com o amor pela sua namorada, ciclismo, corrida e o curso de Sistemas de Informação na UTFPR.'
+url: 'http://jordankobellarz.github.com'           
+
+author:
+    name: Jordan Kobellarz
+    thumb: /assets/images/profile.jpg 
+    bio: Desenvolvedor web usando tecnologias abertas para criar soluções inovadoras. Ama sua namorada, pratica ciclismo e corrida e estuda na UTFPR. De vez em quando dorme.
+    url:
+        facebook: 'https://www.facebook.com/jordan.kobellarz'
+        twitter: 'https://twitter.com/jordankobellarz'
+        linkedin: 'http://br.linkedin.com/in/jordankobellarz'
+        email: 'jordan.kobellarz@gmail.com'
+        
+urls:
+    about: /sobre
 
 img_path: /assets/images/

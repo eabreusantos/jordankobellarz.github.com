@@ -2,6 +2,12 @@
 .post-excerpt p {
   display: inline; }
 
+.post-content, .archive {
+  margin-top: 40px !important; }
+
+.post-footer, #disqus_thread {
+  margin-top: 100px; }
+
 .highlighttable {
   font-size: 0.85em; }
   .highlighttable tr td.code {
