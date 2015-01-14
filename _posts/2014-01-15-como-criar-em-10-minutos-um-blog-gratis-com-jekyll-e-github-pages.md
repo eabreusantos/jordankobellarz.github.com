@@ -46,6 +46,8 @@ $ cd username.github.io
 ##3. Suba os arquivos para seu respositório no GitHub
 ele vai pedir seu nome de usuário e sua senha
 {% highlight bash linenos=table %}
+$ git add --all
+$ git commit -m "novo post: Hello World!"
 $ git pull origin master
 {% endhighlight %}
 
