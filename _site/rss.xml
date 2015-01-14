@@ -8,25 +8,16 @@
     <title>Jordan Kobellarz</title>
     <link>http://jordankobellarz.github.com</link>
     <description>open innovation developer</description>
-    <pubDate>Sun, 12 Jan 2014 10:25:00 -0200</pubDate>
+    <pubDate>Mon, 12 Jan 2015 10:25:00 -0200</pubDate>
     <item>
-      <title>Meu primeiro post</title>
-      <link>http://jordankobellarz.github.com/javascript/node.js/2014/01/12/hello-world.html</link>
-      <description>&lt;p&gt;You&amp;#39;ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory - edit this post and re-build (or run with the &lt;code&gt;-w&lt;/code&gt; switch) to see your changes!
-To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention: YYYY-MM-DD-name-of-post.ext.&lt;/p&gt;
+      <title>Hello World!</title>
+      <link>http://jordankobellarz.github.com/jordan/desenvolvedor/2015/01/12/hello-world.html</link>
+      <description>&lt;p&gt;Como todo site pessoal, é de costume darmos as boas vindas ao público e aproveitar
+para vender as ideias que irei propor aqui.&lt;/p&gt;
 </description>
-      <pubDate>Sun, 12 Jan 2014 10:25:00 -0200</pubDate>
-      <dc:date>2014-01-12T10:25:00-02:00</dc:date>
+      <pubDate>Mon, 12 Jan 2015 10:25:00 -0200</pubDate>
+      <dc:date>2015-01-12T10:25:00-02:00</dc:date>
     </item>
-    <item>
-      <title>Welcome to Jekyll!</title>
-      <link>http://jordankobellarz.github.com/thriller/comedy/horror/2013/11/10/welcome-to-jekyll.html</link>
-      <description>&lt;p&gt;You&amp;#39;ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory - edit this post and re-build (or run with the &lt;code&gt;-w&lt;/code&gt; switch) to see your changes!
-To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention: YYYY-MM-DD-name-of-post.ext.&lt;/p&gt;
-</description>
-      <pubDate>Sun, 10 Nov 2013 08:18:00 -0200</pubDate>
-      <dc:date>2013-11-10T08:18:00-02:00</dc:date>
-    </item>
-    <dc:date>2014-01-12T10:25:00-02:00</dc:date>
+    <dc:date>2015-01-12T10:25:00-02:00</dc:date>
   </channel>
 </rss>
