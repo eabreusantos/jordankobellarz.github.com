@@ -2,7 +2,7 @@
 layout: post
 title:  "Hello World!"
 description: "Artigo de boas vindas ao site pessoal de Jordan Kobellarz"
-date:   2015-01-12 12:25:00
+date:   2015-01-14 12:25:00
 categories: ['jordan', 'desenvolvedor']
 ---
 

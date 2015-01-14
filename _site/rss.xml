@@ -8,16 +8,25 @@
     <title>Jordan Kobellarz</title>
     <link>http://jordankobellarz.github.com</link>
     <description>open innovation developer</description>
-    <pubDate>Mon, 12 Jan 2015 10:25:00 -0200</pubDate>
+    <pubDate>Wed, 14 Jan 2015 13:00:00 -0200</pubDate>
+    <item>
+      <title>Como criar em 10 minutos um blog grátis com Jekyll e GitHub Pages</title>
+      <link>http://jordankobellarz.github.com/jekyll/github/2015/01/14/como-criar-em-10-minutos-um-blog-gratis-com-jekyll-e-github-pages.html</link>
+      <description>&lt;p&gt;Para hospedar esse site usei o &lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt; e para gerar a estrutura 
+em forma de blog usei o &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;, um gerador de sites estáticos, com as mesmas funcionalidades de um CMS.&lt;/p&gt;
+</description>
+      <pubDate>Wed, 14 Jan 2015 13:00:00 -0200</pubDate>
+      <dc:date>2015-01-14T13:00:00-02:00</dc:date>
+    </item>
     <item>
       <title>Hello World!</title>
-      <link>http://jordankobellarz.github.com/jordan/desenvolvedor/2015/01/12/hello-world.html</link>
+      <link>http://jordankobellarz.github.com/jordan/desenvolvedor/2015/01/14/hello-world.html</link>
       <description>&lt;p&gt;Como todo site pessoal, é de costume darmos as boas vindas ao público e aproveitar
 para vender as ideias que irei propor aqui.&lt;/p&gt;
 </description>
-      <pubDate>Mon, 12 Jan 2015 10:25:00 -0200</pubDate>
-      <dc:date>2015-01-12T10:25:00-02:00</dc:date>
+      <pubDate>Wed, 14 Jan 2015 10:25:00 -0200</pubDate>
+      <dc:date>2015-01-14T10:25:00-02:00</dc:date>
     </item>
-    <dc:date>2015-01-12T10:25:00-02:00</dc:date>
+    <dc:date>2015-01-14T13:00:00-02:00</dc:date>
   </channel>
 </rss>
