@@ -3,7 +3,7 @@ description: open innovation developer
 meta_description: ""
 
 markdown: redcarpet
-highlighter: pygments
+highlighter: rouge
 logo: /assets/images/profile.jpg
 paginate: 15
 baseurl: /

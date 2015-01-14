@@ -91,27 +91,27 @@ To add new posts, simply add a file in the <code>_posts</code> directory that fo
 <li>Item 3</li>
 </ol>
 
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><code class="language-php" data-lang="php"> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10</code></pre></div></td><td class="code"><div class="highlight"><pre><span class="c1">// comment out the following two lines when deployed to production</span>
-<span class="nb">defined</span><span class="p">(</span><span class="s1">&#39;YII_DEBUG&#39;</span><span class="p">)</span> <span class="k">or</span> <span class="nb">define</span><span class="p">(</span><span class="s1">&#39;YII_DEBUG&#39;</span><span class="p">,</span> <span class="k">true</span><span class="p">);</span>
-<span class="nb">defined</span><span class="p">(</span><span class="s1">&#39;YII_ENV&#39;</span><span class="p">)</span> <span class="k">or</span> <span class="nb">define</span><span class="p">(</span><span class="s1">&#39;YII_ENV&#39;</span><span class="p">,</span> <span class="s1">&#39;dev&#39;</span><span class="p">);</span>
+<div class="highlight"><pre><code class="language-php" data-lang="php"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10</code></pre></td><td class="code"><pre>// comment out the following two lines when deployed to production
+defined('YII_DEBUG') or define('YII_DEBUG', true);
+defined('YII_ENV') or define('YII_ENV', 'dev');
 
-<span class="k">require</span><span class="p">(</span><span class="nx">__DIR__</span> <span class="o">.</span> <span class="s1">&#39;/../vendor/autoload.php&#39;</span><span class="p">);</span>
-<span class="k">require</span><span class="p">(</span><span class="nx">__DIR__</span> <span class="o">.</span> <span class="s1">&#39;/../vendor/yiisoft/yii2/Yii.php&#39;</span><span class="p">);</span>
+require(__DIR__ . '/../vendor/autoload.php');
+require(__DIR__ . '/../vendor/yiisoft/yii2/Yii.php');
 
-<span class="nv">$config</span> <span class="o">=</span> <span class="k">require</span><span class="p">(</span><span class="nx">__DIR__</span> <span class="o">.</span> <span class="s1">&#39;/../config/web.php&#39;</span><span class="p">);</span>
+$config = require(__DIR__ . '/../config/web.php');
 
-<span class="p">(</span><span class="k">new</span> <span class="nx">yii\web\Application</span><span class="p">(</span><span class="nv">$config</span><span class="p">))</span><span class="o">-&gt;</span><span class="na">run</span><span class="p">();</span>
+(new yii\web\Application($config))-&gt;run();<span class="w">
+</span></pre></td></tr></tbody></table>
 </pre></div>
-</td></tr></table>
 
 <p>Check out the <a href="http://jekyllrb.com">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/mojombo/jekyll">Jekyll&#39;s GitHub repo</a>.</p>
 
