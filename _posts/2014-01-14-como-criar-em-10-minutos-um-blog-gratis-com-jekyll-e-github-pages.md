@@ -36,10 +36,12 @@ $ git clone https://github.com/username/username.github.io
 ##2. Escolha um tema para seu website <small>[opcional]</small>
 * entre no [respositório de temas do Jekyll](http://jekyllthemes.org/) e escolha o seu favorito.
 Recomendo o tema [Kasper](https://github.com/rosario/kasper), que é o que eu uso nesse site.
-* clone o tema no repositório que acabou de criar (não se esqueça que **username** é o seu nome de
+* clone o tema 
+* coloque o tema em seu repositório (não se esqueça que **username** é o seu nome de
 usuário no GitHub).
 {% highlight bash linenos=table %}
-$ git clone https://github.com/rosario/kasper username.github.io
+$ git clone https://github.com/rosario/kasper #baixa o tema kasper
+$ mv kasper username.github.io #coloca o tema no seu repositório
 $ cd username.github.io
 {% endhighlight %}
 
