@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Como criar em 10 minutos um blog grátis com Jekyll e GitHub Pages"
+title:  "Como criar um blog grátis com Jekyll e GitHub Pages em 10 minutos"
 description: "O Jekyl é um criador de sites estáticos, capaz de rodar nos servidores do GitHub Pages, que permite criar páginas web gratuitamente."
 date:   2015-01-14 15:00:00
 categories: ['jekyll','GitHub']
@@ -27,7 +27,7 @@ GitHub Pages é uma hospedagem de sites estáticos disponibilizada gratuitamente
 ##1. Crie um repositório no GitHub
 * entre em sua conta do [GitHub](https://github.com/)
 * crie um [novo repositório](https://github.com/new) exatamente com o nome **username.github.io**,
-no qual **username** é o seu nome de usuário
+no qual **username** é o seu nome de usuário (não funciona se você não colocar exatamente seu nome de usuário).
 * abra o terminal `ctrl + alt + t` e clone o repositório
 {% highlight bash linenos=table %}
 $ git clone https://github.com/username/username.github.io
@@ -37,7 +37,7 @@ $ git clone https://github.com/username/username.github.io
 * entre no [respositório de temas do Jekyll](http://jekyllthemes.org/) e escolha o seu favorito.
 Recomendo o tema [Kasper](https://github.com/rosario/kasper), que é o que eu uso nesse site.
 * clone o tema no repositório que acabou de criar (não se esqueça que **username** é o seu nome de
-usuário no GitHub)
+usuário no GitHub).
 {% highlight bash linenos=table %}
 $ git clone https://github.com/rosario/kasper username.github.io
 $ cd username.github.io
