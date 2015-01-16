@@ -186,7 +186,8 @@ saber se pode manipular o arquivo requisitado antes mesmo de fazer uma requisiç
 ## Comentários
 Somente use comentários para informações relevantes. Tente ser breve e explicativo, sempre! Pense
 em frases que você consiga entender, mesmo lendo daqui há 10 anos. Um leve toque de humor
-pode fazer bem, a não ser que você esteja esteja comentando sistema de tempo real para missões críticas.
+pode fazer bem, a não ser que você esteja comentando um *hard real time system* (o que talvez
+provavelmente não irá acontecer com javascript).
 
 ## Bônus
 * sempre inicie objetos com `{}` e arrays com `[]`
