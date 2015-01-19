@@ -41,7 +41,7 @@ Recomendo o tema [Kasper](https://github.com/rosario/kasper), que é o que eu us
 usuário no GitHub).
 {% highlight bash linenos=table %}
 $ git clone https://github.com/rosario/kasper #baixa o tema kasper
-$ mv kasper username.github.io #coloca o tema no seu repositório
+$ mv kasper/* username.github.io #coloca o tema no seu repositório
 $ cd username.github.io
 {% endhighlight %}
 
