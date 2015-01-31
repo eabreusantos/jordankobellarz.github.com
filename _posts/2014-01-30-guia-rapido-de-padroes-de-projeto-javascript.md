@@ -293,6 +293,12 @@ var singletonEstacionamento = (function () {
         }
     };
 })();
+
+est1 = singletonEstacionamento.getInstance();
+est2 = singletonEstacionamento.getInstance();
+
+// true!
+console.log(est1 === est2);
 {% endhighlight %}
 
 <hr/>
