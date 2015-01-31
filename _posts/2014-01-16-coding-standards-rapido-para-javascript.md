@@ -14,8 +14,7 @@ entre os estilos.
 
 ##Nomeação
 
-* variáveis, funções, propriedades públicas, métodos públicos e namespaces com lowerCamelCase: **nomeDaCoisa**
-* propriedades privadas e métodos privados em lowerCamelCase com underscore: **_nomeDaCoisa**
+* variáveis, funções, propriedades, métodos e namespaces com lowerCamelCase: **nomeDaCoisa**
 * classes com UpperCammelCase:  **NomeDaClasse**
 * callback inicia com *on*: **onMeuCallback**
 * arquivos: **nomedoarquivo.js**
@@ -35,11 +34,11 @@ function nomeDaMinhaFuncao() {
 
 // classe
 function NomeDaMinhaClasse() {
-    var _nomeDaMinhaPropriedadePrivada; // propriedade privada
+    var nomeDaMinhaPropriedadePrivada; // propriedade privada
     this.nomeDaMinhaPropriedadePublica; // propriedade pública
     
     // método privado
-    var _nomeDoMeuMetodoPrivado = function () {
+    var nomeDoMeuMetodoPrivado = function () {
         // ...
     }
     

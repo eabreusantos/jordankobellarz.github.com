@@ -8,7 +8,18 @@
     <title>Jordan Kobellarz</title>
     <link>http://jordankobellarz.github.com</link>
     <description>open innovation developer</description>
-    <pubDate>Tue, 27 Jan 2015 06:30:00 -0200</pubDate>
+    <pubDate>Fri, 30 Jan 2015 12:00:00 -0200</pubDate>
+    <item>
+      <title>Guia rápido de padrões de projeto Javascript</title>
+      <link>http://jordankobellarz.github.com/javascript/2015/01/30/guia-rapido-de-padroes-de-projeto-javascript.html</link>
+      <description>&lt;p&gt;Javascript é uma linguagem difícil de ser compreendida, justamente por
+ser multiparadigma, ou seja, podemos trabalhar com o paradigma orientado a objetos, procedural e 
+imperativo, tudo ao mesmo tempo. Isso pode dificultar a manutenção do código e, também, limitar o
+programador iniciante que não conhece as características dessa linguagem.&lt;/p&gt;
+</description>
+      <pubDate>Fri, 30 Jan 2015 12:00:00 -0200</pubDate>
+      <dc:date>2015-01-30T12:00:00-02:00</dc:date>
+    </item>
     <item>
       <title>Modelos de bancos NoSQL</title>
       <link>http://jordankobellarz.github.com/nosql/2015/01/27/modelos-de-bancos-no-sql.html</link>
@@ -56,6 +67,6 @@ para vender as ideias que irei propor aqui.&lt;/p&gt;
       <pubDate>Wed, 14 Jan 2015 10:25:00 -0200</pubDate>
       <dc:date>2015-01-14T10:25:00-02:00</dc:date>
     </item>
-    <dc:date>2015-01-27T06:30:00-02:00</dc:date>
+    <dc:date>2015-01-30T12:00:00-02:00</dc:date>
   </channel>
 </rss>
