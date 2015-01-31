@@ -164,7 +164,7 @@ module pattern chamada de **exports**. Estéticamente essa forma é bem mais bon
 var moduloEstacionamento = (function () {
 
     // objetos privados
-    var export = {};
+    var exports = {};
     var patio = [];
     var deletaCarro = function (carro) {
         index = patio.indexOf(carro);
@@ -174,15 +174,15 @@ var moduloEstacionamento = (function () {
     };
     
     // objetos que serão publicados
-    export.lista = patio;
-    export.entrar = function (carro) {
+    exports.lista = patio;
+    exports.entrar = function (carro) {
         patio.push(carro);
     };
-    export.sair = function (carro) {
+    exports.sair = function (carro) {
         deletaCarro(carro);
     };
  
-    return export;
+    return exports;
 })();
 {% endhighlight %}
 
