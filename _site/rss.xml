@@ -8,7 +8,15 @@
     <title>Jordan Kobellarz</title>
     <link>http://jordankobellarz.github.com</link>
     <description>open innovation developer</description>
-    <pubDate>Sat, 07 Mar 2015 04:02:00 -0300</pubDate>
+    <pubDate>Thu, 23 Jul 2015 11:58:00 -0300</pubDate>
+    <item>
+      <title>MongoDB - Essencial</title>
+      <link>http://jordankobellarz.github.com/mongodb/2015/07/23/2015-07-23-mongodb-mini-manual.html</link>
+      <description>&lt;p&gt;MongoDB é um banco de dados &lt;strong&gt;orientado a documentos&lt;/strong&gt; multiuso e versátil. Sua abordagem prática veio para suplantar um vão imenso que não era coberto pelos bancos relacionais, principalemente em aplicações modernas, que requerem alguns dos seguintes itens:&lt;/p&gt;
+</description>
+      <pubDate>Thu, 23 Jul 2015 11:58:00 -0300</pubDate>
+      <dc:date>2015-07-23T11:58:00-03:00</dc:date>
+    </item>
     <item>
       <title>Arquitetando com MongoDB</title>
       <link>http://jordankobellarz.github.com/mongodb/2015/03/07/arquitetura-mongodb.html</link>
@@ -16,6 +24,14 @@
 </description>
       <pubDate>Sat, 07 Mar 2015 04:02:00 -0300</pubDate>
       <dc:date>2015-03-07T04:02:00-03:00</dc:date>
+    </item>
+    <item>
+      <title>Sua informação não tem valor!</title>
+      <link>http://jordankobellarz.github.com/informacao/2015/02/20/2014-02-20-sua-informacao-nao-tem-valor.html</link>
+      <description>&lt;p&gt;Estamos aqui trabalhando com níveis de abstração distintos: um &lt;strong&gt;dado&lt;/strong&gt; passa a ser &lt;strong&gt;informação&lt;/strong&gt;, que, por sua vez, passa a ser &lt;strong&gt;conhecimento&lt;/strong&gt;. Mas será que cada um desses níveis possui algum valor significativo? &lt;/p&gt;
+</description>
+      <pubDate>Fri, 20 Feb 2015 07:01:00 -0200</pubDate>
+      <dc:date>2015-02-20T07:01:00-02:00</dc:date>
     </item>
     <item>
       <title>Guia rápido de padrões de projeto Javascript</title>
@@ -75,6 +91,6 @@ para vender as ideias que irei propor aqui.&lt;/p&gt;
       <pubDate>Wed, 14 Jan 2015 10:25:00 -0200</pubDate>
       <dc:date>2015-01-14T10:25:00-02:00</dc:date>
     </item>
-    <dc:date>2015-03-07T04:02:00-03:00</dc:date>
+    <dc:date>2015-07-23T11:58:00-03:00</dc:date>
   </channel>
 </rss>
