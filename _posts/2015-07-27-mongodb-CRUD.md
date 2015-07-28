@@ -455,7 +455,9 @@ Operações de modificação são sempre atômicas à nível de documento: caso 
 Estão disponíveis uma grande variedade de modificadores para trabalhar com a atualização de campos no MongoDB. Assim como os operadores e modificadores usados com o método `find`, aqui eles também devem sempre iniciar com `$`.
 
 ###Operador $set
-O método update sem nenhum modificador substitui completamente o documento antigo pelo novo. Para evitar esse comportamento e permitir apenas a atualização de campos específicos, usamos o comando `$set`.
+O método update sem nenhum modificador substitui completamente o documento antigo pelo novo (como visto anteriormente). Para evitar esse comportamento e permitir apenas a atualização de campos específicos, usamos o comando `$set`.
+
+Caso seja executado `$set` sobre um documento que não contenha o campo que terá o valor modificado, então o campo é criado com o valor especificado.
 
 **EXEMPLO** trocando o valor do campo "nome" em um documento
 
@@ -484,32 +486,33 @@ Para incrementar um valor numérico, usamos o comando `$inc`.
 ##Modificando arrays em documentos
 
 ###Comando $push
-
-###Comando $pop
-
-###Comando $pull
+Para inserir um novo elemento no fim do array, usamos o comando `$push`, passando como parâmetro o elemento a ser adicionado.
 
 ###Comando $pushAll
+Para inserir vários novos elementos no fim de um array, usamos o comando `$pushAll`, passando como parâmetro a lista de elementos a serem adicionados.
+
+###Comando $pop
+Para remover um elemento do fim do array, usamos o comando `$pop`.
+
+###Comando $pull
+Para remover um elemento em uma posição específica do array, usamos o comando `$pull`, passando como parâmetro a posição a ser removida.
 
 ###Comando $pullAll
+Para remover vários elementos específicos de um array, usamos o comando `$pullAll`, passando como parâmetro uma lista de elementos a serem removidos.
 
 ###Comando $addToSet
+Para inserir um novo elemento no fim do array, sabendo que ele deve ser único dentro do array, usamos o comando `$addToSet`, passando como parâmetro o elemento a ser adicionado. Esse comando age como o `$push`, sempre que o elemento a ser inserido ainda não existir no array.
 
 ###Comando $each
 
 ###Comando $slice
+Para permitir que o array cresça somente até um tamanho predefinido, usamos o comando `$slice`, passando como parâmetro um valor negativo.
 
 ###Comando $sort
+Para ordenar os itens do array, usamos o comando `$sort`.
 
-###Comando $ne
-
-
-
-
-
-
-
-TODO: UPSERT
+##Upsert
+O que acontece acontece se tentarmos mopdificar um documento que não existe na coleção? Nada. A não ser que que seja usada a flag de **upsert**.
 
 TODO: $SEToNiNSERT
 
