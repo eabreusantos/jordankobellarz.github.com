@@ -8,18 +8,42 @@
     <title>Jordan Kobellarz</title>
     <link>http://jordankobellarz.github.com</link>
     <description>open innovation developer</description>
-    <pubDate>Thu, 23 Jul 2015 11:58:00 -0300</pubDate>
+    <pubDate>Mon, 27 Jul 2015 21:00:00 -0300</pubDate>
     <item>
-      <title>MongoDB - Essencial</title>
-      <link>http://jordankobellarz.github.com/mongodb/2015/07/23/mongodb-essencial.html</link>
+      <title>#3 MongoDB - Modelagem</title>
+      <link>http://jordankobellarz.github.com/mongodb/2015/07/27/mongodb-modelagem.html</link>
+      <description>&lt;p&gt;A maioria dos autores coloca essa seção depois das operações de CRUD, mas particularmente acho ela muito mais importante, pois quem está acostumado com o modelo relacional não tem uma concepção do modelo orientado a documentos consistente. É como pilotar um Boeing 737 tendo apenas a carteira de habilitação para motos.&lt;/p&gt;
+</description>
+      <pubDate>Mon, 27 Jul 2015 21:00:00 -0300</pubDate>
+      <dc:date>2015-07-27T21:00:00-03:00</dc:date>
+    </item>
+    <item>
+      <title>#2 MongoDB - CRUD</title>
+      <link>http://jordankobellarz.github.com/mongodb/2015/07/26/mongodb-CRUD.html</link>
+      <description>&lt;p&gt;Qualquer operação de criar, buscar, atualizar ou remover documentos deve ocorrer sobre uma e somente uma coleção no MongoDB, devido à sua natureza não relacional.&lt;/p&gt;
+</description>
+      <pubDate>Sun, 26 Jul 2015 21:00:00 -0300</pubDate>
+      <dc:date>2015-07-26T21:00:00-03:00</dc:date>
+    </item>
+    <item>
+      <title>#1 MongoDB - Conceitos Básicos</title>
+      <link>http://jordankobellarz.github.com/mongodb/2015/07/23/mongodb-conceitos-basicos.html</link>
+      <description>&lt;p&gt;O MongoDB pode ser comparado de frente à um banco relacional devido à sua organização. O que muda, na prática, é a flexibilidade que ele nos proporciona para armazenar estruturas, que jamais seriam possíveis em um banco relacional.&lt;/p&gt;
+</description>
+      <pubDate>Thu, 23 Jul 2015 21:00:00 -0300</pubDate>
+      <dc:date>2015-07-23T21:00:00-03:00</dc:date>
+    </item>
+    <item>
+      <title>#0 MongoDB - Introdução</title>
+      <link>http://jordankobellarz.github.com/mongodb/2015/07/22/mongodb-essencial.html</link>
       <description>&lt;blockquote&gt;
 &lt;blockquote&gt;
 &lt;p&gt;MongoDB é um banco orientado a documentos open-source que permite alta performance, alta disponibilidade e escalabilidade automática. - 10gen&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/blockquote&gt;
 </description>
-      <pubDate>Thu, 23 Jul 2015 11:58:00 -0300</pubDate>
-      <dc:date>2015-07-23T11:58:00-03:00</dc:date>
+      <pubDate>Wed, 22 Jul 2015 21:00:00 -0300</pubDate>
+      <dc:date>2015-07-22T21:00:00-03:00</dc:date>
     </item>
     <item>
       <title>Arquitetando com MongoDB</title>
@@ -87,6 +111,6 @@ para vender as ideias que irei propor aqui.&lt;/p&gt;
       <pubDate>Wed, 14 Jan 2015 10:25:00 -0200</pubDate>
       <dc:date>2015-01-14T10:25:00-02:00</dc:date>
     </item>
-    <dc:date>2015-07-23T11:58:00-03:00</dc:date>
+    <dc:date>2015-07-27T21:00:00-03:00</dc:date>
   </channel>
 </rss>
