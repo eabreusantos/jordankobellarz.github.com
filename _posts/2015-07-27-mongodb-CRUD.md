@@ -19,6 +19,8 @@ A seguir, serão mostrados conceitos básicos de operações de CRUD (Create, Re
 
 A inserção de documentos em uma coleção é realizada pelo comando `insert`. Ele é similar ao comando `insert` de uma base de dados relacional, com a diferença de não precisarmos seguir um *schema* predefinido. Quando essa operação é realizada com sucesso, retorna um objeto com o número de documentos inseridos.
 
+**EXEMPLO** inserção de um documento:
+
 {% highlight javascript linenos=table %}
 db.test.insert({
   nome: "MongoDB Shell"
@@ -33,7 +35,11 @@ db.test.insert({
 
 Quando criamos um documento sem o campo `\_id`, o driver gera automaticamente um `ObjectId` e adiciona ele ao campo `\_id` do documento. O mesmo vale para a coleção: se ela ainda não existir, então uma nova coleção é criada para permitir a inserção do novo documento.
 
-Caso queiramos inserir vários documentos ao mesmo tempo, podemos passar um array de documentos ao comando insert:
+###Inserção de conjunto de documentos
+
+Caso queiramos inserir vários documentos ao mesmo tempo, podemos passar um array de documentos ao comando insert.
+
+**EXEMPLO** inserção de um conjunto de documentos:
 
 {% highlight javascript linenos=table %}
 db.test.insert([
@@ -58,6 +64,8 @@ Ao executar o comando acima, caso algum dos documentos não seja inserido, entã
 
 É possível inserir também quantidades imensas de documentos em paralelo através da API `Bulk()`. Nesse caso, se um documento falhar, os outros ainda continuarão a ser inseridos.
 
+**EXEMPLO** inserção de documentos em massa:
+
 {% highlight javascript linenos=table %}
 var bulk = db.test.initializeUnorderedBulkOp();
 bulk.insert(
@@ -75,6 +83,15 @@ bulk.insert(
 bulk.execute();
 {% endhighlight %}
 
+###Velocidade de inserção
+
+Uma inserção no MongoDB ocorre centenas de vezes mais rápido que em um banco relacional. Isso é possível, pois são feitas verificações mínimas nos documentos a serem inseridos:
+
+* **estrutura básica:** verifica se o tamanho do documento não ultrapassa 16MB e se é uma estrutura JSON válida;
+* **existência do \_id:** verifica se o driver gerou um \_id, caso contrário, o servidor cria um novo.
+
+Os 16MB de tamanho máximo para um documento é um valor arbitrário que o MongoDB usa para evitar projetos ruins de bancos de dados. Nas próximas seções, será demonstrado como armazenar documentos maiores que 16MB através do GridFS.
+
 ###Alternativas para inserir documentos
 
 Existem outros métodos de adicionar documentos, que funcionam quando tentamos atualizar os campos de um documento que ainda não existe no banco de dados, são eles:
@@ -90,7 +107,9 @@ Estes métodos serão vistos em maior profundidade nas próximas seções.
 # Buscando documentos
 A riqueza de opções para o método `find` é tão grande, que só dele poderia sair um livro, caso explicado em conjunto com o framework de agregação. Esse comando sempre retorna um cursor para os documentos encontrados, possiblitando operações de ordenação, limites, etc.
 
-Para retornar todos os documentos de uma coleção, usamos o método `find` sem passar nenhum parâmetro:
+Para retornar todos os documentos de uma coleção, usamos o método `find` sem passar nenhum parâmetro.
+
+**EXEMPLO** retornando todos os documentos:
 
 {% highlight javascript linenos=table %}
 db.test.find();
@@ -103,6 +122,8 @@ No Mongo Shell, ao executar o método `find`, o cursor retornará apenas os 20 p
 ##Comportamento do cursor
 Cursores ficam ativos por 10 minutos no cliente ou até ele ser esgotado. O comportamento de *timeout* de 10 minutos, contudo, pode ser removido através do comando `addOption`, passando como parâmetro a variável global `DBQuery.Option.noTimeout`.
 
+**EXEMPLO** removendo o comportamento de *timeout*:
+
 {% highlight javascript linenos=table %}
 db.test.find().addOption(DBQuery.Option.noTimeout);
 {% endhighlight %}
@@ -111,7 +132,9 @@ db.test.find().addOption(DBQuery.Option.noTimeout);
 
 O mótodo `find` pode retornar o mesmo documento mais de uma vez, caso este seja modificado antes de terminar seu ciclo de vida por exaustão ou por *timeout*. Isso ocorre devido à natureza não isolada do cursor.
 
-Para evitar que isso aconteça, podemos usar o método [snapshot](http://docs.mongodb.org/manual/faq/developers/#faq-developers-isolate-cursors). Dessa forma, apenas uma versão de cada documento será retornada no cursor:
+Para evitar que isso aconteça, podemos usar o método [snapshot](http://docs.mongodb.org/manual/faq/developers/#faq-developers-isolate-cursors). Dessa forma, apenas uma versão de cada documento será retornada no cursor.
+
+**EXEMPLO** usando o método `snapshot`:
 
 {% highlight javascript linenos=table %}
 db.test.find().snapshot();
@@ -119,7 +142,9 @@ db.test.find().snapshot();
 
 ####Status dos Cursores
 
-É possível verificar a situação dos cursores ativos e inativos no Mongo Server através do comando `serverStatus`:
+É possível verificar a situação dos cursores ativos e inativos no Mongo Server através do comando `serverStatus`.
+
+**EXEMPLO** verificando a situação dos cursores no servidor:
 
 {% highlight javascript linenos=table %}
 db.serverStatus().metrics.cursor
@@ -137,7 +162,9 @@ db.serverStatus().metrics.cursor
 
 ###Ordenando, limitando ou omitindo documentos através de cursores
 
-Os cursores disponibilizam métodos para ordenar, limitar ou pular documentos em uma query. Eles podem ser invocados em conjunto sequencialmente:
+Os cursores disponibilizam métodos para ordenar, limitar ou pular documentos em uma query. Eles podem ser invocados em conjunto de forma sequencial.
+
+**EXEMPLO** usando métodos de ordenação, limite e remoção de resultados
 
 {% highlight javascript linenos=table %}
 // ordena em ordem decrescente pelo "nome" e, depois,
@@ -154,20 +181,25 @@ db.test.find().skip(8);
 db.test.find().sort({nome:-1, tempo: 1}).limit(5).skip(8);
 {% endhighlight %}
 
+TODO: count
+
 ##Especificando os documentos a serem retornados
 
 As queries começam a ficar mais interessantes ao passo que começamos a especificar os documentos que queremos que sejam retornados através de vários operadores básicos e modificadores, como será visto nos próximos tópicos:
 
 ###Procurando uma string
 
-Para procurar por um valor nos campos, apenas o passamos como parâmetro da query:
+Para procurar por um valor nos campos, apenas o passamos como parâmetro da query.
+
+**EXEMPLO** procurando por documentos que tenham o campo "nome" igual a "Mongo" e o campo "ano" igual a 2007:
 
 {% highlight javascript linenos=table %}
-// o "nome" deve ser "Mongo" e o "ano" deve ser 2007
 db.test.find({"nome": "Mongo", "ano": 2007});
 {% endhighlight %}
 
-Tenha cuidado ao procurar por campos com valores nulos, pois nesse caso o servidor retornará tanto os documentos que tenham campos com valor nulo, quanto os que não tenham o campo procurado, veja o exemplo:
+Tenha cuidado ao procurar por campos com valores nulos, pois nesse caso o servidor retornará tanto os documentos que tenham campos com valor nulo, quanto os que não tenham o campo procurado.
+
+**EXEMPLO** procurando documentos que tenham o campo "nome" igual a null ou que não tenham o campo "nome":
 
 {% highlight javascript linenos=table %}
 db.test.find({"nome": null});
@@ -181,14 +213,20 @@ db.test.find({"nome": null});
 {}
 {% endhighlight %}
 
+TODO: falar sobre o operador $exists
+
 ###Projeção de campos
-Os campos a serem retornados devem ser especificados no segundo parâmetro do método `find`. Nesse exemplo, queremos retornar apenas o campo "ano":
+Os campos a serem retornados devem ser especificados no segundo parâmetro do método `find`.
+
+**EXEMPLO** retornando apenas o campo "ano":
 
 {% highlight javascript linenos=table %}
 db.test.find({"nome": "Mongo"}, {"ano": 1});
 {% endhighlight %}
 
-Da mesma forma que especificamos os campos a serem retornados, podemos especificar apenas os campos a não serem retornados. Nesse exemplo, removemos da projeção apenas o campo "status":
+Da mesma forma que especificamos os campos a serem retornados, podemos especificar apenas os campos a não serem retornados.
+
+**EXEMPLO** removendo da projeção apenas o campo "status":
 
 {% highlight javascript linenos=table %}
 db.test.find({"nome": "Mongo"}, {"status": -1});
@@ -197,7 +235,9 @@ db.test.find({"nome": "Mongo"}, {"status": -1});
 >> Na projeção ou usamos a remoção de campos ou a especificação dos campos a serem retornados, jamais os dois juntos, salvo no caso abaixo:
 
 
-Como pode ser notado nos exemplos acima, o MongoDB sempre retorna o campo `\_id`, mesmo que não o tenhamos especificado na projeção, pois é um campo que na maioria das vezes é necessário para que possamos manipular o documento posteriormente. Podemos sobreescrever esse comportamento especificando a sua retirada da projeção:
+Como pode ser notado nos exemplos acima, o MongoDB sempre retorna o campo `\_id`, mesmo que não o tenhamos especificado na projeção, pois é um campo que na maioria das vezes é necessário para que possamos manipular o documento posteriormente. Podemos sobreescrever esse comportamento especificando a sua retirada da projeção.
+
+**EXEMPLO** removendo o campo \_id da projeção:
 
 {% highlight javascript linenos=table %}
 db.test.find({"nome": "Mongo"}, {"ano": 1, "\_id": -1});
@@ -208,32 +248,38 @@ Assim como em bancos de dados relacionais, temos a possibilidade de acessar oper
 
 ####Operador $and (AND lógico)
 
-Operações AND são realizadas usando uma vírgula entre as condições ou, alternativamente, através do modificador `$and`. Por exemplo, para retornar todos os documentos que tenham "qtd" igual a 100 e "preco" igual a 9.95:  
+Operações AND são realizadas usando uma vírgula entre as condições ou, alternativamente, através do modificador `$and`.
+
+**EXEMPLO** retornando todos os documentos que tenham "qtd" igual a 100 e "preco" igual a 9.95:  
 
 {% highlight javascript linenos=table %}
-db.estoque.find({
+db.test.find({
   { qtd: 100 }, { preco: 9.95}
 })
 
 // alternativamente
-db.estoque.find({
+db.test.find({
   $and: [ { qtd: 100 }, { preco: 9.95 } ]
 })
 {% endhighlight %}
 
 ####Operadores $or, $in e $nin  (OU lógico)
-Condicionais OR são realizadas através do operador `$or`, que precisa de um array de condições a serem verificadas. Por exemplo, para retornar todos os documentos que tenham "qtd" igual a 100 ou "preco" igual a 9.95:  
+Condicionais OR são realizadas através do operador `$or`, que precisa de um array de condições a serem verificadas.
+
+**EXEMPLO** retornando todos os documentos que tenham "qtd" igual a 100 ou "preco" igual a 9.95:  
 
 {% highlight javascript linenos=table %}
-db.estoque.find({
+db.test.find({
   $or: [ { qtd: 100 }, { preco: 9.95 } ]
 })
 {% endhighlight %}
 
-Para o caso de queries mais simples com a cláusula OR, podemos usar o operador `$in` ou `$nin` (negação de `$in`) - eles são ligeiramente mais rápidos que o operador `$or`. Por exemplo, para retornar todos os documentos que tenham "qtd" igual a 20 ou "qtd" igual a 50:  
+Para o caso de queries mais simples com a cláusula OR, podemos usar o operador `$in` ou `$nin` (negação de `$in`) - eles são ligeiramente mais rápidos que o operador `$or`.
+
+**EXEMPLO** retornando todos os documentos que tenham "qtd" igual a 20 ou "qtd" igual a 50:  
 
 {% highlight javascript linenos=table %}
-db.estoque.find({
+db.test.find({
   qtd: {$in: [20, 50]}
 })
 {% endhighlight %}
@@ -242,30 +288,40 @@ Tente sempre que possível usar o operador `$in`, pois o *query optimizer* usa e
 
 ####Condicionais $gt, $gte, $lt, $lte (>, >=, <, <=)
 
-Trabalhamos com inequações através dos operadores `$gt`, `$gte`, `$lt`, `$lte`, que tem a mesma função que >, >=, <, <=, respectivamente. Por exemplo, para retornar todos os documentos que tenham "qtd" maior que 100 e "preco" menor ou igual a 9.95:
+Trabalhamos com inequações através dos operadores `$gt`, `$gte`, `$lt`, `$lte`, que tem a mesma função que >, >=, <, <=, respectivamente.
+
+**EXEMPLO** retornando todos os documentos que tenham "qtd" maior que 100 e "preco" menor ou igual a 9.95:
 
 {% highlight javascript linenos=table %}
-db.estoque.find({
+db.test.find({
   { qtd: { $gt: 100 } }, { preco: { $lte: 9.95 } }
 })
 {% endhighlight %}
 
 ####Operador $ne (!=)
 
-Quando precisamos que o documento tenha um campo com valor diferente do especificado, usamos o operador `$ne`, que se comporta como o operador !=. Por exemplo, para retornar todos os documentos que tenham "qtd" diferente de 100 e "preco" diferente de 9.95, podemos fazer a seguinte query:
+Quando precisamos que o documento tenha um campo com valor diferente do especificado, usamos o operador `$ne`, que se comporta como o operador !=.
+
+**EXEMPLO** retornando todos os documentos que tenham "qtd" diferente de 100 e "preco" diferente de 9.95, podemos fazer a seguinte query:
 
 {% highlight javascript linenos=table %}
-db.estoque.find({
+db.test.find({
   $ne: [ { qtd: 100 }, { preco:  9.95 } ]
 })
 {% endhighlight %}
+
+TODO: operador $type
+
+TODO: operador $regex
 
 ###Documentos encadeados
 
 Da mesma forma que procuramos por campos, podemos procurar dentro de subdocumentos através da notação de ponto (*dot notation*). Fique atento ao uso obrigatório de aspas em volta do nome da chave.
 
+**EXEMPLO** procurando dentro de um campo encadeado:
+
 {% highlight javascript linenos=table %}
-db.estoque.find({"info.qtd": 50})
+db.test.find({"info.qtd": 50})
 
 // exemplo de documento retornado
 {
@@ -281,10 +337,12 @@ A sintaxe rica do MongoDB permite trabalhar com arrays através de alguns modifi
 
 ####Correspondência ampla
 
-Quando queremos encontrar um documento que tenha um array com pelo menos o valor procurado ou não sabemos se o campo é realmente um array, podemos fazer uma busca de correspondência ampla:
+Quando queremos encontrar um documento que tenha um array com pelo menos o valor procurado ou não sabemos se o campo é realmente um array, podemos fazer uma busca de correspondência ampla.
+
+**EXEMPLO** retornando documentos que contenham a string "banana" ou o valor "banana" em qualquer posição do array de "frutas":
 
 {% highlight javascript linenos=table %}
-db.estoque.find({
+db.test.find({
   "frutas": "banana"
 })
 
@@ -303,9 +361,10 @@ Quando sabemos exatamente como é o array que o documento deve conter, devemos p
 
 >> A posição dos elementos no array é importante para retornar os documentos corretos. Nesse caso, uma busca por ["banana", "maçã"] e ["maçã", "banana"] retornarão documentos diferentes.
 
+**EXEMPLO** retornando documentos que contenham exatamente o array ["banana", "maçã"]:
+
 {% highlight javascript linenos=table %}
-// o array de frutas deve conter exatamente o array ["banana", "maçã"]
-db.estoque.find({
+db.test.find({
   "frutas": ["banana", "maçã"]
 })
 
@@ -319,10 +378,10 @@ db.estoque.find({
 
 Quando temos uma **lista de valores que o array deve conter no mínimo**, podemos passar eles com o modificador `$all`. A ordem não é importante para esse operador.
 
-Por exemplo, se quisessemos buscar documentos que contenham pelo menos os valores `"banana" e "maçã"`, fariamos:
+**EXEMPLO** retornando documentos que contenham pelo menos os valores `"banana" e "maçã"`:
 
 {% highlight javascript linenos=table %}
-db.estoque.find({
+db.test.find({
   "frutas": {$all: ["banana", "maçã"]}}
 })
 
@@ -342,10 +401,10 @@ db.estoque.find({
 
 É possível usarmos também o operador `$in` em arrays, a fim de encontrar documentos que possam ter **pelo menos um dos valores buscados**. A ordem não é importante para esse operador.
 
-Por exemplo, se quisessemos buscar documentos que contenham pelo menos os valores `"banana" ou "maçã"`, fariamos:
+**EXEMPLO** retornando documentos que contenham pelo menos os valores `"banana" ou "maçã"`:
 
 {% highlight javascript linenos=table %}
-db.estoque.find({
+db.test.find({
   "frutas": {$in: ["banana", "maçã"]}}
 })
 
@@ -362,9 +421,104 @@ db.estoque.find({
 {% endhighlight %}
 
 
+#Modificando documentos
+
+A modificação dos documentos é feita através do método `update` que recebe pelo menos 2 parâmetros: o primeiro especifica os documentos a serem modificados (exatamente igual ao método `find`) e o segundo parâmetro especifica o quê será modificado.
+
+**EXEMPLO** modificando um documento:
+
+{% highlight javascript linenos=table %}
+// supondo que o seguinte documento existe na coleção 'test'
+{
+  \_id: 1,
+  "nome": "Pedro",
+  "idade": 45,
+  "programa": ["Python", "Javascript", "PHP"]
+}
+
+// executando o update
+db.test.update({
+  "\_id": 0
+}, {
+  "nome": "João"
+})
+{% endhighlight %}
+
+Note que o `update` acima fez com que o documento anterior fosse completamente trocado pelo novo documento passado como segundo parâmetro. O único campo que foi mantido, foi o \_id - esse é o comportamento padrão do método `update`.
+
+Os próximos tópicos explicarão como modificar o valor de apenas um campo em um documento, sem que todo o documento seja substituído.
+
+##Atomicidade do método update
+Operações de modificação são sempre atômicas à nível de documento: caso mais de um cliente tente modificar o mesmo documento ao mesmo tempo, a fila de requisições é respeitada. A última requisição da fila sempre será a vencedora, dessa forma, sua ação é a que preponderará dentre as outras.
+
+##Modificadores
+Estão disponíveis uma grande variedade de modificadores para trabalhar com a atualização de campos no MongoDB. Assim como os operadores e modificadores usados com o método `find`, aqui eles também devem sempre iniciar com `$`.
+
+###Operador $set
+O método update sem nenhum modificador substitui completamente o documento antigo pelo novo. Para evitar esse comportamento e permitir apenas a atualização de campos específicos, usamos o comando `$set`.
+
+**EXEMPLO** trocando o valor do campo "nome" em um documento
+
+{% highlight javascript linenos=table %}
+// TODO trocar o valor do campo nome
+{% endhighlight %}
+
+###Operador $unset
+Para remover um campo e seu conteúdo de um documento, usamos o comando `$unset`.
+
+**EXEMPLO** removendo o campo "nome" de um documento
+
+{% highlight javascript linenos=table %}
+// TODO remover o campo nome
+{% endhighlight %}
+
+###Operador $inc
+Para incrementar um valor numérico, usamos o comando `$inc`.
+
+**EXEMPLO** incrementando o valor do campo "likes" em 5 unidades
+
+{% highlight javascript linenos=table %}
+// TODO incrementar o valor do campo like em 5 uniodades
+{% endhighlight %}
+
+##Modificando arrays em documentos
+
+###Comando $push
+
+###Comando $pop
+
+###Comando $pull
+
+###Comando $pushAll
+
+###Comando $pullAll
+
+###Comando $addToSet
+
+###Comando $each
+
+###Comando $slice
+
+###Comando $sort
+
+###Comando $ne
 
 
 
-## Atualizando documentos
 
-## Removendo documentos
+
+
+
+TODO: UPSERT
+
+TODO: $SEToNiNSERT
+
+TODO: SAVE SHELL HELPER
+
+TODO: update em vários documentos
+
+TODO: findAndModify
+
+TODO: WRITE CONCERN
+
+#Removendo documentos
