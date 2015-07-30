@@ -8,28 +8,56 @@ categories: ['mongodb']
 
 O MongoDB pode ser comparado de frente à um banco relacional devido à sua organização. O que muda, na prática, é a flexibilidade que ele nos proporciona para armazenar estruturas, que jamais seriam possíveis em um banco relacional.
 
-Dentro de um banco encontram-se **coleções** (tabelas), com vários **documentos** (linhas) e dentro de cada documento existem vários **campos** (colunas) do tipo chave-valor.
+Dentro de um banco encontram-se **coleções** com vários **documentos** e, dentro de cada documento, existem vários **campos** do tipo chave-valor.
+
+**Mapeamento SQL para o MongoDB:**
 
 <table>
-  <tr><th>RDBMS</th><th>MongoDB</th></tr>
-  <tr><td>Banco de dados</td><td>Banco de dados</td></tr>
-  <tr><td>Tabela</td><td>Coleção</td></tr>
-  <tr><td>Linha</td><td>Documento</td></tr>
-  <tr><td>Índice</td><td>Índice</td></tr>
-  <tr><td>JOIN</td><td>Documento encadeado ou referência</td></tr>
+  <tr><th>RDBMS</th>          <th>MongoDB</th></tr>
+  <tr><td>Banco de dados</td> <td>Banco de dados</td></tr>
+  <tr><td>Tabela</td>         <td>Coleção</td></tr>
+  <tr><td>Linha</td>          <td>Documento</td></tr>
+  <tr><td>Coluna</td>         <td>Campo</td></tr>
+  <tr><td>Índice</td>         <td>Índice</td></tr>
+  <tr><td>JOIN</td>           <td>Documento encadeado ou referência</td></tr>
 </table>
+
+**Executáveis:**
+
+<table>
+  <tr>
+    <th></th>
+    <th>MongoDB</th>
+    <th>MySQL</th>
+    <th>Oracle</th>
+  </tr>
+  <tr>
+    <td>servidor</td>
+    <td>mongod</td>
+    <td>mysqld</td>
+    <td>oracle</td>
+  </tr>
+  <tr>
+    <td>cliente</td>
+    <td>mongo</td>
+    <td>mysql</td>
+    <td>sqlplus</td>
+  </tr>
+</table>
+
+Veja [mais comparações entre a sintaxe SQL e a do MongoDB](http://docs.mongodb.org/manual/reference/sql-comparison/).
 
 ## Documentos
 
-No coração do MongoDB há uma unidade atômica chamada **documento**. Essa unidade tem a mesma função que uma linha de uma tabela em um banco de dados relacional: armazenar dados de uma entidade.
+No coração do MongoDB há uma unidade atômica chamada **documento**, que tem a mesma função que uma linha de uma tabela em um banco de dados relacional: armazenar dados de uma entidade.
 
 Se a função de um documento é a mesma de uma linha de um banco de dados relacional, então por quê usaríamos um banco de dados orientado a documentos, como o MongoDB? Simples: **flexibilidade** e **agilidade**.
 
-A natureza chave-valor dos documentos permite que sua estrutura seja modificada rapidamente ao decorrer de seu ciclo de vida. Damos para essa chave-valor o nome **campo**. É possível adicionar, alterar ou remover um campo de um documento sem a necessidade de alterar a estrutura de todos os documentos que estão na mesma coleção e sem *downtime*.
+A natureza chave-valor dos documentos permite que sua estrutura seja modificada rapidamente ao decorrer de seu ciclo de vida. Damos para essa chave-valor o nome **campo**. É possível adicionar, alterar ou remover um campo de um documento sem a necessidade de alterar a estrutura de todos os documentos que estão na mesma coleção.
 
 #### JSON
 
-Em um documento no MongoDB armazenamos estruturas JSON, que possibilitam maior poder expressivo ao permitir o uso de objetos encadeados e arrays - duas coisas que são quase um pecado no mundo dos bancos relacionais - Tente imaginar uma tabela dentro de outra...
+Em um documento no MongoDB armazenamos estruturas JSON, que possibilitam maior poder expressivo ao permitir o uso de objetos encadeados e arrays - duas coisas que são quase um pecado no mundo dos bancos relacionais - Tente imaginar uma tabela dentro de outra... não dá certo.
 
 Essas estruturas são muito semelhantes às que usamos nas linguagens de programação modernas e isso possibilita o casamento de impedâncias, que jamais seria possível se usássemos um banco relacional - nada de camadas adicionais de software, como ORM ou DAO para casar as impedâncias.
 
@@ -53,7 +81,7 @@ A especificação JSON possibilita o uso de 6 tipos de dados:
 
 ####Tipos extendidos
 
-Como os 6 tipos nativos do JSON não eram suficientes para as operações do MongoDB, adicionaram suporte para mais alguns tipos:
+Os 6 tipos nativos do JSON não são suficientes para as operações de um banco de dados, como trabalhar com datas, por exemplo. É por esse motivo, que o MongoDB introduziu mais alguns tipos especiais para suprir essa necessidade. São eles:
 
 {% highlight javascript linenos=table %}
 {

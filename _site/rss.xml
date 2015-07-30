@@ -20,7 +20,7 @@
     <item>
       <title>#2 MongoDB - CRUD</title>
       <link>http://jordankobellarz.github.com/mongodb/2015/07/26/mongodb-CRUD.html</link>
-      <description>&lt;p&gt;Qualquer operação de criar, buscar, atualizar ou remover documentos deve ocorrer sobre uma e somente uma coleção no MongoDB, devido à sua natureza não relacional.&lt;/p&gt;
+      <description>&lt;p&gt;Trabalhar com o MongoDB é uma tarefa muito mais simples para o desenvolvedor, já que não é necessário se preocupar em manter uma estrutura rígida nos documetos de uma coleção. Temos aqui uma flexibilidade muito grande, que só é possível graças à sua estrutura orientada a documentos.&lt;/p&gt;
 </description>
       <pubDate>Sun, 26 Jul 2015 21:00:00 -0300</pubDate>
       <dc:date>2015-07-26T21:00:00-03:00</dc:date>
