@@ -59,4 +59,4 @@ Além disso temos aqui o casamento de impedâncias: não precisamos mais daquela
 
 Nos próximos posts, serão cobertos, de forma breve, os tópicos básicos referentes à operacionalização de uma base de dados MongoDB, permitindo uma visão holística sobre essa nova tecnologia, que tem grandes chances de ser o próximo *buzzword* no mercado de banco de dados.
 
-Desejo um bom estudo! Siga agora pra o próximo post: [MongoDB - Pensando em Documentos](http://jordankobellarz.github.io/mongodb/2015/07/24/mongodb-penjsando-em-documentos.html).
+Desejo um bom estudo! Siga agora pra o próximo post: [MongoDB - Pensando em Documentos](http://jordankobellarz.github.io/mongodb/2015/07/24/mongodb-pensando-em-documentos.html).
