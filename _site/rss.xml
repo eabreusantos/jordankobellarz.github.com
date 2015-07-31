@@ -10,29 +10,25 @@
     <description>open innovation developer</description>
     <pubDate>Sun, 26 Jul 2015 21:00:00 -0300</pubDate>
     <item>
-      <title>#2 MongoDB - CRUD</title>
-      <link>http://jordankobellarz.github.com/mongodb/2015/07/26/mongodb-CRUD.html</link>
-      <description>&lt;p&gt;Trabalhar com o MongoDB é uma tarefa muito mais simples para o desenvolvedor, já que não é necessário se preocupar em manter uma estrutura rígida nos documetos de uma coleção. Temos aqui uma flexibilidade muito grande, que só é possível graças à sua estrutura orientada a documentos.&lt;/p&gt;
+      <title>#2 MongoDB - Operações CRUD</title>
+      <link>http://jordankobellarz.github.com/mongodb/2015/07/26/mongodb-operacoes-crud.html</link>
+      <description>&lt;p&gt;&lt;img src=&quot;/assets/images/mongo-2.png&quot; alt=&quot;Operações CRUD&quot; style=&quot;width: 60%; margin:0 auto&quot;&gt;&lt;/p&gt;
 </description>
       <pubDate>Sun, 26 Jul 2015 21:00:00 -0300</pubDate>
       <dc:date>2015-07-26T21:00:00-03:00</dc:date>
     </item>
     <item>
-      <title>#1 MongoDB - Conceitos Básicos</title>
-      <link>http://jordankobellarz.github.com/mongodb/2015/07/23/mongodb-conceitos-basicos.html</link>
-      <description>&lt;p&gt;O MongoDB pode ser comparado de frente à um banco relacional devido à sua organização. O que muda, na prática, é a flexibilidade que ele nos proporciona para armazenar estruturas, que jamais seriam possíveis em um banco relacional.&lt;/p&gt;
+      <title>#1 MongoDB - Pensando em documentos</title>
+      <link>http://jordankobellarz.github.com/mongodb/2015/07/23/mongodb-pensando-em-documentos.html</link>
+      <description>&lt;p&gt;&lt;img src=&quot;/assets/images/mongo-1.png&quot; alt=&quot;Pensando em documentos&quot; style=&quot;width: 60%; margin:0 auto&quot;&gt;&lt;/p&gt;
 </description>
       <pubDate>Thu, 23 Jul 2015 21:00:00 -0300</pubDate>
       <dc:date>2015-07-23T21:00:00-03:00</dc:date>
     </item>
     <item>
-      <title>#0 MongoDB - Introdução</title>
-      <link>http://jordankobellarz.github.com/mongodb/2015/07/22/mongodb-essencial.html</link>
-      <description>&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;MongoDB é um banco orientado a documentos open-source que permite alta performance, alta disponibilidade e escalabilidade automática. - 10gen&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
+      <title>#0 MongoDB - Introdução ao Armazenamento do Futuro</title>
+      <link>http://jordankobellarz.github.com/mongodb/2015/07/22/mongodb-introducao-ao-armazenamento-do-futuro.html</link>
+      <description>&lt;p&gt;&lt;img src=&quot;/assets/images/mongo-0.png&quot; alt=&quot;Armazenamento do futuro&quot; style=&quot;width: 60%; margin:0 auto&quot;&gt;&lt;/p&gt;
 </description>
       <pubDate>Wed, 22 Jul 2015 21:00:00 -0300</pubDate>
       <dc:date>2015-07-22T21:00:00-03:00</dc:date>

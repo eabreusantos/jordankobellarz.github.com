@@ -1,10 +1,12 @@
 ---
 layout: post
-title:  "#1 MongoDB - Conceitos Básicos"
+title:  "#1 MongoDB - Pensando em documentos"
 description: "..."
 date:   2015-07-24 00:00:00
 categories: ['mongodb']
 ---
+
+<img src="/assets/images/mongo-1.png" alt="Pensando em documentos" style="width: 60%; margin:0 auto">
 
 O MongoDB pode ser comparado de frente à um banco relacional devido à sua organização. O que muda, na prática, é a flexibilidade que ele nos proporciona para armazenar estruturas, que jamais seriam possíveis em um banco relacional.
 
@@ -193,4 +195,4 @@ O único *script* que é executado automaticamente em qualquer sessão do shell 
 
 ###CRUD no MongoDB
 
-No próximo post, colocaremos a mão na massa: vamos [inserir, buscar, modificar e remover documentos em um banco de dados no MongoDB](http://jordankobellarz.github.io/mongodb/2015/07/27/mongodb-CRUD.html).
+No próximo post, colocaremos a mão na massa: vamos [inserir, buscar, modificar e remover documentos em um banco de dados no MongoDB](http://jordankobellarz.github.io/mongodb/2015/07/27/mongodb-operacoes-crud.html).

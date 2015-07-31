@@ -1,10 +1,12 @@
 ---
 layout: post
-title:  "#0 MongoDB - Introdução"
+title:  "#0 MongoDB - Introdução ao Armazenamento do Futuro"
 description: "..."
 date:   2015-07-23 00:00:00
 categories: ['mongodb']
 ---
+
+<img src="/assets/images/mongo-0.png" alt="Armazenamento do futuro" style="width: 60%; margin:0 auto">
 
 >> MongoDB é um banco orientado a documentos open-source que permite alta performance, alta disponibilidade e escalabilidade automática. - 10gen
 
@@ -57,4 +59,4 @@ Além disso temos aqui o casamento de impedâncias: não precisamos mais daquela
 
 Nos próximos posts, serão cobertos, de forma breve, os tópicos básicos referentes à operacionalização de uma base de dados MongoDB, permitindo uma visão holística sobre essa nova tecnologia, que tem grandes chances de ser o próximo *buzzword* no mercado de banco de dados.
 
-Desejo um bom estudo! Siga agora pra o próximo post: [MongoDB - Conceitos básicos](http://jordankobellarz.github.io/mongodb/2015/07/24/mongodb-conceitos-basicos.html).
+Desejo um bom estudo! Siga agora pra o próximo post: [MongoDB - Pensando em Documentos](http://jordankobellarz.github.io/mongodb/2015/07/24/mongodb-penjsando-em-documentos.html).

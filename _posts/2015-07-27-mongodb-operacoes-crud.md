@@ -1,10 +1,12 @@
 ---
 layout: post
-title:  "#2 MongoDB - CRUD"
+title:  "#2 MongoDB - Operações CRUD"
 description: "..."
 date:   2015-07-27 00:00:00
 categories: ['mongodb']
 ---
+
+<img src="/assets/images/mongo-2.png" alt="Operações CRUD" style="width: 60%; margin:0 auto">
 
 Trabalhar com o MongoDB é uma tarefa muito mais simples para o desenvolvedor, já que não é necessário se preocupar em manter uma estrutura rígida nos documetos de uma coleção. Temos aqui uma flexibilidade muito grande, que só é possível graças à sua estrutura orientada a documentos.
 
