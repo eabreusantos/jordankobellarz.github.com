@@ -96,7 +96,7 @@ Os 6 tipos nativos do JSON não são suficientes para as operações de um banco
   }
 }
 {% endhighlight %}
-
+<!--
 #####Date e Timestamp
 Os campos do tipo **date** são independentes do fuso horário, dependendo únicamente deste ser adicionado em um outro campo ou no próprio código, caso seja uma aplicação local.
 
@@ -111,6 +111,7 @@ TODO: falar sobre os campos de dados binários, BSON
 
 #####Code
 TODO: falar dos campos code
+-->
 
 ####Campo _id
 Cada documento do banco possui uma chave identificadora única chamada `_id`. Essa chave pode ser gerada por um algoritmo do próprio MongoDB ou criada manualmente (isso pode ser perigoso!).
@@ -127,10 +128,10 @@ Esse algoritmo permite uma granularidade tão alta, que é quase impossível a o
 {
   _id: ObjectId(507f191e810c19729de860ea),
   hashEmPartes: {
-    "timestamp":  "507f191e",
-    "idMaquina":  "810c19",
-    "idProcesso": "729d",
-    "incremento": "e860ea"
+    timestamp:  "507f191e",
+    idMaquina:  "810c19",
+    idProcesso: "729d",
+    incremento: "e860ea"
   }
 }
 {% endhighlight %}
@@ -140,7 +141,7 @@ Esse algoritmo permite uma granularidade tão alta, que é quase impossível a o
 * **|7|8|**: id do processo do algoritmo de geração de `_id`
 * **|9|10|11|**: incremento (permite 256³ combinações diferentes por segundo)
 
-O `hash` criado automaticamente possui um propriedade muito interessante: é ordenado pelo tempo de criação através dos quatro primeiros dígitos que formam o `timestamp`.
+O `hash` criado automaticamente possui uma propriedade muito interessante: é ordenado pelo tempo de criação através dos quatro primeiros dígitos que formam o `timestamp`.
 
 #### BSON
 O usuário trabalha em alto nível usando o formato amigável JSON, porém, por baixo do capô, o MongoDB usa um formato de serialização chamado BSON, que é simplesmente o formato JSON convertido para dados binários, o qual contêm mais tipos de dados. Veja [bsonspec.org](http://bsonspec.org/).

@@ -9,7 +9,7 @@ categories: ['javascript']
 Manter um estilo consistente ao escrever código pode ser um fator decisivo para a manutenibilidade de um sistema por uma grande equipe, principalmente se o projeto for Open Source. Nesse artigo vou mostrar o padrão usado em meus projetos.
 
 Esse coding standard foi inspirado em alguns scripts de código aberto que utilizei, assim como diretrizes de [Douglas Crockford](http://javascript.crockford.com/code.html), [Google](https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml), [W3Schools](http://www.w3schools.com/js/js_conventions.asp). Se for segui-lo, recomendo que comece em seu próximo
-projeto ou, caso inicie agora mesmo, pense em refator seu projeto atual para evitar colisão 
+projeto ou, caso inicie agora mesmo, pense em refator seu projeto atual para evitar colisão
 entre os estilos.
 
 ##Nomeação
@@ -28,20 +28,20 @@ var nomeDoMeu.novoNamespace; // namespace
 var nomeDaMinhaVariavel; // variável
 
 // função
-function nomeDaMinhaFuncao() { 
+function nomeDaMinhaFuncao() {
     // ...
-} 
+}
 
 // classe
 function NomeDaMinhaClasse() {
     var nomeDaMinhaPropriedadePrivada; // propriedade privada
     this.nomeDaMinhaPropriedadePublica; // propriedade pública
-    
+
     // método privado
     var nomeDoMeuMetodoPrivado = function () {
         // ...
     }
-    
+
     // método público
     this.nomeDoMeuMetodoPublico = function () {
         // ...
@@ -81,7 +81,7 @@ var corre = function () {
 if (condicao) {
     // ...
 } else if (condicao) {
-    // ... 
+    // ...
 } else {
     // ...
 }
@@ -123,7 +123,7 @@ try {
 * sempre usar 4 espaços para indentar
 * tentar não ultrapassar 80 caracteres em uma linha. Se ultrapassar, pule para a próxima linha
 inserindo 4 espaços de indentação
-* jamais usar parênteses em operadores unários, como `delete`, `typeof` e `void` ou depois de 
+* jamais usar parênteses em operadores unários, como `delete`, `typeof` e `void` ou depois de
 keywords, como `return`, `throw`, `case`, `new`.
 * sempre usar aspas simples
 * sempre agrupar blocos de código relacionados, separando-os por uma linha em branco
@@ -134,24 +134,24 @@ keywords, como `return`, `throw`, `case`, `new`.
 ###Whitespace
 
 * sempre colocar operadores binários `+, -, *, /, %`, etc. entre espaços
-* nunca colocar operadores `.` unários entre espaços 
+* nunca colocar operadores `.` unários entre espaços
 
 ####Exemplo de formatação
 
 {% highlight javascript linenos=table %}
-function MeusAlimentos(){
+function MeusAlimentos () {
     var foo = 'fooFruta';
     var fooArray = ['maçã', 'banana', 'tomate'];
-    
+
     var bar = 'barVegetais';
-    var barArray = [ 
-        'pimentão', 
-        'brócoli', 
-        'pepino', 
+    var barArray = [
+        'pimentão',
+        'brócoli',
+        'pepino',
         'alface',
         'acelga'
     ];
-    
+
     var fooObjeto = {
         'nome': 'X-Salada Gorduroso',
         'ingredientes': [
@@ -164,11 +164,11 @@ function MeusAlimentos(){
         'lucroPercentual': 80,
         'vendasTotais': 1495
     }
-    
+
     this.comidaSaudavel = function () {
         return fooArray.join(barArray);
     }
-    
+
     this.junkieFood = function () {
         return fooObjeto;
     }
@@ -178,8 +178,8 @@ function MeusAlimentos(){
 ## Arquivos
 
 * sempre usar a extensão **.js**
-* importar com `<script src='nomedomeuarquivo.js'>` sempre que possível no fim do *body* e sem usar o 
-atributo `type`, pois quem define o MIME Type é o backend. Esse atributo apenas é usado para o navegador 
+* importar com `<script src='nomedomeuarquivo.js'>` sempre que possível no fim do *body* e sem usar o
+atributo `type`, pois quem define o MIME Type é o backend. Esse atributo apenas é usado para o navegador
 saber se pode manipular o arquivo requisitado antes mesmo de fazer uma requisição ao servidor.
 
 ## Comentários

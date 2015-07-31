@@ -15,9 +15,9 @@ A seguir, serão mostrados conceitos básicos de operações de CRUD (Create, Re
 # Criando documentos
 
 
-## Comando Insert
+## Método Insert
 
-A inserção de documentos em uma coleção é realizada pelo comando `insert`. Ele é similar ao comando `insert` de uma base de dados relacional, com a diferença de não precisarmos seguir um *schema* predefinido. Quando essa operação é realizada com sucesso, retorna um objeto com o número de documentos inseridos.
+A inserção de documentos em uma coleção é realizada pelo método `insert`. Ele é similar ao comando `insert` de uma base de dados relacional, com a diferença de não precisarmos seguir um *schema* predefinido. Quando essa operação é realizada com sucesso, retorna um objeto com o número de documentos inseridos.
 
 **EXEMPLO** inserção de um documento:
 
@@ -37,7 +37,7 @@ Quando criamos um documento sem o campo `_id`, o driver gera automaticamente um 
 
 ###Inserção de um conjunto de documentos
 
-Caso queiramos inserir vários documentos ao mesmo tempo, podemos passar um array de documentos ao comando insert.
+Caso queiramos inserir vários documentos ao mesmo tempo, podemos passar um array de documentos ao método `insert`.
 
 **EXEMPLO** inserção de um conjunto de documentos:
 
@@ -105,7 +105,7 @@ db.test.save({...});
 Estes métodos serão vistos em maior profundidade nas próximas seções.
 
 # Buscando documentos
-A riqueza de opções para o método `find` é tão grande, que só dele poderia sair um livro, caso explicado em conjunto com o framework de agregação. Esse comando sempre retorna um cursor para os documentos encontrados, possiblitando operações de ordenação, limites, etc.
+A riqueza de opções para o método `find` é tão grande, que só dele poderia sair um livro, caso explicado em conjunto com o framework de agregação. Esse método sempre retorna um cursor para os documentos encontrados, possiblitando operações de ordenação, limites, etc.
 
 Para retornar todos os documentos de uma coleção, usamos o método `find` sem passar nenhum parâmetro.
 
@@ -120,7 +120,7 @@ db.test.findOne(); // retorna apenas um documento
 No Mongo Shell, ao executar o método `find`, o cursor retornará apenas os 20 primeiros documentos encontrados. Para iterar sobre o cursor, nesse caso, usa-se o comando `it`.
 
 ##Comportamento do cursor
-Cursores ficam ativos por 10 minutos no cliente ou até ele ser esgotado. O comportamento de *timeout* de 10 minutos, contudo, pode ser removido através do comando `addOption`, passando como parâmetro a variável global `DBQuery.Option.noTimeout`.
+Cursores ficam ativos por 10 minutos no cliente ou até ele ser esgotado. O comportamento de *timeout* de 10 minutos, contudo, pode ser removido através do método `addOption`, passando como parâmetro a variável global `DBQuery.Option.noTimeout`.
 
 **EXEMPLO** removendo o comportamento de *timeout*:
 
@@ -142,7 +142,7 @@ db.test.find().snapshot();
 
 ####Status dos Cursores
 
-É possível verificar a situação dos cursores ativos e inativos no Mongo Server através do comando `serverStatus`.
+É possível verificar a situação dos cursores ativos e inativos no Mongo Server através do método `serverStatus`.
 
 **EXEMPLO** verificando a situação dos cursores no servidor:
 
@@ -205,7 +205,7 @@ Tenha cuidado ao procurar por campos com valores nulos, pois nesse caso o servid
 **EXEMPLO** procurando documentos que tenham o campo "nome" igual a `null` ou que não tenham o campo "nome":
 
 {% highlight javascript linenos=table %}
-db.test.find({nome: null});
+db.test.find({});
 
 // pode retornar
 {
@@ -259,7 +259,7 @@ Assim como em bancos de dados relacionais, temos a possibilidade de acessar oper
 
 ####Operador $and (AND lógico)
 
-Operações AND são realizadas usando uma vírgula entre as condições ou, alternativamente, através do modificador `$and`.
+Operações AND são realizadas usando uma vírgula entre as condições ou, alternativamente, através do operador `$and`.
 
 **EXEMPLO** retornando todos os documentos que tenham "tipo" igual a "orientado a documentos" **e** "ano" igual a 2007:  
 
@@ -291,7 +291,7 @@ Para o caso de queries mais simples com a cláusula OR, podemos usar o operador 
 
 {% highlight javascript linenos=table %}
 db.test.find({
-  qtd: {$in: ["orientado a documentos", "colunar"]}
+  tipo: {$in: ["orientado a documentos", "colunar"]}
 })
 {% endhighlight %}
 
@@ -343,7 +343,7 @@ Da mesma forma que procuramos por campos, podemos procurar dentro de subdocument
 **EXEMPLO** procurando dentro de um campo encadeado:
 
 {% highlight javascript linenos=table %}
-db.test.find({"info.qtd": 50})
+db.test.find({"info.engine": "Wired Tiger"})
 
 // exemplo de documento retornado
 {
@@ -355,7 +355,7 @@ db.test.find({"info.qtd": 50})
 
 ###Arrays
 
-A sintaxe rica do MongoDB permite trabalhar com arrays através de alguns modificadores específicos, como será visto a seguir:
+A sintaxe rica do MongoDB permite trabalhar com arrays através de alguns operadores especiais para arrays, como será visto a seguir:
 
 ####Correspondência ampla
 
@@ -427,7 +427,7 @@ db.test.find({
 
 {% highlight javascript linenos=table %}
 db.test.find({
-  frutas: {$in: ["banana", "maçã"]}}
+  frutas: {$in: ["banana", "maçã"]}
 })
 
 // exemplo
@@ -444,6 +444,8 @@ db.test.find({
 
 
 #Modificando documentos
+
+##Método Update
 
 A modificação dos documentos é feita através do método `update` que recebe pelo menos 2 parâmetros: o primeiro especifica os documentos a serem modificados (exatamente igual ao método `find`) e o segundo parâmetro especifica o quê será modificado.
 
@@ -476,23 +478,23 @@ Note que o `update` acima fez com que o documento anterior fosse completamente t
 
 Os próximos tópicos explicarão como modificar o valor de apenas um campo em um documento, sem que todo o documento seja substituído.
 
-##Atomicidade do método `update`
+###Atomicidade do método update
 Operações de modificação são sempre atômicas à nível de documento: caso mais de um cliente tente modificar o mesmo documento ao mesmo tempo, a fila de requisições é respeitada. A última requisição da fila sempre será a vencedora, dessa forma, sua ação é a que preponderará dentre as outras.
 
-##Opções do método `update`
+###Opções do método update
 Podemos setar o comportamento padrão do método `update` através das opções que podem ser passadas dentro do terceiro parâmetro.
 
 **EXEMPLO** opções do método `update`:
 
 {% highlight javascript linenos=table %}
-db.test.update({query}, {doc}, {
+db.test.update({nome: "Mongo"}, {empresa: "10gen"}, {
   //opções
   upsert: true,
   multi: true
 })
 {% endhighlight %}
 
-###Upsert - criando documentos, caso não existam
+####Upsert - criando documentos, caso não existam
 O comportamento padrão do método `update` é atualizar o documento somente se ele já existir. Caso o documento não exista, nada irá acontecer. Para sobreescrever esse comportamento setamos a opção `upsert` como `true`.
 
 **EXEMPLO** criando um novo documento caso ele não exista:
@@ -510,7 +512,7 @@ db.test.update({nome: "Mongo"}, {empresa: "10gen"}, {
 
 
 
-###Multi - modificando vários documentos ao mesmo tempo
+####Multi - modificando vários documentos ao mesmo tempo
 Apenas o primeiro documento encontrado na query é afetado pelo método `update`, mesmo existindo vários documentos candidatos à modificação. Mudamos esse comportamento através da opção `multi` setada como `true`.
 
 **EXEMPLO** modificando o campo "tipo" de todos os documentos com "ano" maior que 2005:
@@ -521,126 +523,136 @@ db.test.update({ano: {$gt: 2005}}, {tipo: "NoSql"}, {
 })
 {% endhighlight %}
 
-##Operadores de modificação
+###Operadores de modificação
 Estão disponíveis uma grande variedade de operadores para trabalhar com a modificação de campos no MongoDB. Assim como os operadores usados com o método `find`, aqui eles também devem sempre iniciar com `$`.
 
-###Operador $set
-O método `update` sem nenhum modificador substitui completamente o documento antigo pelo novo (como visto anteriormente). Para evitar esse comportamento e permitir apenas a atualização de campos específicos, usamos o comando `$set`.
+####Operador $set
+O método `update`, sem usar nenhum operador, substitui completamente o documento da query pelo novo (como visto anteriormente). Para evitar esse comportamento e permitir apenas a modificação de campos específicos, usamos o operador `$set`.
 
 Caso seja executado `$set` sobre um documento que não contenha o campo que terá o valor modificado, então o campo é criado com o valor especificado.
 
 **EXEMPLO** trocando o valor do campo "nome" de "Mongo" para "MongoDB":
 
 {% highlight javascript linenos=table %}
-db.test.update({"nome": "Mongo"}, {
-  $set: {"nome": "MongoDB"}
+db.test.update({nome: "Mongo"}, {
+  $set: {nome: "MongoDB"}
 })
 {% endhighlight %}
 
-###Operador $unset
-Para remover um campo e seu conteúdo de um documento, usamos o comando `$unset`.
+####Operador $unset
+Para remover um campo e seu conteúdo de um documento, usamos o operador `$unset`.
 
 **EXEMPLO** removendo o campo "nome" de um documento:
 
 {% highlight javascript linenos=table %}
-db.test.update({"nome": "Mongo"}, {
-  $unset: {"nome": 1}
+db.test.update({nome: "Mongo"}, {
+  $unset: {nome: 1}
 });
 {% endhighlight %}
 
-###Operador $inc
-Para incrementar um valor numérico, usamos o comando `$inc`.
+####Operador $inc
+Para incrementar um valor numérico, usamos o operador `$inc`.
 
 **EXEMPLO** incrementando o valor do campo "likes" em 5 unidades:
 
 {% highlight javascript linenos=table %}
-db.test.update({"nome": "MongoDB"}, {
-  $inc: {"likes": 5}
+db.test.update({nome: "MongoDB"}, {
+  $inc: {likes: 5}
 })
 {% endhighlight %}
 
-##Modificando arrays em documentos
+###Modificando arrays em documentos
 
-###Comando $push
-Para inserir um novo elemento no fim do array, usamos o comando `$push`, passando como parâmetro o elemento a ser adicionado.
+####Operador $push
+Para inserir um novo elemento no fim do array, usamos o operador `$push`, passando como parâmetro o elemento a ser adicionado.
 
-**EXEMPLO** inserindo o elemento 5 no array:
+**EXEMPLO** inserindo o elemento "abacate" no array:
 
 {% highlight javascript linenos=table %}
-db.test.update({"nome": null}, {
-  $push: {"frutas": 5}
+db.test.update({}, {
+  $push: {frutas: "abacate"}
 })
 {% endhighlight %}
 
-###Comando $pushAll
-Para inserir vários novos elementos no fim de um array, usamos o comando `$pushAll`, passando como parâmetro a lista de elementos a serem adicionados.
+####Operador $pushAll
+Para inserir vários novos elementos no fim de um array, usamos o operador `$pushAll`, passando como parâmetro a lista de elementos a serem adicionados.
 
-**EXEMPLO** inserindo a lista ["mamão", 4, 6] no array:
+**EXEMPLO** inserindo a lista ["mamão", "abacate", "morango"] no array:
 
 {% highlight javascript linenos=table %}
-db.test.update({"nome": null}, {
-  $pushAll: {"frutas": ["mamão", 4, 6]}
+db.test.update({}, {
+  $pushAll: {frutas: ["mamão", "abacate", "morango"]}
 })
 {% endhighlight %}
 
-###Comando $pop
-Para remover um elemento do fim do array, usamos o comando `$pop`.
+####Operador $pop
+Para remover um elemento do fim do array, usamos o operador `$pop`.
 
 **EXEMPLO** removendo o último elemento do array:
 
 {% highlight javascript linenos=table %}
-db.test.update({"nome": null}, {
-  $pop: {"frutas": 1}
+db.test.update({}, {
+  $pop: {frutas: 1}
 })
 {% endhighlight %}
 
-###Comando $pull
-Para remover um elemento em uma posição específica do array, usamos o comando `$pull`, passando como parâmetro a posição a ser removida.
+É possível também remover o primeiro elemento, passando como parâmetro o valor -1 para o operador `pop`:
+
+**EXEMPLO** removendo o primeiro elemento do array:
+
+{% highlight javascript linenos=table %}
+db.test.update({}, {
+  $pop: {frutas: -1}
+})
+{% endhighlight %}
+
+####Operador $pull
+Para remover um elemento em uma posição específica do array, usamos o operador `$pull`, passando como parâmetro a posição a ser removida.
 
 **EXEMPLO** removendo o último elemento do array:
 
 {% highlight javascript linenos=table %}
-db.test.update({"nome": null}, {
-  $pop: {"frutas": 1}
+db.test.update({}, {
+  $pop: {frutas: 1}
 })
 {% endhighlight %}
 
-###Comando $pullAll
-Para remover vários elementos específicos de um array, usamos o comando `$pullAll`, passando como parâmetro uma lista de elementos a serem removidos.
+####Operador $pullAll
+Para remover vários elementos específicos de um array, usamos o operador `$pullAll`, passando como parâmetro uma lista de elementos a serem removidos.
 
 **EXEMPLO** removendo a lista ["mamão", 4, 6] do array:
 
 {% highlight javascript linenos=table %}
-db.test.update({"nome": null}, {
-  $pullAll: {"frutas": ["mamão", 4, 6]}
+db.test.update({}, {
+  $pullAll: {frutas: ["mamão", 4, 6]}
 })
 {% endhighlight %}
 
-###Comando $addToSet
-Para inserir um novo elemento no fim do array, sabendo que ele deve ser único dentro do array, usamos o comando `$addToSet`, passando como parâmetro o elemento a ser adicionado. Esse comando age como o `$push`, sempre que o elemento a ser inserido ainda não existir no array.
+####Operador $addToSet
+Para inserir um novo elemento no fim do array, sabendo que ele deve ser único dentro do array, usamos o operador `$addToSet`, passando como parâmetro o elemento a ser adicionado. Esse operador age como o `$push`, sempre que o elemento a ser inserido ainda não existir no array.
 
 **EXEMPLO** adicionando um elemento que ainda não existe no array:
 
 {% highlight javascript linenos=table %}
-db.test.update({"nome": null}, {
-  $addToSet: {"frutas": "abacaxi"}
+db.test.update({}, {
+  $addToSet: {frutas: "abacaxi"}
 })
 
 // se eu tentar novamente, nada será inserido:
-db.test.update({"nome": null}, {
-  $addToSet: {"frutas": "abacaxi"}
+db.test.update({}, {
+  $addToSet: {frutas: "abacaxi"}
 })
 {% endhighlight %}
 
-###Comando $each
-Para inserir uma lista elementos no fim do array, sabendo que cada valor da lista deve ser único dentro do array, usamos o comando `$each` combinado com o comando `$addToSet`.
+####Operador $each
+Para inserir uma lista elementos no fim do array, sabendo que cada valor da lista deve ser único dentro do array, usamos o operador `$each` combinado com o operador `$addToSet`.
 
 **EXEMPLO** adicionando uma lista de elementos que ainda não existem no array:
 
 {% highlight javascript linenos=table %}
-db.test.update({"nome": null}, {
+db.test.update({}, {
   $addToSet: {
-    "frutas": {
+    frutas: {
       $each: ["banana", "morango", "pêra"]
     }
   }
@@ -648,10 +660,10 @@ db.test.update({"nome": null}, {
 {% endhighlight %}
 
 
-###Comando $slice
-Para permitir que o array cresça somente até um tamanho predefinido, usamos o comando `$slice`, passando como parâmetro o número máximo de posições que o array deve ter. Esse comando deve ser usado junto com a inserção de novos elementos.
+####Operador $slice
+Para permitir que o array cresça somente até um tamanho predefinido, usamos o operador `$slice`, passando como parâmetro o número máximo de posições que o array deve ter. Esse operador deve ser usado junto com a inserção de novos elementos.
 
-Se o parâmetro que especifica o número máximo de posições que o array deve ter for positivo, então são mantidos os n primeiros documentos inseridos. Caso seja negativo, então não mantidos os n últimos elementos inseridos.
+Se o parâmetro que especifica o número máximo de posições que o array deve ter for positivo, então são mantidos os n primeiros documentos inseridos. Caso seja negativo, então são mantidos os n últimos elementos inseridos.
 
 **EXEMPLO** mantendo os 4 primeiros elementos no array:
 
@@ -663,9 +675,9 @@ Se o parâmetro que especifica o número máximo de posições que o array deve 
 }
 
 // usando $slice com parâmetro positivo
-db.test.update({"_id": 1}, {
+db.test.update({_id: 1}, {
   $push: {
-    scores: {
+    numeros: {
       $each: [3, 4, 5],
       $slice: 4
     }
@@ -705,47 +717,47 @@ db.test.update({"_id": 1}, {
 }
 {% endhighlight %}
 
-###Comando $sort
-Para ordenar os itens do array, usamos o comando `$sort`, passando como parâmetro se queremos em ordem crescente [1] ou decrescente [-1]. Ele é usado em conjunto com a operação de `$push` e do comando `$each`. Caso queiramos apenas ordenar os elementos do array, passamos um array vazio `[]` como parâmetro do método `$each`.
+####Operador $sort
+Para ordenar os itens do array, usamos o operador `$sort`, passando como parâmetro se queremos em ordem crescente `1` ou decrescente `-1`. Ele é usado em conjunto com a operação de `$push` e do operador `$each`. Caso queiramos apenas ordenar os elementos do array, passamos um array vazio `[]` como parâmetro do método `$each`.
 
 **EXEMPLO** ordenando os elementos do array:
 
 {% highlight javascript linenos=table %}
-db.test.update({"nome": null}, {
+db.test.update({}, {
   $push: {
     frutas: {
-      $each: [40, 60],
-      $sort: 1
+      $each: ["manga", "limão"], // adiciona manga e limão
+      $sort: 1 // ordena em ordem crescente
     }
   }
 })
 {% endhighlight %}
 
-###Comando $setOnInsert
-Quando estamos usando a opção de `upsert` (criar um novo documento, caso não exista) e queremos que um campo seja setado apenas na criação de um novo documento, então usamos o operador $setOnInsert. Ele é muito útil quando precisamos setar a data de criação do documento, por exemplo.
+####Operador $setOnInsert
+Quando estamos usando a opção de `upsert` (criar um novo documento, caso não exista) e queremos que um campo seja setado apenas na criação de um novo documento, então usamos o operador `$setOnInsert`. Ele é muito útil quando precisamos setar a data de criação do documento, por exemplo.
 
 **EXEMPLO** adicionando uma data somente na inserção:
 
 {% highlight javascript linenos=table %}
-db.test.update({"nome": null}, {
+db.test.update({}, {
   $setOnInsert: {
-    "dataCriado": new Date()
+    dataCriacao: new Date()
   }
 })
 {% endhighlight %}
 
-##Método `save`
-O método `save` funciona como um *wrapper* para o método `update` usando a opção de `upsert`. Ele recebe como parâmetro a query e o documento a ser inserido. Se especificarmos o `_id` do documento na query, então não é criado um novo documento, caso contrário, ele se comporta como o comando `insert`.
+##Método save
+O método `save` funciona como um *wrapper* para o método `update` usando a opção de `upsert`. Ele recebe como parâmetro a query e o documento a ser inserido. Se especificarmos o `_id` do documento na query, então não é criado um novo documento, caso contrário, ele se comporta como o método `insert`.
 
 **EXEMPLO** usando o método `save`:
 
 {% highlight javascript linenos=table %}
-db.test.save({"nome": null}, {
-  "nome": "MongoDB"
+db.test.save({}, {
+  nome: "MongoDB"
 })
 {% endhighlight %}
 
-##Método `findAndModify`
+##Método findAndModify
 Quando queremos modificar um documento, geralmente procuramos ele com o método `find`, realizamos o `update` e retornamos o documento modificado, caso necessário. Isso pode ser perigoso, pois no tempo compreendido entre essas três operações, algum outro processo pode modificar o documento, gerando resultados inconsistentes.
 
 Para evitar esse problema e realizar uma operação atômica, usamos o método `findAndModify`, que executa as três operações consecutivamente de forma atômica, evitando condições de disputa. Esse método permite o retorno tanto dos dados dos documentos antigos (antes da modificação), quanto dos dados dos documentos modificados.
@@ -771,7 +783,7 @@ A remoção dos documentos é feita através do método `remove` que recebe como
 
 {% highlight javascript linenos=table %}
 db.test.remove({
-  "nome": "MongoDB"
+  nome: "MongoDB"
 })
 {% endhighlight %}
 
@@ -783,10 +795,18 @@ Caso seja necessário remover todos os documentos de uma coleção, podemos pass
 db.test.remove({})
 {% endhighlight %}
 
-Um jeito mais eficiente de realizar a remoção de todos os documentos de uma coleção é usando o método `drop`, que executa quase que instantâneamente. Esse comando também exclui qualquer índice criado para essa coleção.
+Um jeito mais eficiente de realizar a remoção de todos os documentos de uma coleção é usando o método `drop`, que é executado quase que instantâneamente. Esse método também exclui qualquer índice criado na coleção.
 
-**EXEMPLO** removendo todos os documentos e índices da coleção de forma eficiente:
+**EXEMPLO** removendo todos os documentos e índices da coleção:
 
 {% highlight javascript linenos=table %}
 db.test.drop()
+{% endhighlight %}
+
+É possível também remover apenas um documento por vez. Para isso é só passar o valor 1 no segundo parâmetro do método `remove`.
+
+**EXEMPLO** removendo um documento da coleção:
+
+{% highlight javascript linenos=table %}
+db.test.remove({}, 1)
 {% endhighlight %}

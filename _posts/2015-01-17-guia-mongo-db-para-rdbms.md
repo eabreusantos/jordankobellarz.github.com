@@ -6,26 +6,23 @@ date:   2015-01-17 08:30:00
 categories: ['mongodb']
 ---
 
-Todos os adeptos ao MySql, Oracle, SqlServer ou a outros bancos de dados relacionais ouviram pelo menos 
+Todos os adeptos ao MySql, Oracle, SqlServer ou a outros bancos de dados relacionais ouviram pelo menos
 uma vez sobre bancos NoSQL orientados a documentos. Nesse post irei fazer uma introdução ao
 MongoDB e, também, comparar as duas tecnologias.
 
 > *Antes de começar quero deixar explícito que o MongoDB não substitui nenhum outro banco de dados
 relacional ou outro banco de dados NoSQL que não seja orientado a documentos. Vários autores afirmam
-que em torno de 90% dos projetos requerem um banco relacional e os 10% restantes um não-relacional. 
+que em torno de 90% dos projetos requerem um banco relacional e os 10% restantes um não-relacional.
 
 ## O que é o MongoDB?
 
 > **pelo MongoDB:**
 > is an open-source, document-oriented database designed for ease of development and scaling.
 
-> **por eu:**
-> é um banco de dados open-source que armazena estruturas JSON.
-
 ## Traduzindo SQL para NoSQL
 
 Aos usuários de bancos de dados relacionais, segue abaixo uma comparação entre conceitos das duas
-tecnologias e suas nomenclaturas. Mais detalhes em [SQL to MongoDB Mapping Chart](http://docs.mongodb.org/manual/reference/sql-comparison/#sql-to-mongodb-mapping-chart). 
+tecnologias e suas nomenclaturas. Mais detalhes em [SQL to MongoDB Mapping Chart](http://docs.mongodb.org/manual/reference/sql-comparison/#sql-to-mongodb-mapping-chart).
 
 ###SQL para NoSQL:
 
@@ -67,22 +64,18 @@ Note que em 5 linhas conseguimos criar a coleção de usuarios e também inserir
 
 ## O básico do MongoDB
 
-O MongoDB armazena os dados no formato de **documentos** que ficam dentro de **coleções**. Os 
-documentos podem ser interligados através de ponteiros chamados **links** ou, caso necessário, 
-podem conter **documentos encadeados** (um documento dentro do outro).
+O MongoDB armazena os dados no formato de **documentos** que ficam dentro de **coleções**. Os documentos podem ser interligados através de referência ou, para a maioria dos casos, podem conter **documentos encadeados** (um documento dentro do outro).
 
 ####Documentos encadeados
-O armazenamento através de documentos encadeados permite com que sejam eliminados joins, que 
-podem consumir muita memória em uma query, porém o custo é a **desnormalização**. 
+O armazenamento através de documentos encadeados permite com que não sejam necessárias operações pesadas de JOIN, porém o custo é a **desnormalização**.
 
 ####Link entre documentos
-Cada documento possui um campo **_id**, que é um hash **único** e **global** para todo o banco de dados.
-O _id de um documento permite que outro documento aponte pra ele, criando um **link** entre eles.
+Cada documento possui um campo **_id**, que é um hash **único** e **global** para todo o banco de dados. O _id de um documento permite que outro documento aponte pra ele, através de referência direta.
 
 ####Armazenamento binário
-Sob o capô, o MongoDB armazena o JSON como dados binários chamados **BSON**. Isso 
-possibilita rapidez na busca de grandes quantidades documentos, que não seria possível se fosse usado 
-JSON. Essa tática, contudo, é responsável pela grande quantidade de memória gasta para guardar 
+Sob o capô, o MongoDB armazena o JSON como dados binários chamados **BSON**. Isso
+possibilita rapidez na busca de grandes quantidades documentos, que não seria possível se fosse usado
+JSON. Essa tática, contudo, é responsável pela grande quantidade de memória gasta para guardar
 uma coleção.
 
 Essa forma de guardar os dados, permite que o MongoDB armazene qualquer tipo de arquivo binário,
@@ -100,7 +93,7 @@ dados ou quando o uso de processamento e memória for tão intenso que um único
 suportar a carga.
 
 ## Quando escolher o MongoDB?
-De acordo com o site [java.dzone.com](/http://java.dzone.com/articles/when-use-mongodb-rather-mysql) e 
+De acordo com o site [java.dzone.com](/http://java.dzone.com/articles/when-use-mongodb-rather-mysql) e
 um artigo de [Andrew Brust](http://www.zdnet.com/article/rdbms-vs-nosql-how-do-you-pick/):
 
 1. se tiver que fazer grandes quantidades de inserções
@@ -124,6 +117,6 @@ um artigo de [Andrew Brust](http://www.zdnet.com/article/rdbms-vs-nosql-how-do-y
 * facilidade em replicar o banco de dados
 * facilidade em distribuir grandes massas de dados em bancos separados
 
-Bom, é isso. E lembrem-se: os bancos de dados não-relacionais suprem problemas diferentes dos 
+Bom, é isso. E lembrem-se: os bancos de dados não-relacionais suprem problemas diferentes dos
 relacionais, cada um tem sua aplicação específica, sendo que na maioria dos casos os bancos relacionais
 ainda sejam mais indicados.

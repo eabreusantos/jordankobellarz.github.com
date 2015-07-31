@@ -8,15 +8,7 @@
     <title>Jordan Kobellarz</title>
     <link>http://jordankobellarz.github.com</link>
     <description>open innovation developer</description>
-    <pubDate>Mon, 27 Jul 2015 21:00:00 -0300</pubDate>
-    <item>
-      <title>#3 MongoDB - Modelagem</title>
-      <link>http://jordankobellarz.github.com/mongodb/2015/07/27/mongodb-modelagem.html</link>
-      <description>&lt;p&gt;A maioria dos autores coloca essa seção depois das operações de CRUD, mas particularmente acho ela muito mais importante, pois quem está acostumado com o modelo relacional não tem uma concepção do modelo orientado a documentos consistente. É como pilotar um Boeing 737 tendo apenas a carteira de habilitação para motos.&lt;/p&gt;
-</description>
-      <pubDate>Mon, 27 Jul 2015 21:00:00 -0300</pubDate>
-      <dc:date>2015-07-27T21:00:00-03:00</dc:date>
-    </item>
+    <pubDate>Sun, 26 Jul 2015 21:00:00 -0300</pubDate>
     <item>
       <title>#2 MongoDB - CRUD</title>
       <link>http://jordankobellarz.github.com/mongodb/2015/07/26/mongodb-CRUD.html</link>
@@ -46,7 +38,7 @@
       <dc:date>2015-07-22T21:00:00-03:00</dc:date>
     </item>
     <item>
-      <title>Arquitetando com MongoDB</title>
+      <title>Arquitetando com MongoDB - Overview</title>
       <link>http://jordankobellarz.github.com/mongodb/2015/03/07/arquitetura-mongodb.html</link>
       <description>&lt;p&gt;Arquitetar um banco com o MongoDB é fácil, no entanto a flexibilidade que ele nos dá sobre a estrutura pode ser um grande problema, pois um projeto pode priorizar a consistência sobre a performance ou vice-versa. Nesse artigo demonstrarei os conceitos necessários para arquitetar um banco usando o MongoDB.&lt;/p&gt;
 </description>
@@ -78,7 +70,7 @@ BigData, aplicações web soft real time, ... &lt;/p&gt;
     <item>
       <title>Guia MongoDB para RDBMS'ers</title>
       <link>http://jordankobellarz.github.com/mongodb/2015/01/17/guia-mongo-db-para-rdbms.html</link>
-      <description>&lt;p&gt;Todos os adeptos ao MySql, Oracle, SqlServer ou a outros bancos de dados relacionais ouviram pelo menos 
+      <description>&lt;p&gt;Todos os adeptos ao MySql, Oracle, SqlServer ou a outros bancos de dados relacionais ouviram pelo menos
 uma vez sobre bancos NoSQL orientados a documentos. Nesse post irei fazer uma introdução ao
 MongoDB e, também, comparar as duas tecnologias.&lt;/p&gt;
 </description>
@@ -111,6 +103,6 @@ para vender as ideias que irei propor aqui.&lt;/p&gt;
       <pubDate>Wed, 14 Jan 2015 10:25:00 -0200</pubDate>
       <dc:date>2015-01-14T10:25:00-02:00</dc:date>
     </item>
-    <dc:date>2015-07-27T21:00:00-03:00</dc:date>
+    <dc:date>2015-07-26T21:00:00-03:00</dc:date>
   </channel>
 </rss>
