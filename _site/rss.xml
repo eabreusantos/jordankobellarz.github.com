@@ -8,7 +8,23 @@
     <title>Jordan Kobellarz</title>
     <link>http://jordankobellarz.github.com</link>
     <description>open innovation developer</description>
-    <pubDate>Sun, 26 Jul 2015 21:00:00 -0300</pubDate>
+    <pubDate>Thu, 30 Jul 2015 21:00:00 -0300</pubDate>
+    <item>
+      <title>#4 MongoDB - Criando Índices</title>
+      <link>http://jordankobellarz.github.com/mongodb/2015/07/30/2015-07-31-mongodb-criando-indices.html</link>
+      <description>&lt;p&gt;Criar índices no MongoDB é uma maneira muito fácil de otimizar as consultas. Podemos comparar um índice no MongoDB à um índice em um livro. Já imaginou ter de procurar do começo ao fim de um livro por uma informação? Nesse caso usaríamos o seu índice, que nos indicaria a posição onde encontrar a informação de forma eficiente.&lt;/p&gt;
+</description>
+      <pubDate>Thu, 30 Jul 2015 21:00:00 -0300</pubDate>
+      <dc:date>2015-07-30T21:00:00-03:00</dc:date>
+    </item>
+    <item>
+      <title>#3 MongoDB - Modelagem</title>
+      <link>http://jordankobellarz.github.com/mongodb/2015/07/27/2015-07-28-mongodb-modelagem.html</link>
+      <description>&lt;p&gt;A maioria dos autores coloca essa seção depois das operações de CRUD, mas particularmente acho ela muito mais importante, pois quem está acostumado com o modelo relacional não tem uma concepção do modelo orientado a documentos consistente. É como pilotar um Boeing 737 tendo apenas a carteira de habilitação para motos.&lt;/p&gt;
+</description>
+      <pubDate>Mon, 27 Jul 2015 21:00:00 -0300</pubDate>
+      <dc:date>2015-07-27T21:00:00-03:00</dc:date>
+    </item>
     <item>
       <title>#2 MongoDB - Operações CRUD</title>
       <link>http://jordankobellarz.github.com/mongodb/2015/07/26/mongodb-operacoes-crud.html</link>
@@ -40,6 +56,14 @@
 </description>
       <pubDate>Sat, 07 Mar 2015 04:02:00 -0300</pubDate>
       <dc:date>2015-03-07T04:02:00-03:00</dc:date>
+    </item>
+    <item>
+      <title>Sua informação não tem valor!</title>
+      <link>http://jordankobellarz.github.com/informacao/2015/02/20/2014-02-20-sua-informacao-nao-tem-valor.html</link>
+      <description>&lt;p&gt;Estamos aqui trabalhando com níveis de abstração distintos: um &lt;strong&gt;dado&lt;/strong&gt; passa a ser &lt;strong&gt;informação&lt;/strong&gt;, que, por sua vez, passa a ser &lt;strong&gt;conhecimento&lt;/strong&gt;. Mas será que cada um desses níveis possui algum valor significativo? &lt;/p&gt;
+</description>
+      <pubDate>Fri, 20 Feb 2015 07:01:00 -0200</pubDate>
+      <dc:date>2015-02-20T07:01:00-02:00</dc:date>
     </item>
     <item>
       <title>Guia rápido de padrões de projeto Javascript</title>
@@ -99,6 +123,6 @@ para vender as ideias que irei propor aqui.&lt;/p&gt;
       <pubDate>Wed, 14 Jan 2015 10:25:00 -0200</pubDate>
       <dc:date>2015-01-14T10:25:00-02:00</dc:date>
     </item>
-    <dc:date>2015-07-26T21:00:00-03:00</dc:date>
+    <dc:date>2015-07-30T21:00:00-03:00</dc:date>
   </channel>
 </rss>
