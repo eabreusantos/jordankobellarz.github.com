@@ -10,7 +10,7 @@ categories: ['mongodb']
 
 Trabalhar com o MongoDB é uma tarefa muito mais simples para o desenvolvedor, já que não é necessário se preocupar em manter uma estrutura rígida nos documetos de uma coleção. Temos aqui uma flexibilidade muito grande, que só é possível graças à sua estrutura orientada a documentos.
 
-As operações de criar, buscar, modificar ou remover documentos ocorrem somente sobre uma coleção ao mesmo tempo. Essa é uma característica comum aos bancos orientados a documentos, principalmente por terem aliminado o conceito de JOINS para permitir alta escalabilidade.
+As operações de criar, buscar, modificar ou remover documentos ocorrem somente sobre uma coleção ao mesmo tempo. Essa é uma característica comum aos bancos orientados a documentos, principalmente por terem eliminado o conceito de JOINS para permitir alta escalabilidade.
 
 A seguir, serão mostrados conceitos básicos de operações de CRUD (Create, Read, Update e Delete) sobre uma coleção no MongoDB.
 
