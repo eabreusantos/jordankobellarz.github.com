@@ -80,9 +80,7 @@ Essa consulta encontrou o documento instantâneamente e levou apenas 0,2 segundo
 #Como os índices funcionam?
 Quando criamos um índice no MongoDB, internamente é criada uma estrutura do tipo árvore B (*b-tree*), que é carregada em memória (caso haja espaço suficiente). Essa estrutura possibilita o uso do algoritmo de busca binária para encontrar o resultado que queremos.
 
-<!--
-TODO: colocart [esse exemplo](https://university.mongodb.com/courses/10gen/M101JS/2015_March/courseware/Week_4_Performance/52aa16abe2d4232c54a18a7a/)
--->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/U3iWPF5jP-g" frameborder="0" allowfullscreen></iframe>
 
 ##Administração de índices
 
@@ -295,6 +293,9 @@ A consulta do exemplo acima não contempla uma cobertura, pois não especificamo
 ##Como o *query optimizer* escolhe o melhor índice?
 <iframe width="560" height="315" src="https://www.youtube.com/embed/JyQlxDc549c" frameborder="0" allowfullscreen></iframe>
 
+##Cardinalidade
+TODO
+
 #Propriedades dos índices
 
 ##Índice único
@@ -311,7 +312,7 @@ db.test.createIndex({a: 1, b:1}, {
 Note que o valor do campo jamais poderá ser nulo e, com isso, o campo deverá estar presente em todos os documentos.
 
 ##Índice Esparso
-Quando criamos um índice único, obrigatóriamente todos os documentos da coleção devem conter o campo do índice. Podemos sobreescrever esse comportamento através da opção `sparse`, que permite a criação de documetos sem o campo coberto pelo índice único. Essa opção permite uma maior flexibilidade na utilização de índices únicos.
+Quando criamos um índice único, obrigatóriamente todos os documentos da coleção devem conter o campo do índice. Podemos sobreescrever esse comportamento através da opção `sparse`, que permite a criação de documetos sem o campo coberto pelo índice único. Essa opção permite uma maior flexibilidade na utilização de índices únicos e, também, diminui a quantidade de índices criados para um campo que pode faltar de forma recorrente.
 
 **EXEMPLO** criação de um índice único não obrigatório
 
@@ -320,6 +321,8 @@ db.test.createIndex({a: 1, b:1}, {
   sparse: true
 });
 {% endhighlight %}
+
+>> **ATENÇÃO** índices esparsos não não índices únicos
 
 <!--
 ##TTL
@@ -347,18 +350,174 @@ O método `explain` recebe como parâmetro uma `string`, que configura o nível 
 
 * **allPlansExecution:**  esse é o nível de verbosidade mais completo, que contempla, inclusive, resultados parciais da execução de índices rejeitados pelo `query optimizer`.
 
+#Método hint
+Em casos em que o *query planner* escolha um índice diferente do almejado, é possível forçar a escolha desse índice com o método `hint`, passando como parâmetro o nome do índice, que queremos que seja usado na consulta.
 
-<!--
+**EXEMPLO** usando o método `hint`:
+
+{% highlight javascript linenos=table %}
+db.test.find().hint({nome: 1})
+{% endhighlight %}
+
 
 #Índices especiais
-TODO
 
 ##Índices geoespaciais
-TODO
+Para consultas que envolvem localização em um mapa, seja ele planar ou esférico, o MongoDB disponibiliza de operadores e de índices especiais, que permitem consultas eficazes para esse tipo de campo.
 
+Antes de criar um índice geoespacial, devemos conhecer os requisitos da nossa aplicação. Caso seja necessário consultar um mapa planar simples, usamos um índice do tipo `2d` e para consultas mais complexas que envolvam coordenadas de longitude e latitude no formato GeoJSON, usamos o índice do tipo `2dsphere`.
+
+###2dsphere
+Quando precisamos consultar documentos que possuam dados referentes às coordenadas terrestres de longitude e latitude, usamos um índice do tipo `2dsphere`. Esse índice deve ser criado em um campo que contém um objeto no formato **GeoJSON**.
+
+**EXEMPLO** formato **GeoJSON**:
+
+{% highlight javascript linenos=table %}
+{
+  type: "<GeoJSON type>",
+  coordinates: <coordinates>
+}
+{% endhighlight %}
+
+O **GeoJSON type** deve ser uma das 3 opções a seguir:
+
+* **Point**: um ponto nas coordenadas long. e lat.
+* **LineString**: uma linha criada por vários pontos
+* **Polygon**: um polígono criado por uma linha fechada
+
+Com esses três tipos de dados GeoJSON, é possível armazenar os seguintes documentos:
+
+{% highlight javascript linenos=table %}
+db.test.insert({
+  localizacao: {
+    type: "Point",
+    coordinates: [100.0, 0.0]
+  }
+})
+
+db.test.insert({
+  localizacao: {
+    type: "LineString",
+    coordinates: [[100.0, 0.0],[101.0, 0.0]]
+  }
+})
+
+db.test.insert({
+  localizacao: {
+    type: "Polygon",
+    coordinates: [[100.0, 0.0],[101.0, 0.0],
+      [101.0, 1.0],[100.0, 1.0],[100.0, 0.0]]
+  }
+})
+{% endhighlight %}
+
+Sobre esses documentos, criamos o índice para permitir operações de consulta geolocalizadas:
+
+{% highlight javascript linenos=table %}
+db.test.createIndex({localizacao: "2dsphere"})
+{% endhighlight %}
+
+É possível também criar índices compostos junto com índices geoespaciais. Supondo que eu tivesse que armazenar o tipo da localização, como "pizzaria", "lancheria" ou "petiscaria", poderíamos criar o seguinte índice:
+
+{% highlight javascript linenos=table %}
+db.test.createIndex({tipo: 1, localizacao: "2dsphere"})
+{% endhighlight %}
+
+Esse índices criados nos dois últimos exemplos, permitem o uso de vários operadores otimizados para trabalhar com consultas em coordenadas de long. e lat. Como exemplo, vamos usar o operador `$near`, que ordena os resultados mais próximos do ponto passado como parâmetro e que estão há uma distância estipulada:
+
+**EXEMPLO** consultando os locais que estão próximos ao ponto [45, 45] e que encontram-se no máximo há 10km de distância:
+
+{% highlight javascript linenos=table %}
+db.test.find({
+  localizacao: {
+    $near: {
+      $geometry: {
+        type : "Point",
+        coordinates : [45,45]
+      },
+      $maxDistance : 10000
+    }
+  }
+})
+{% endhighlight %}
+
+Outros operadores estão disponíveis para enriquecer as consultas geolocalizadas. Verifique o manual do MongoDB.
+
+###2d
+Para mapas planares mais simples, o MongoDB disponibiliza índice do tipo `2d`. Ele se comporta de forma parecida com os índices `2dsphere`.
+
+**EXEMPLO** criando um índice `2d`
+
+{% highlight javascript linenos=table %}
+db.test.createIndex({localizacao: "2d"})
+{% endhighlight %}
+
+O documento deverá ter um campo que armazene a longitude e a latitude dentro do range [-180, +180].
+
+**EXEMPLO** documento com um campo passível de utilização com um índice `2d`:
+
+{% highlight javascript linenos=table %}
+db.test.insert({
+  localizacao: [45, 45]
+})
+{% endhighlight %}
+
+**EXEMPLO** consultando os locais que estão mais próximos do ponto [45, 45]:
+
+{% highlight javascript linenos=table %}
+db.test.find({
+  localizacao: {
+    $near: [45,45]
+  }
+})
+{% endhighlight %}
+
+>> por padrão serão retornados apenas os 100 primeiros locais mais próximos do ponto estipulado
+
+<!--
 ##Índices Hash
 TODO
+-->
 
 ##Índices Text
-TODO
--->
+Quando um campo tiver conteúdo em forma de texto, seja uma *string* ou um *array* de *strings*, é possível fazer consultas por correspondência ampla, permitindo inclusive a ordenação dos resultados que sejam mais relevantes.
+
+**EXEMPLO** criando um índice de texto no campo "nome":
+
+{% highlight javascript linenos=table %}
+db.test.createIndex({nome: "text"})
+{% endhighlight %}
+
+Podemos acessar o índice criado no campo "nome" através do operador `$text`.
+
+**EXEMPLO** fazendo uma busca por um texto:
+
+{% highlight javascript linenos=table %}
+db.test.find({
+  $text: {
+    $search: "Mon DB"
+  }
+})
+{% endhighlight %}
+
+Notou que não passamos o nome do campo sobre o qual queremos encontrar a *string* almejada? A consulta deve ser realizada sem o nome do campo, pois o MongoDB permite apenas um índice de texto por coleção, dessa forma ele sabe exatamente quais são os campos de texto que devem ter seu valor indexado.
+
+>> **IMPORTANTE!** uma coleção pode ter no máximo um índice de texto
+
+###Retornando por ordem de relevância
+O operador `$text` retorna um objeto adicional para cada documento resultante, que pode ser acessado através do campo `textScore` usando o operador `$meta`. Esse campo pode ser usado para ordenar o resultado da consulta pela relevância dos resultado encontrados.
+
+
+{% highlight javascript linenos=table %}
+db.test.find({
+  $text: {
+    $search: "Mon DB"
+  }
+}).sort({
+  score: {
+    $meta: "textScore"
+  }
+})
+{% endhighlight %}
+
+Criarei um post exclusivamente para falar sobre os índices de texto.
