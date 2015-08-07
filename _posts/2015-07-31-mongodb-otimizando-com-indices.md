@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "#4 MongoDB - Criando Índices"
-description: "..."
+title:  "#4 MongoDB - Otimizando com Índices"
+description: "Usar o MongoDB sem criar índices, é como transformar trocar um Core I7 por um Pentium 100. Aprenda como deixar as consultas centenas de vezes mais rápidas através da criação de índices para as suas coleções."
 date:   2015-07-31 00:00:00
 categories: ['mongodb']
 ---

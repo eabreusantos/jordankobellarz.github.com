@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "#1 MongoDB - Pensando em documentos"
-description: "..."
+description: "Sair do modelo relacional e cair no mundo NoSQL é uma tarefa árdua para qualquer desenvolvedor. A ideia aqui é desmistificar o funcionamento do MongoDB, um banco de dados orientado a documentos, que tem uma certa familiaridade com bancos relacionais."
 date:   2015-07-24 00:00:00
 categories: ['mongodb']
 ---

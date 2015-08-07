@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "#2 MongoDB - Operações CRUD"
-description: "..."
+description: "Conhecer a mala de ferramentas do MongoDB é uma tarefa muito fácil. Vamos aprender as operações básicas de inserção, leitura, modificação e remoção de documentos, com eficiência!"
 date:   2015-07-27 00:00:00
 categories: ['mongodb']
 ---
@@ -434,6 +434,26 @@ db.test.find({
 },
 {
   "frutas": ["banana", "maçã"]
+}
+{% endhighlight %}
+
+####Operador $elemMatch
+
+Para procurar documentos que contenham um *array* que possua pelo menos 1 elemento que condiz com o critério, usamos o operador `$elemMatch`, que recebe como parâmetro o critério a ser verificado no *array*.
+
+**EXEMPLO** retornando documentos que contenham um *array* com pelo menos um elemento que seja maior que 50 e menor que 60:
+
+{% highlight javascript linenos=table %}
+db.test.find({
+  n: {$elemMatch: {$gt:50, $lt:60}}
+})
+
+// retorno
+{
+  "n": [51]
+},
+{
+  "n": [40, 700, 55]
 }
 {% endhighlight %}
 

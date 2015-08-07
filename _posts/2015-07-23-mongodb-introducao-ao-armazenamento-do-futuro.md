@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "#0 MongoDB - Introdução ao Armazenamento do Futuro"
-description: "..."
+description: "Introdução às aplicações modernas usando MongoDB, que demandam escalabilidade automática, flexibilidade, agilidade e baixo custo de manutenção - o banco de dados do futuro!"
 date:   2015-07-23 00:00:00
 categories: ['mongodb']
 ---
