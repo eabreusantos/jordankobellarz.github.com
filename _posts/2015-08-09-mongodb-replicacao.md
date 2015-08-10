@@ -55,7 +55,7 @@ Ele também fica sincronizado com os outros nós através do sistema de *heartbe
 ###Nó de prioridade 0
 Nós de prioridade 0 (zero) jamais podem ser eleitos para serem primários, mas ainda assim possuem direito de votação. Fora isso, esse nó é exatamente igual a um nó secundário comum.
 
-TODO: quando ele é útil?
+<!-- TODO: quando ele é útil? -->
 
 ###Nós escondidos (*hidden members*)
 Os nós do tipo *hidden* ficam escondidos para as aplicações-cliente, sendo somente acessíveis através do sistema de *heartbeat*. Eles, contudo, ainda possuem direito de voto, pois comportam-se exatamente como um nó de prioridade 0 (zero).
@@ -117,10 +117,10 @@ Através do Mongo shell, usamos o *namespace* `rs` para acessar as funcionalidad
 
 {% highlight javascript linenos=table %}
 config = {
-  \_id: "rs0",
+  _id: "rs0",
   members: [
     {
-      \_id: 0,
+      _id: 0,
       host: "localhost:27017"
     }
   ]

@@ -293,8 +293,10 @@ A consulta do exemplo acima não contempla uma cobertura, pois não especificamo
 ##Como o *query optimizer* escolhe o melhor índice?
 <iframe width="560" height="315" src="https://www.youtube.com/embed/JyQlxDc549c" frameborder="0" allowfullscreen></iframe>
 
+<!--
 ##Cardinalidade
 TODO
+-->
 
 #Propriedades dos índices
 
