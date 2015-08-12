@@ -1,0 +1,593 @@
+2015-08-12T18:02:56.436-0300 I JOURNAL  [initandlisten] journal dir=/data/shard2/rs1/journal
+2015-08-12T18:02:56.485-0300 I JOURNAL  [initandlisten] recover : no journal files present, no recovery needed
+2015-08-12T18:03:01.289-0300 I JOURNAL  [initandlisten] preallocateIsFaster=true 48.26
+2015-08-12T18:03:05.705-0300 I JOURNAL  [initandlisten] preallocateIsFaster=true 42.46
+2015-08-12T18:03:09.888-0300 I JOURNAL  [initandlisten] preallocateIsFaster=true 40.04
+2015-08-12T18:03:09.888-0300 I JOURNAL  [initandlisten] preallocateIsFaster check took 13.403 secs
+2015-08-12T18:03:09.888-0300 I JOURNAL  [initandlisten] preallocating a journal file /data/shard2/rs1/journal/prealloc.0
+2015-08-12T18:03:11.857-0300 I JOURNAL  [initandlisten] preallocating a journal file /data/shard2/rs1/journal/prealloc.1
+2015-08-12T18:03:13.699-0300 I JOURNAL  [initandlisten] preallocating a journal file /data/shard2/rs1/journal/prealloc.2
+2015-08-12T18:03:16.328-0300 I JOURNAL  [durability] Durability thread started
+2015-08-12T18:03:16.328-0300 I JOURNAL  [journal writer] Journal writer thread started
+2015-08-12T18:03:16.499-0300 I CONTROL  [initandlisten] MongoDB starting : pid=20956 port=57018 dbpath=/data/shard2/rs1 64-bit host=jordan
+2015-08-12T18:03:16.499-0300 I CONTROL  [initandlisten] 
+2015-08-12T18:03:16.499-0300 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2015-08-12T18:03:16.499-0300 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2015-08-12T18:03:16.499-0300 I CONTROL  [initandlisten] 
+2015-08-12T18:03:16.499-0300 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2015-08-12T18:03:16.499-0300 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2015-08-12T18:03:16.499-0300 I CONTROL  [initandlisten] 
+2015-08-12T18:03:16.499-0300 I CONTROL  [initandlisten] db version v3.0.5
+2015-08-12T18:03:16.499-0300 I CONTROL  [initandlisten] git version: 8bc4ae20708dbb493cb09338d9e7be6698e4a3a3
+2015-08-12T18:03:16.499-0300 I CONTROL  [initandlisten] build info: Linux build2.ny.cbi.10gen.cc 2.6.32-431.3.1.el6.x86_64 #1 SMP Fri Jan 3 21:39:27 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2015-08-12T18:03:16.499-0300 I CONTROL  [initandlisten] allocator: tcmalloc
+2015-08-12T18:03:16.499-0300 I CONTROL  [initandlisten] options: { net: { port: 57018 }, processManagement: { fork: true }, replication: { replSet: "s2" }, sharding: { clusterRole: "shardsvr" }, storage: { dbPath: "/data/shard2/rs1", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", path: "s2-r1.log" } }
+2015-08-12T18:03:16.500-0300 I INDEX    [initandlisten] allocating new ns file /data/shard2/rs1/local.ns, filling with zeroes...
+2015-08-12T18:03:16.905-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs1/local.0, filling with zeroes...
+2015-08-12T18:03:16.905-0300 I STORAGE  [FileAllocator] creating directory /data/shard2/rs1/_tmp
+2015-08-12T18:03:17.121-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs1/local.0, size: 16MB,  took 0.1 secs
+2015-08-12T18:03:17.178-0300 I REPL     [initandlisten] Did not find local replica set configuration document at startup;  NoMatchingDocument Did not find replica set configuration document in local.system.replset
+2015-08-12T18:03:17.178-0300 I NETWORK  [initandlisten] waiting for connections on port 57018
+2015-08-12T18:03:45.188-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52369 #1 (1 connection now open)
+2015-08-12T18:03:45.190-0300 I NETWORK  [conn1] end connection 127.0.0.1:52369 (0 connections now open)
+2015-08-12T18:03:45.210-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52371 #2 (1 connection now open)
+2015-08-12T18:03:45.219-0300 I REPL     [WriteReplSetConfig] Starting replication applier threads
+2015-08-12T18:03:45.219-0300 I REPL     [ReplicationExecutor] New replica set config in use: { _id: "s2", version: 1, members: [ { _id: 0, host: "localhost:57017", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 1, host: "localhost:57018", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "localhost:57019", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatTimeoutSecs: 10, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 } } }
+2015-08-12T18:03:45.219-0300 I REPL     [ReplicationExecutor] This node is localhost:57018 in the config
+2015-08-12T18:03:45.219-0300 I REPL     [ReplicationExecutor] transition to STARTUP2
+2015-08-12T18:03:45.219-0300 I REPL     [rsSync] ******
+2015-08-12T18:03:45.220-0300 I REPL     [rsSync] creating replication oplog of size: 12707MB...
+2015-08-12T18:03:45.220-0300 I REPL     [ReplicationExecutor] Member localhost:57017 is now in state STARTUP2
+2015-08-12T18:03:45.221-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs1/local.1, filling with zeroes...
+2015-08-12T18:03:45.223-0300 I REPL     [ReplicationExecutor] Member localhost:57019 is now in state STARTUP
+2015-08-12T18:03:45.223-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52378 #3 (2 connections now open)
+2015-08-12T18:03:45.226-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52380 #4 (3 connections now open)
+2015-08-12T18:03:45.227-0300 I NETWORK  [conn4] end connection 127.0.0.1:52380 (2 connections now open)
+2015-08-12T18:03:45.291-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs1/local.1, size: 511MB,  took 0.069 secs
+2015-08-12T18:03:45.292-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs1/local.2, filling with zeroes...
+2015-08-12T18:03:45.371-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs1/local.2, size: 511MB,  took 0.078 secs
+2015-08-12T18:03:45.372-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs1/local.3, filling with zeroes...
+2015-08-12T18:03:45.450-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs1/local.3, size: 511MB,  took 0.077 secs
+2015-08-12T18:03:45.451-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs1/local.4, filling with zeroes...
+2015-08-12T18:03:45.495-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs1/local.4, size: 511MB,  took 0.044 secs
+2015-08-12T18:03:45.496-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs1/local.5, filling with zeroes...
+2015-08-12T18:03:45.574-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs1/local.5, size: 511MB,  took 0.078 secs
+2015-08-12T18:03:45.575-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs1/local.6, filling with zeroes...
+2015-08-12T18:03:45.620-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs1/local.6, size: 511MB,  took 0.044 secs
+2015-08-12T18:03:45.621-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs1/local.7, filling with zeroes...
+2015-08-12T18:03:45.688-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs1/local.7, size: 511MB,  took 0.066 secs
+2015-08-12T18:03:45.688-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs1/local.8, filling with zeroes...
+2015-08-12T18:03:45.734-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs1/local.8, size: 511MB,  took 0.044 secs
+2015-08-12T18:03:45.734-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs1/local.9, filling with zeroes...
+2015-08-12T18:03:45.812-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs1/local.9, size: 511MB,  took 0.078 secs
+2015-08-12T18:03:45.813-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs1/local.10, filling with zeroes...
+2015-08-12T18:03:45.858-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs1/local.10, size: 511MB,  took 0.044 secs
+2015-08-12T18:03:45.859-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs1/local.11, filling with zeroes...
+2015-08-12T18:03:45.939-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs1/local.11, size: 511MB,  took 0.079 secs
+2015-08-12T18:03:45.939-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs1/local.12, filling with zeroes...
+2015-08-12T18:03:46.006-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs1/local.12, size: 511MB,  took 0.066 secs
+2015-08-12T18:03:46.007-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs1/local.13, filling with zeroes...
+2015-08-12T18:03:46.052-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs1/local.13, size: 511MB,  took 0.044 secs
+2015-08-12T18:03:46.053-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs1/local.14, filling with zeroes...
+2015-08-12T18:03:46.120-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs1/local.14, size: 511MB,  took 0.066 secs
+2015-08-12T18:03:46.120-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs1/local.15, filling with zeroes...
+2015-08-12T18:03:46.310-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs1/local.15, size: 511MB,  took 0.189 secs
+2015-08-12T18:03:46.311-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs1/local.16, filling with zeroes...
+2015-08-12T18:03:46.378-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs1/local.16, size: 511MB,  took 0.066 secs
+2015-08-12T18:03:46.379-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs1/local.17, filling with zeroes...
+2015-08-12T18:03:46.524-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs1/local.17, size: 511MB,  took 0.144 secs
+2015-08-12T18:03:46.524-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs1/local.18, filling with zeroes...
+2015-08-12T18:03:46.591-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs1/local.18, size: 511MB,  took 0.066 secs
+2015-08-12T18:03:46.592-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs1/local.19, filling with zeroes...
+2015-08-12T18:03:46.637-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs1/local.19, size: 511MB,  took 0.044 secs
+2015-08-12T18:03:46.638-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs1/local.20, filling with zeroes...
+2015-08-12T18:03:46.706-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs1/local.20, size: 511MB,  took 0.068 secs
+2015-08-12T18:03:46.707-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs1/local.21, filling with zeroes...
+2015-08-12T18:03:46.752-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs1/local.21, size: 511MB,  took 0.044 secs
+2015-08-12T18:03:46.753-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs1/local.22, filling with zeroes...
+2015-08-12T18:03:46.809-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs1/local.22, size: 511MB,  took 0.056 secs
+2015-08-12T18:03:46.809-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs1/local.23, filling with zeroes...
+2015-08-12T18:03:46.877-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs1/local.23, size: 511MB,  took 0.067 secs
+2015-08-12T18:03:46.877-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs1/local.24, filling with zeroes...
+2015-08-12T18:03:46.922-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs1/local.24, size: 511MB,  took 0.044 secs
+2015-08-12T18:03:46.923-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs1/local.25, filling with zeroes...
+2015-08-12T18:03:47.001-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs1/local.25, size: 511MB,  took 0.077 secs
+2015-08-12T18:03:47.223-0300 I REPL     [ReplicationExecutor] Member localhost:57019 is now in state STARTUP2
+2015-08-12T18:03:49.526-0300 I REPL     [rsSync] ******
+2015-08-12T18:03:49.526-0300 I REPL     [rsSync] initial sync pending
+2015-08-12T18:03:49.527-0300 I REPL     [rsSync] no valid sync sources found in current replset to do an initial sync
+2015-08-12T18:03:50.527-0300 I REPL     [rsSync] initial sync pending
+2015-08-12T18:03:50.528-0300 I REPL     [rsSync] no valid sync sources found in current replset to do an initial sync
+2015-08-12T18:03:51.221-0300 I REPL     [ReplicationExecutor] Member localhost:57017 is now in state SECONDARY
+2015-08-12T18:03:51.528-0300 I REPL     [rsSync] initial sync pending
+2015-08-12T18:03:51.528-0300 I REPL     [ReplicationExecutor] syncing from: localhost:57017
+2015-08-12T18:03:51.529-0300 I REPL     [rsSync] initial sync drop all databases
+2015-08-12T18:03:51.530-0300 I STORAGE  [rsSync] dropAllDatabasesExceptLocal 1
+2015-08-12T18:03:51.530-0300 I REPL     [rsSync] initial sync clone all databases
+2015-08-12T18:03:51.530-0300 I REPL     [rsSync] initial sync data copy, starting syncup
+2015-08-12T18:03:51.530-0300 I REPL     [rsSync] oplog sync 1 of 3
+2015-08-12T18:03:51.530-0300 I REPL     [rsSync] oplog sync 2 of 3
+2015-08-12T18:03:51.530-0300 I REPL     [rsSync] initial sync building indexes
+2015-08-12T18:03:51.530-0300 I REPL     [rsSync] oplog sync 3 of 3
+2015-08-12T18:03:51.531-0300 I REPL     [rsSync] initial sync finishing up
+2015-08-12T18:03:51.531-0300 I REPL     [rsSync] replSet set minValid=55cbb4b5:1
+2015-08-12T18:03:51.531-0300 I REPL     [rsSync] initial sync done
+2015-08-12T18:03:51.534-0300 I REPL     [ReplicationExecutor] transition to RECOVERING
+2015-08-12T18:03:51.535-0300 I REPL     [ReplicationExecutor] transition to SECONDARY
+2015-08-12T18:03:52.221-0300 I REPL     [ReplicationExecutor] could not find member to sync from
+2015-08-12T18:03:53.217-0300 I REPL     [ReplicationExecutor] replSetElect voting yea for localhost:57017 (0)
+2015-08-12T18:03:53.222-0300 I REPL     [ReplicationExecutor] Member localhost:57017 is now in state PRIMARY
+2015-08-12T18:03:54.511-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52386 #5 (3 connections now open)
+2015-08-12T18:03:54.522-0300 I NETWORK  [conn5] end connection 127.0.0.1:52386 (2 connections now open)
+2015-08-12T18:03:55.226-0300 I REPL     [ReplicationExecutor] Member localhost:57019 is now in state SECONDARY
+2015-08-12T18:04:15.222-0300 I NETWORK  [conn2] end connection 127.0.0.1:52371 (1 connection now open)
+2015-08-12T18:04:15.222-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52395 #6 (2 connections now open)
+2015-08-12T18:04:15.234-0300 I NETWORK  [conn3] end connection 127.0.0.1:52378 (1 connection now open)
+2015-08-12T18:04:15.238-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52400 #7 (2 connections now open)
+2015-08-12T18:04:45.230-0300 I NETWORK  [conn6] end connection 127.0.0.1:52395 (1 connection now open)
+2015-08-12T18:04:45.232-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52432 #8 (2 connections now open)
+2015-08-12T18:04:45.244-0300 I NETWORK  [conn7] end connection 127.0.0.1:52400 (1 connection now open)
+2015-08-12T18:04:45.244-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52435 #9 (2 connections now open)
+2015-08-12T18:05:15.239-0300 I NETWORK  [conn8] end connection 127.0.0.1:52432 (1 connection now open)
+2015-08-12T18:05:15.239-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52454 #10 (2 connections now open)
+2015-08-12T18:05:15.252-0300 I NETWORK  [conn9] end connection 127.0.0.1:52435 (1 connection now open)
+2015-08-12T18:05:15.253-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52457 #11 (2 connections now open)
+2015-08-12T18:05:45.251-0300 I NETWORK  [conn10] end connection 127.0.0.1:52454 (1 connection now open)
+2015-08-12T18:05:45.251-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52472 #12 (2 connections now open)
+2015-08-12T18:05:45.262-0300 I NETWORK  [conn11] end connection 127.0.0.1:52457 (1 connection now open)
+2015-08-12T18:05:45.263-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52474 #13 (2 connections now open)
+2015-08-12T18:05:54.247-0300 I REPL     [ReplicationExecutor] syncing from: localhost:57017
+2015-08-12T18:05:54.248-0300 I REPL     [SyncSourceFeedback] replset setting syncSourceFeedback to localhost:57017
+2015-08-12T18:05:54.249-0300 I INDEX    [repl writer worker 15] allocating new ns file /data/shard2/rs1/school.ns, filling with zeroes...
+2015-08-12T18:05:54.935-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs1/school.0, filling with zeroes...
+2015-08-12T18:05:55.166-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs1/school.0, size: 16MB,  took 0.23 secs
+2015-08-12T18:05:55.243-0300 I INDEX    [repl writer worker 15] build index on: school.students properties: { v: 1, key: { student_id: 1.0 }, name: "student_id_1", ns: "school.students" }
+2015-08-12T18:05:55.243-0300 I INDEX    [repl writer worker 15] 	 building index using bulk method
+2015-08-12T18:05:55.243-0300 I INDEX    [repl writer worker 15] build index done.  scanned 0 total records. 0 secs
+2015-08-12T18:05:59.172-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52501 #14 (3 connections now open)
+2015-08-12T18:06:15.262-0300 I NETWORK  [conn12] end connection 127.0.0.1:52472 (2 connections now open)
+2015-08-12T18:06:15.262-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52519 #15 (4 connections now open)
+2015-08-12T18:06:15.269-0300 I NETWORK  [conn13] end connection 127.0.0.1:52474 (2 connections now open)
+2015-08-12T18:06:15.269-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52521 #16 (3 connections now open)
+2015-08-12T18:06:45.272-0300 I NETWORK  [conn15] end connection 127.0.0.1:52519 (2 connections now open)
+2015-08-12T18:06:45.272-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52541 #17 (4 connections now open)
+2015-08-12T18:06:45.273-0300 I NETWORK  [conn16] end connection 127.0.0.1:52521 (2 connections now open)
+2015-08-12T18:06:45.273-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52543 #18 (3 connections now open)
+2015-08-12T18:07:15.280-0300 I NETWORK  [conn18] end connection 127.0.0.1:52543 (2 connections now open)
+2015-08-12T18:07:15.280-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52562 #19 (4 connections now open)
+2015-08-12T18:07:15.281-0300 I NETWORK  [conn17] end connection 127.0.0.1:52541 (2 connections now open)
+2015-08-12T18:07:15.281-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52564 #20 (3 connections now open)
+2015-08-12T18:07:45.291-0300 I NETWORK  [conn20] end connection 127.0.0.1:52564 (2 connections now open)
+2015-08-12T18:07:45.291-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52586 #21 (3 connections now open)
+2015-08-12T18:07:45.292-0300 I NETWORK  [conn19] end connection 127.0.0.1:52562 (2 connections now open)
+2015-08-12T18:07:45.292-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52589 #22 (3 connections now open)
+2015-08-12T18:08:15.298-0300 I NETWORK  [conn22] end connection 127.0.0.1:52589 (2 connections now open)
+2015-08-12T18:08:15.298-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52605 #23 (3 connections now open)
+2015-08-12T18:08:15.300-0300 I NETWORK  [conn21] end connection 127.0.0.1:52586 (2 connections now open)
+2015-08-12T18:08:15.301-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52607 #24 (3 connections now open)
+2015-08-12T18:08:30.946-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52667 #25 (4 connections now open)
+2015-08-12T18:08:37.152-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52678 #26 (5 connections now open)
+2015-08-12T18:08:45.306-0300 I NETWORK  [conn23] end connection 127.0.0.1:52605 (4 connections now open)
+2015-08-12T18:08:45.306-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52681 #27 (6 connections now open)
+2015-08-12T18:08:45.308-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52683 #28 (6 connections now open)
+2015-08-12T18:08:45.309-0300 I NETWORK  [conn24] end connection 127.0.0.1:52607 (5 connections now open)
+2015-08-12T18:09:15.310-0300 I NETWORK  [conn27] end connection 127.0.0.1:52681 (4 connections now open)
+2015-08-12T18:09:15.310-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52699 #29 (5 connections now open)
+2015-08-12T18:09:15.318-0300 I NETWORK  [conn28] end connection 127.0.0.1:52683 (4 connections now open)
+2015-08-12T18:09:15.318-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52702 #30 (5 connections now open)
+2015-08-12T18:09:45.315-0300 I NETWORK  [conn29] end connection 127.0.0.1:52699 (4 connections now open)
+2015-08-12T18:09:45.315-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52735 #31 (5 connections now open)
+2015-08-12T18:09:45.325-0300 I NETWORK  [conn30] end connection 127.0.0.1:52702 (4 connections now open)
+2015-08-12T18:09:45.325-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52738 #32 (5 connections now open)
+2015-08-12T18:10:15.322-0300 I NETWORK  [conn31] end connection 127.0.0.1:52735 (4 connections now open)
+2015-08-12T18:10:15.322-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52754 #33 (5 connections now open)
+2015-08-12T18:10:15.332-0300 I NETWORK  [conn32] end connection 127.0.0.1:52738 (4 connections now open)
+2015-08-12T18:10:15.332-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52756 #34 (6 connections now open)
+2015-08-12T18:10:45.331-0300 I NETWORK  [conn33] end connection 127.0.0.1:52754 (4 connections now open)
+2015-08-12T18:10:45.331-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52775 #35 (5 connections now open)
+2015-08-12T18:10:45.334-0300 I NETWORK  [conn34] end connection 127.0.0.1:52756 (4 connections now open)
+2015-08-12T18:10:45.334-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52778 #36 (6 connections now open)
+2015-08-12T18:11:15.336-0300 I NETWORK  [conn35] end connection 127.0.0.1:52775 (4 connections now open)
+2015-08-12T18:11:15.336-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52793 #37 (5 connections now open)
+2015-08-12T18:11:15.339-0300 I NETWORK  [conn36] end connection 127.0.0.1:52778 (4 connections now open)
+2015-08-12T18:11:15.339-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52796 #38 (6 connections now open)
+2015-08-12T18:11:45.347-0300 I NETWORK  [conn38] end connection 127.0.0.1:52796 (4 connections now open)
+2015-08-12T18:11:45.347-0300 I NETWORK  [conn37] end connection 127.0.0.1:52793 (3 connections now open)
+2015-08-12T18:11:45.348-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52811 #39 (4 connections now open)
+2015-08-12T18:11:45.349-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52814 #40 (5 connections now open)
+2015-08-12T18:12:15.355-0300 I NETWORK  [conn40] end connection 127.0.0.1:52814 (4 connections now open)
+2015-08-12T18:12:15.356-0300 I NETWORK  [conn39] end connection 127.0.0.1:52811 (3 connections now open)
+2015-08-12T18:12:15.356-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52830 #41 (4 connections now open)
+2015-08-12T18:12:15.357-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52832 #42 (5 connections now open)
+2015-08-12T18:12:45.363-0300 I NETWORK  [conn41] end connection 127.0.0.1:52830 (4 connections now open)
+2015-08-12T18:12:45.363-0300 I NETWORK  [conn42] end connection 127.0.0.1:52832 (4 connections now open)
+2015-08-12T18:12:45.364-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52846 #43 (4 connections now open)
+2015-08-12T18:12:45.364-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52847 #44 (5 connections now open)
+2015-08-12T18:13:15.370-0300 I NETWORK  [conn44] end connection 127.0.0.1:52847 (4 connections now open)
+2015-08-12T18:13:15.370-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52900 #45 (5 connections now open)
+2015-08-12T18:13:15.374-0300 I NETWORK  [conn43] end connection 127.0.0.1:52846 (4 connections now open)
+2015-08-12T18:13:15.374-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52903 #46 (6 connections now open)
+2015-08-12T18:13:45.381-0300 I NETWORK  [conn46] end connection 127.0.0.1:52903 (4 connections now open)
+2015-08-12T18:13:45.381-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52933 #47 (5 connections now open)
+2015-08-12T18:13:45.381-0300 I NETWORK  [conn45] end connection 127.0.0.1:52900 (4 connections now open)
+2015-08-12T18:13:45.382-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52936 #48 (5 connections now open)
+2015-08-12T18:14:15.386-0300 I NETWORK  [conn47] end connection 127.0.0.1:52933 (4 connections now open)
+2015-08-12T18:14:15.386-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52950 #49 (5 connections now open)
+2015-08-12T18:14:15.389-0300 I NETWORK  [conn48] end connection 127.0.0.1:52936 (4 connections now open)
+2015-08-12T18:14:15.389-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52953 #50 (5 connections now open)
+2015-08-12T18:14:45.395-0300 I NETWORK  [conn49] end connection 127.0.0.1:52950 (4 connections now open)
+2015-08-12T18:14:45.395-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52969 #51 (5 connections now open)
+2015-08-12T18:14:45.405-0300 I NETWORK  [conn50] end connection 127.0.0.1:52953 (4 connections now open)
+2015-08-12T18:14:45.405-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52971 #52 (5 connections now open)
+2015-08-12T18:15:15.402-0300 I NETWORK  [conn51] end connection 127.0.0.1:52969 (4 connections now open)
+2015-08-12T18:15:15.402-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52985 #53 (5 connections now open)
+2015-08-12T18:15:15.415-0300 I NETWORK  [conn52] end connection 127.0.0.1:52971 (4 connections now open)
+2015-08-12T18:15:15.415-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52989 #54 (5 connections now open)
+2015-08-12T18:15:45.411-0300 I NETWORK  [conn53] end connection 127.0.0.1:52985 (4 connections now open)
+2015-08-12T18:15:45.411-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53003 #55 (6 connections now open)
+2015-08-12T18:15:45.424-0300 I NETWORK  [conn54] end connection 127.0.0.1:52989 (4 connections now open)
+2015-08-12T18:15:45.424-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53007 #56 (6 connections now open)
+2015-08-12T18:16:15.416-0300 I NETWORK  [conn55] end connection 127.0.0.1:53003 (4 connections now open)
+2015-08-12T18:16:15.416-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53022 #57 (5 connections now open)
+2015-08-12T18:16:15.428-0300 I NETWORK  [conn56] end connection 127.0.0.1:53007 (4 connections now open)
+2015-08-12T18:16:15.428-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53025 #58 (6 connections now open)
+2015-08-12T18:16:45.428-0300 I NETWORK  [conn57] end connection 127.0.0.1:53022 (4 connections now open)
+2015-08-12T18:16:45.428-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53041 #59 (5 connections now open)
+2015-08-12T18:16:45.436-0300 I NETWORK  [conn58] end connection 127.0.0.1:53025 (4 connections now open)
+2015-08-12T18:16:45.437-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53042 #60 (5 connections now open)
+2015-08-12T18:17:15.436-0300 I NETWORK  [conn59] end connection 127.0.0.1:53041 (4 connections now open)
+2015-08-12T18:17:15.436-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53059 #61 (5 connections now open)
+2015-08-12T18:17:15.441-0300 I NETWORK  [conn60] end connection 127.0.0.1:53042 (4 connections now open)
+2015-08-12T18:17:15.442-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53060 #62 (5 connections now open)
+2015-08-12T18:17:45.442-0300 I NETWORK  [conn61] end connection 127.0.0.1:53059 (4 connections now open)
+2015-08-12T18:17:45.442-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53076 #63 (5 connections now open)
+2015-08-12T18:17:45.450-0300 I NETWORK  [conn62] end connection 127.0.0.1:53060 (4 connections now open)
+2015-08-12T18:17:45.450-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53078 #64 (6 connections now open)
+2015-08-12T18:18:15.446-0300 I NETWORK  [conn63] end connection 127.0.0.1:53076 (4 connections now open)
+2015-08-12T18:18:15.446-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53094 #65 (5 connections now open)
+2015-08-12T18:18:15.458-0300 I NETWORK  [conn64] end connection 127.0.0.1:53078 (4 connections now open)
+2015-08-12T18:18:15.458-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53097 #66 (5 connections now open)
+2015-08-12T18:18:45.455-0300 I NETWORK  [conn65] end connection 127.0.0.1:53094 (4 connections now open)
+2015-08-12T18:18:45.456-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53113 #67 (5 connections now open)
+2015-08-12T18:18:45.463-0300 I NETWORK  [conn66] end connection 127.0.0.1:53097 (4 connections now open)
+2015-08-12T18:18:45.463-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53114 #68 (6 connections now open)
+2015-08-12T18:19:15.464-0300 I NETWORK  [conn67] end connection 127.0.0.1:53113 (4 connections now open)
+2015-08-12T18:19:15.465-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53131 #69 (5 connections now open)
+2015-08-12T18:19:15.472-0300 I NETWORK  [conn68] end connection 127.0.0.1:53114 (4 connections now open)
+2015-08-12T18:19:15.472-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53134 #70 (5 connections now open)
+2015-08-12T18:19:45.476-0300 I NETWORK  [conn69] end connection 127.0.0.1:53131 (4 connections now open)
+2015-08-12T18:19:45.476-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53150 #71 (5 connections now open)
+2015-08-12T18:19:45.479-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53151 #72 (6 connections now open)
+2015-08-12T18:19:45.479-0300 I NETWORK  [conn70] end connection 127.0.0.1:53134 (5 connections now open)
+2015-08-12T18:20:15.487-0300 I NETWORK  [conn71] end connection 127.0.0.1:53150 (4 connections now open)
+2015-08-12T18:20:15.487-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53168 #73 (5 connections now open)
+2015-08-12T18:20:15.492-0300 I NETWORK  [conn72] end connection 127.0.0.1:53151 (4 connections now open)
+2015-08-12T18:20:15.493-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53170 #74 (5 connections now open)
+2015-08-12T18:20:45.496-0300 I NETWORK  [conn73] end connection 127.0.0.1:53168 (4 connections now open)
+2015-08-12T18:20:45.496-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53184 #75 (5 connections now open)
+2015-08-12T18:20:45.499-0300 I NETWORK  [conn74] end connection 127.0.0.1:53170 (4 connections now open)
+2015-08-12T18:20:45.500-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53187 #76 (5 connections now open)
+2015-08-12T18:21:15.506-0300 I NETWORK  [conn75] end connection 127.0.0.1:53184 (4 connections now open)
+2015-08-12T18:21:15.506-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53204 #77 (5 connections now open)
+2015-08-12T18:21:15.507-0300 I NETWORK  [conn76] end connection 127.0.0.1:53187 (4 connections now open)
+2015-08-12T18:21:15.507-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53206 #78 (6 connections now open)
+2015-08-12T18:21:45.514-0300 I NETWORK  [conn78] end connection 127.0.0.1:53206 (4 connections now open)
+2015-08-12T18:21:45.514-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53221 #79 (5 connections now open)
+2015-08-12T18:21:45.518-0300 I NETWORK  [conn77] end connection 127.0.0.1:53204 (4 connections now open)
+2015-08-12T18:21:45.518-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53224 #80 (6 connections now open)
+2015-08-12T18:22:15.520-0300 I NETWORK  [conn79] end connection 127.0.0.1:53221 (4 connections now open)
+2015-08-12T18:22:15.520-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53239 #81 (6 connections now open)
+2015-08-12T18:22:15.527-0300 I NETWORK  [conn80] end connection 127.0.0.1:53224 (4 connections now open)
+2015-08-12T18:22:15.528-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53245 #82 (5 connections now open)
+2015-08-12T18:22:45.532-0300 I NETWORK  [conn81] end connection 127.0.0.1:53239 (4 connections now open)
+2015-08-12T18:22:45.532-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53260 #83 (5 connections now open)
+2015-08-12T18:22:45.533-0300 I NETWORK  [conn82] end connection 127.0.0.1:53245 (4 connections now open)
+2015-08-12T18:22:45.533-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53262 #84 (6 connections now open)
+2015-08-12T18:23:15.540-0300 I NETWORK  [conn83] end connection 127.0.0.1:53260 (4 connections now open)
+2015-08-12T18:23:15.540-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53279 #85 (5 connections now open)
+2015-08-12T18:23:15.544-0300 I NETWORK  [conn84] end connection 127.0.0.1:53262 (4 connections now open)
+2015-08-12T18:23:15.545-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53281 #86 (5 connections now open)
+2015-08-12T18:23:45.550-0300 I NETWORK  [conn85] end connection 127.0.0.1:53279 (4 connections now open)
+2015-08-12T18:23:45.550-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53299 #87 (5 connections now open)
+2015-08-12T18:23:45.554-0300 I NETWORK  [conn86] end connection 127.0.0.1:53281 (4 connections now open)
+2015-08-12T18:23:45.555-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53302 #88 (5 connections now open)
+2015-08-12T18:24:15.563-0300 I NETWORK  [conn87] end connection 127.0.0.1:53299 (4 connections now open)
+2015-08-12T18:24:15.563-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53318 #89 (5 connections now open)
+2015-08-12T18:24:15.567-0300 I NETWORK  [conn88] end connection 127.0.0.1:53302 (4 connections now open)
+2015-08-12T18:24:15.567-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53319 #90 (5 connections now open)
+2015-08-12T18:24:45.575-0300 I NETWORK  [conn89] end connection 127.0.0.1:53318 (4 connections now open)
+2015-08-12T18:24:45.575-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53336 #91 (5 connections now open)
+2015-08-12T18:24:45.582-0300 I NETWORK  [conn90] end connection 127.0.0.1:53319 (4 connections now open)
+2015-08-12T18:24:45.582-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53337 #92 (5 connections now open)
+2015-08-12T18:25:15.588-0300 I NETWORK  [conn91] end connection 127.0.0.1:53336 (4 connections now open)
+2015-08-12T18:25:15.588-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53354 #93 (5 connections now open)
+2015-08-12T18:25:15.592-0300 I NETWORK  [conn92] end connection 127.0.0.1:53337 (4 connections now open)
+2015-08-12T18:25:15.592-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53356 #94 (5 connections now open)
+2015-08-12T18:25:45.598-0300 I NETWORK  [conn93] end connection 127.0.0.1:53354 (4 connections now open)
+2015-08-12T18:25:45.598-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53372 #95 (5 connections now open)
+2015-08-12T18:25:45.601-0300 I NETWORK  [conn94] end connection 127.0.0.1:53356 (4 connections now open)
+2015-08-12T18:25:45.601-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53374 #96 (6 connections now open)
+2015-08-12T18:26:15.605-0300 I NETWORK  [conn95] end connection 127.0.0.1:53372 (4 connections now open)
+2015-08-12T18:26:15.605-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53390 #97 (5 connections now open)
+2015-08-12T18:26:15.608-0300 I NETWORK  [conn96] end connection 127.0.0.1:53374 (4 connections now open)
+2015-08-12T18:26:15.609-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53391 #98 (5 connections now open)
+2015-08-12T18:26:45.610-0300 I NETWORK  [conn97] end connection 127.0.0.1:53390 (4 connections now open)
+2015-08-12T18:26:45.610-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53408 #99 (6 connections now open)
+2015-08-12T18:26:45.619-0300 I NETWORK  [conn98] end connection 127.0.0.1:53391 (4 connections now open)
+2015-08-12T18:26:45.619-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53410 #100 (5 connections now open)
+2015-08-12T18:27:15.624-0300 I NETWORK  [conn99] end connection 127.0.0.1:53408 (4 connections now open)
+2015-08-12T18:27:15.624-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53426 #101 (5 connections now open)
+2015-08-12T18:27:15.632-0300 I NETWORK  [conn100] end connection 127.0.0.1:53410 (4 connections now open)
+2015-08-12T18:27:15.632-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53429 #102 (5 connections now open)
+2015-08-12T18:27:45.631-0300 I NETWORK  [conn101] end connection 127.0.0.1:53426 (4 connections now open)
+2015-08-12T18:27:45.631-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53444 #103 (5 connections now open)
+2015-08-12T18:27:45.641-0300 I NETWORK  [conn102] end connection 127.0.0.1:53429 (4 connections now open)
+2015-08-12T18:27:45.641-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53445 #104 (5 connections now open)
+2015-08-12T18:28:15.638-0300 I NETWORK  [conn103] end connection 127.0.0.1:53444 (4 connections now open)
+2015-08-12T18:28:15.639-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53464 #105 (5 connections now open)
+2015-08-12T18:28:15.651-0300 I NETWORK  [conn104] end connection 127.0.0.1:53445 (4 connections now open)
+2015-08-12T18:28:15.651-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53466 #106 (5 connections now open)
+2015-08-12T18:28:45.653-0300 I NETWORK  [conn105] end connection 127.0.0.1:53464 (4 connections now open)
+2015-08-12T18:28:45.653-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53482 #107 (5 connections now open)
+2015-08-12T18:28:45.661-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53484 #108 (6 connections now open)
+2015-08-12T18:28:45.661-0300 I NETWORK  [conn106] end connection 127.0.0.1:53466 (4 connections now open)
+2015-08-12T18:29:15.665-0300 I NETWORK  [conn107] end connection 127.0.0.1:53482 (4 connections now open)
+2015-08-12T18:29:15.666-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53500 #109 (5 connections now open)
+2015-08-12T18:29:15.671-0300 I NETWORK  [conn108] end connection 127.0.0.1:53484 (4 connections now open)
+2015-08-12T18:29:15.672-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53502 #110 (6 connections now open)
+2015-08-12T18:29:45.675-0300 I NETWORK  [conn109] end connection 127.0.0.1:53500 (4 connections now open)
+2015-08-12T18:29:45.675-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53518 #111 (6 connections now open)
+2015-08-12T18:29:45.682-0300 I NETWORK  [conn110] end connection 127.0.0.1:53502 (4 connections now open)
+2015-08-12T18:29:45.682-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53520 #112 (5 connections now open)
+2015-08-12T18:30:15.685-0300 I NETWORK  [conn111] end connection 127.0.0.1:53518 (4 connections now open)
+2015-08-12T18:30:15.686-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53537 #113 (5 connections now open)
+2015-08-12T18:30:15.693-0300 I NETWORK  [conn112] end connection 127.0.0.1:53520 (4 connections now open)
+2015-08-12T18:30:15.694-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53540 #114 (5 connections now open)
+2015-08-12T18:30:45.696-0300 I NETWORK  [conn113] end connection 127.0.0.1:53537 (4 connections now open)
+2015-08-12T18:30:45.697-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53555 #115 (5 connections now open)
+2015-08-12T18:30:45.701-0300 I NETWORK  [conn114] end connection 127.0.0.1:53540 (4 connections now open)
+2015-08-12T18:30:45.702-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53556 #116 (5 connections now open)
+2015-08-12T18:31:15.711-0300 I NETWORK  [conn115] end connection 127.0.0.1:53555 (4 connections now open)
+2015-08-12T18:31:15.711-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53573 #117 (5 connections now open)
+2015-08-12T18:31:15.711-0300 I NETWORK  [conn116] end connection 127.0.0.1:53556 (4 connections now open)
+2015-08-12T18:31:15.711-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53574 #118 (5 connections now open)
+2015-08-12T18:31:45.718-0300 I NETWORK  [conn117] end connection 127.0.0.1:53573 (4 connections now open)
+2015-08-12T18:31:45.718-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53591 #119 (5 connections now open)
+2015-08-12T18:31:45.718-0300 I NETWORK  [conn118] end connection 127.0.0.1:53574 (4 connections now open)
+2015-08-12T18:31:45.719-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53594 #120 (5 connections now open)
+2015-08-12T18:32:15.728-0300 I NETWORK  [conn119] end connection 127.0.0.1:53591 (4 connections now open)
+2015-08-12T18:32:15.729-0300 I NETWORK  [conn120] end connection 127.0.0.1:53594 (3 connections now open)
+2015-08-12T18:32:15.729-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53610 #121 (4 connections now open)
+2015-08-12T18:32:15.729-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53611 #122 (5 connections now open)
+2015-08-12T18:32:45.739-0300 I NETWORK  [conn122] end connection 127.0.0.1:53611 (4 connections now open)
+2015-08-12T18:32:45.740-0300 I NETWORK  [conn121] end connection 127.0.0.1:53610 (4 connections now open)
+2015-08-12T18:32:45.740-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53629 #123 (4 connections now open)
+2015-08-12T18:32:45.740-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53631 #124 (5 connections now open)
+2015-08-12T18:33:15.747-0300 I NETWORK  [conn123] end connection 127.0.0.1:53629 (4 connections now open)
+2015-08-12T18:33:15.748-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53651 #125 (5 connections now open)
+2015-08-12T18:33:15.749-0300 I NETWORK  [conn124] end connection 127.0.0.1:53631 (4 connections now open)
+2015-08-12T18:33:15.749-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53653 #126 (5 connections now open)
+2015-08-12T18:33:45.752-0300 I NETWORK  [conn126] end connection 127.0.0.1:53653 (4 connections now open)
+2015-08-12T18:33:45.752-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53673 #127 (6 connections now open)
+2015-08-12T18:33:45.757-0300 I NETWORK  [conn125] end connection 127.0.0.1:53651 (4 connections now open)
+2015-08-12T18:33:45.757-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53675 #128 (5 connections now open)
+2015-08-12T18:34:15.758-0300 I NETWORK  [conn127] end connection 127.0.0.1:53673 (4 connections now open)
+2015-08-12T18:34:15.758-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53691 #129 (6 connections now open)
+2015-08-12T18:34:15.767-0300 I NETWORK  [conn128] end connection 127.0.0.1:53675 (4 connections now open)
+2015-08-12T18:34:15.767-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53693 #130 (5 connections now open)
+2015-08-12T18:34:45.767-0300 I NETWORK  [conn129] end connection 127.0.0.1:53691 (4 connections now open)
+2015-08-12T18:34:45.767-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53709 #131 (5 connections now open)
+2015-08-12T18:34:45.776-0300 I NETWORK  [conn130] end connection 127.0.0.1:53693 (4 connections now open)
+2015-08-12T18:34:45.777-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53711 #132 (5 connections now open)
+2015-08-12T18:35:15.778-0300 I NETWORK  [conn131] end connection 127.0.0.1:53709 (4 connections now open)
+2015-08-12T18:35:15.779-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53728 #133 (5 connections now open)
+2015-08-12T18:35:15.785-0300 I NETWORK  [conn132] end connection 127.0.0.1:53711 (4 connections now open)
+2015-08-12T18:35:15.785-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53729 #134 (5 connections now open)
+2015-08-12T18:35:45.786-0300 I NETWORK  [conn133] end connection 127.0.0.1:53728 (4 connections now open)
+2015-08-12T18:35:45.787-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53745 #135 (5 connections now open)
+2015-08-12T18:35:45.796-0300 I NETWORK  [conn134] end connection 127.0.0.1:53729 (4 connections now open)
+2015-08-12T18:35:45.796-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53747 #136 (5 connections now open)
+2015-08-12T18:36:15.794-0300 I NETWORK  [conn135] end connection 127.0.0.1:53745 (4 connections now open)
+2015-08-12T18:36:15.794-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53763 #137 (5 connections now open)
+2015-08-12T18:36:15.807-0300 I NETWORK  [conn136] end connection 127.0.0.1:53747 (4 connections now open)
+2015-08-12T18:36:15.807-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53765 #138 (5 connections now open)
+2015-08-12T18:36:45.804-0300 I NETWORK  [conn137] end connection 127.0.0.1:53763 (4 connections now open)
+2015-08-12T18:36:45.805-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53782 #139 (5 connections now open)
+2015-08-12T18:36:45.814-0300 I NETWORK  [conn138] end connection 127.0.0.1:53765 (4 connections now open)
+2015-08-12T18:36:45.814-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53783 #140 (6 connections now open)
+2015-08-12T18:37:15.816-0300 I NETWORK  [conn139] end connection 127.0.0.1:53782 (4 connections now open)
+2015-08-12T18:37:15.816-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53800 #141 (5 connections now open)
+2015-08-12T18:37:15.821-0300 I NETWORK  [conn140] end connection 127.0.0.1:53783 (4 connections now open)
+2015-08-12T18:37:15.821-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53801 #142 (5 connections now open)
+2015-08-12T18:37:45.825-0300 I NETWORK  [conn141] end connection 127.0.0.1:53800 (4 connections now open)
+2015-08-12T18:37:45.825-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53819 #143 (5 connections now open)
+2015-08-12T18:37:45.826-0300 I NETWORK  [conn142] end connection 127.0.0.1:53801 (4 connections now open)
+2015-08-12T18:37:45.826-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53820 #144 (5 connections now open)
+2015-08-12T18:38:15.832-0300 I NETWORK  [conn144] end connection 127.0.0.1:53820 (4 connections now open)
+2015-08-12T18:38:15.833-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53838 #145 (5 connections now open)
+2015-08-12T18:38:15.834-0300 I NETWORK  [conn143] end connection 127.0.0.1:53819 (4 connections now open)
+2015-08-12T18:38:15.834-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53839 #146 (5 connections now open)
+2015-08-12T18:38:45.839-0300 I NETWORK  [conn146] end connection 127.0.0.1:53839 (4 connections now open)
+2015-08-12T18:38:45.840-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53854 #147 (5 connections now open)
+2015-08-12T18:38:45.840-0300 I NETWORK  [conn145] end connection 127.0.0.1:53838 (4 connections now open)
+2015-08-12T18:38:45.841-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53857 #148 (5 connections now open)
+2015-08-12T18:39:15.847-0300 I NETWORK  [conn147] end connection 127.0.0.1:53854 (4 connections now open)
+2015-08-12T18:39:15.848-0300 I NETWORK  [conn148] end connection 127.0.0.1:53857 (4 connections now open)
+2015-08-12T18:39:15.848-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53877 #149 (4 connections now open)
+2015-08-12T18:39:15.849-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53876 #150 (5 connections now open)
+2015-08-12T18:39:45.858-0300 I NETWORK  [conn149] end connection 127.0.0.1:53877 (4 connections now open)
+2015-08-12T18:39:45.858-0300 I NETWORK  [conn150] end connection 127.0.0.1:53876 (4 connections now open)
+2015-08-12T18:39:45.858-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53927 #151 (4 connections now open)
+2015-08-12T18:39:45.858-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53928 #152 (5 connections now open)
+2015-08-12T18:40:15.864-0300 I NETWORK  [conn152] end connection 127.0.0.1:53928 (4 connections now open)
+2015-08-12T18:40:15.864-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53944 #153 (5 connections now open)
+2015-08-12T18:40:15.870-0300 I NETWORK  [conn151] end connection 127.0.0.1:53927 (4 connections now open)
+2015-08-12T18:40:15.870-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53947 #154 (5 connections now open)
+2015-08-12T18:40:45.876-0300 I NETWORK  [conn153] end connection 127.0.0.1:53944 (4 connections now open)
+2015-08-12T18:40:45.876-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53963 #155 (6 connections now open)
+2015-08-12T18:40:45.883-0300 I NETWORK  [conn154] end connection 127.0.0.1:53947 (4 connections now open)
+2015-08-12T18:40:45.883-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:53965 #156 (5 connections now open)
+2015-08-12T18:41:15.889-0300 I NETWORK  [conn155] end connection 127.0.0.1:53963 (4 connections now open)
+2015-08-12T18:41:15.889-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54022 #157 (5 connections now open)
+2015-08-12T18:41:15.893-0300 I NETWORK  [conn156] end connection 127.0.0.1:53965 (4 connections now open)
+2015-08-12T18:41:15.894-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54023 #158 (5 connections now open)
+2015-08-12T18:41:45.898-0300 I NETWORK  [conn157] end connection 127.0.0.1:54022 (4 connections now open)
+2015-08-12T18:41:45.901-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54054 #159 (5 connections now open)
+2015-08-12T18:41:45.903-0300 I NETWORK  [conn158] end connection 127.0.0.1:54023 (4 connections now open)
+2015-08-12T18:41:45.903-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54055 #160 (5 connections now open)
+2015-08-12T18:42:15.911-0300 I NETWORK  [conn159] end connection 127.0.0.1:54054 (4 connections now open)
+2015-08-12T18:42:15.911-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54079 #161 (5 connections now open)
+2015-08-12T18:42:15.915-0300 I NETWORK  [conn160] end connection 127.0.0.1:54055 (4 connections now open)
+2015-08-12T18:42:15.915-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54080 #162 (5 connections now open)
+2015-08-12T18:42:45.923-0300 I NETWORK  [conn161] end connection 127.0.0.1:54079 (4 connections now open)
+2015-08-12T18:42:45.923-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54097 #163 (5 connections now open)
+2015-08-12T18:42:45.927-0300 I NETWORK  [conn162] end connection 127.0.0.1:54080 (4 connections now open)
+2015-08-12T18:42:45.927-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54098 #164 (5 connections now open)
+2015-08-12T18:43:15.930-0300 I NETWORK  [conn163] end connection 127.0.0.1:54097 (4 connections now open)
+2015-08-12T18:43:15.930-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54116 #165 (6 connections now open)
+2015-08-12T18:43:15.938-0300 I NETWORK  [conn164] end connection 127.0.0.1:54098 (4 connections now open)
+2015-08-12T18:43:15.938-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54117 #166 (5 connections now open)
+2015-08-12T18:43:45.943-0300 I NETWORK  [conn165] end connection 127.0.0.1:54116 (4 connections now open)
+2015-08-12T18:43:45.943-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54134 #167 (5 connections now open)
+2015-08-12T18:43:45.951-0300 I NETWORK  [conn166] end connection 127.0.0.1:54117 (4 connections now open)
+2015-08-12T18:43:45.953-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54135 #168 (5 connections now open)
+2015-08-12T18:44:15.952-0300 I NETWORK  [conn167] end connection 127.0.0.1:54134 (4 connections now open)
+2015-08-12T18:44:15.952-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54152 #169 (5 connections now open)
+2015-08-12T18:44:15.962-0300 I NETWORK  [conn168] end connection 127.0.0.1:54135 (4 connections now open)
+2015-08-12T18:44:15.963-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54153 #170 (5 connections now open)
+2015-08-12T18:44:45.961-0300 I NETWORK  [conn169] end connection 127.0.0.1:54152 (4 connections now open)
+2015-08-12T18:44:45.962-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54194 #171 (5 connections now open)
+2015-08-12T18:44:45.974-0300 I NETWORK  [conn170] end connection 127.0.0.1:54153 (4 connections now open)
+2015-08-12T18:44:45.974-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54195 #172 (5 connections now open)
+2015-08-12T18:45:15.972-0300 I NETWORK  [conn171] end connection 127.0.0.1:54194 (4 connections now open)
+2015-08-12T18:45:15.973-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54212 #173 (5 connections now open)
+2015-08-12T18:45:15.981-0300 I NETWORK  [conn172] end connection 127.0.0.1:54195 (4 connections now open)
+2015-08-12T18:45:15.981-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54213 #174 (5 connections now open)
+2015-08-12T18:45:45.980-0300 I NETWORK  [conn173] end connection 127.0.0.1:54212 (4 connections now open)
+2015-08-12T18:45:45.980-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54230 #175 (6 connections now open)
+2015-08-12T18:45:45.990-0300 I NETWORK  [conn174] end connection 127.0.0.1:54213 (4 connections now open)
+2015-08-12T18:45:45.990-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54231 #176 (5 connections now open)
+2015-08-12T18:46:15.987-0300 I NETWORK  [conn175] end connection 127.0.0.1:54230 (4 connections now open)
+2015-08-12T18:46:15.987-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54248 #177 (6 connections now open)
+2015-08-12T18:46:15.996-0300 I NETWORK  [conn176] end connection 127.0.0.1:54231 (4 connections now open)
+2015-08-12T18:46:15.996-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54249 #178 (5 connections now open)
+2015-08-12T18:46:45.995-0300 I NETWORK  [conn177] end connection 127.0.0.1:54248 (4 connections now open)
+2015-08-12T18:46:45.995-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54265 #179 (5 connections now open)
+2015-08-12T18:46:46.004-0300 I NETWORK  [conn178] end connection 127.0.0.1:54249 (4 connections now open)
+2015-08-12T18:46:46.004-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54267 #180 (5 connections now open)
+2015-08-12T18:47:16.002-0300 I NETWORK  [conn179] end connection 127.0.0.1:54265 (4 connections now open)
+2015-08-12T18:47:16.003-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54284 #181 (5 connections now open)
+2015-08-12T18:47:16.014-0300 I NETWORK  [conn180] end connection 127.0.0.1:54267 (4 connections now open)
+2015-08-12T18:47:16.015-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54285 #182 (5 connections now open)
+2015-08-12T18:47:46.014-0300 I NETWORK  [conn181] end connection 127.0.0.1:54284 (4 connections now open)
+2015-08-12T18:47:46.014-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54301 #183 (5 connections now open)
+2015-08-12T18:47:46.026-0300 I NETWORK  [conn182] end connection 127.0.0.1:54285 (4 connections now open)
+2015-08-12T18:47:46.026-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54303 #184 (5 connections now open)
+2015-08-12T18:48:16.023-0300 I NETWORK  [conn183] end connection 127.0.0.1:54301 (4 connections now open)
+2015-08-12T18:48:16.023-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54338 #185 (5 connections now open)
+2015-08-12T18:48:16.032-0300 I NETWORK  [conn184] end connection 127.0.0.1:54303 (4 connections now open)
+2015-08-12T18:48:16.032-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54339 #186 (5 connections now open)
+2015-08-12T18:48:46.030-0300 I NETWORK  [conn185] end connection 127.0.0.1:54338 (4 connections now open)
+2015-08-12T18:48:46.030-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54374 #187 (6 connections now open)
+2015-08-12T18:48:46.039-0300 I NETWORK  [conn186] end connection 127.0.0.1:54339 (4 connections now open)
+2015-08-12T18:48:46.039-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54376 #188 (5 connections now open)
+2015-08-12T18:49:16.040-0300 I NETWORK  [conn187] end connection 127.0.0.1:54374 (4 connections now open)
+2015-08-12T18:49:16.040-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54396 #189 (5 connections now open)
+2015-08-12T18:49:16.045-0300 I NETWORK  [conn188] end connection 127.0.0.1:54376 (4 connections now open)
+2015-08-12T18:49:16.045-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54399 #190 (5 connections now open)
+2015-08-12T18:49:46.053-0300 I NETWORK  [conn189] end connection 127.0.0.1:54396 (4 connections now open)
+2015-08-12T18:49:46.054-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54416 #191 (5 connections now open)
+2015-08-12T18:49:46.055-0300 I NETWORK  [conn190] end connection 127.0.0.1:54399 (4 connections now open)
+2015-08-12T18:49:46.055-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54417 #192 (5 connections now open)
+2015-08-12T18:50:16.060-0300 I NETWORK  [conn191] end connection 127.0.0.1:54416 (4 connections now open)
+2015-08-12T18:50:16.060-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54440 #193 (5 connections now open)
+2015-08-12T18:50:16.062-0300 I NETWORK  [conn192] end connection 127.0.0.1:54417 (4 connections now open)
+2015-08-12T18:50:16.062-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54442 #194 (5 connections now open)
+2015-08-12T18:50:46.069-0300 I NETWORK  [conn194] end connection 127.0.0.1:54442 (4 connections now open)
+2015-08-12T18:50:46.069-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54472 #195 (6 connections now open)
+2015-08-12T18:50:46.072-0300 I NETWORK  [conn193] end connection 127.0.0.1:54440 (4 connections now open)
+2015-08-12T18:50:46.072-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54473 #196 (5 connections now open)
+2015-08-12T18:51:16.076-0300 I NETWORK  [conn195] end connection 127.0.0.1:54472 (4 connections now open)
+2015-08-12T18:51:16.077-0300 I NETWORK  [conn196] end connection 127.0.0.1:54473 (3 connections now open)
+2015-08-12T18:51:16.077-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54492 #197 (4 connections now open)
+2015-08-12T18:51:16.077-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54493 #198 (5 connections now open)
+2015-08-12T18:51:46.084-0300 I NETWORK  [conn197] end connection 127.0.0.1:54492 (4 connections now open)
+2015-08-12T18:51:46.085-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54524 #199 (6 connections now open)
+2015-08-12T18:51:46.090-0300 I NETWORK  [conn198] end connection 127.0.0.1:54493 (4 connections now open)
+2015-08-12T18:51:46.090-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54526 #200 (5 connections now open)
+2015-08-12T18:52:16.095-0300 I NETWORK  [conn199] end connection 127.0.0.1:54524 (4 connections now open)
+2015-08-12T18:52:16.096-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54543 #201 (5 connections now open)
+2015-08-12T18:52:16.100-0300 I NETWORK  [conn200] end connection 127.0.0.1:54526 (4 connections now open)
+2015-08-12T18:52:16.101-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54544 #202 (5 connections now open)
+2015-08-12T18:52:46.103-0300 I NETWORK  [conn201] end connection 127.0.0.1:54543 (4 connections now open)
+2015-08-12T18:52:46.104-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54561 #203 (6 connections now open)
+2015-08-12T18:52:46.111-0300 I NETWORK  [conn202] end connection 127.0.0.1:54544 (4 connections now open)
+2015-08-12T18:52:46.112-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54563 #204 (5 connections now open)
+2015-08-12T18:53:16.116-0300 I NETWORK  [conn203] end connection 127.0.0.1:54561 (4 connections now open)
+2015-08-12T18:53:16.117-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54581 #205 (5 connections now open)
+2015-08-12T18:53:16.122-0300 I NETWORK  [conn204] end connection 127.0.0.1:54563 (4 connections now open)
+2015-08-12T18:53:16.122-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54582 #206 (6 connections now open)
+2015-08-12T18:53:46.127-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54614 #207 (6 connections now open)
+2015-08-12T18:53:46.128-0300 I NETWORK  [conn206] end connection 127.0.0.1:54582 (5 connections now open)
+2015-08-12T18:53:46.128-0300 I NETWORK  [conn205] end connection 127.0.0.1:54581 (4 connections now open)
+2015-08-12T18:53:46.128-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54616 #208 (5 connections now open)
+2015-08-12T18:54:16.149-0300 I NETWORK  [conn207] end connection 127.0.0.1:54614 (4 connections now open)
+2015-08-12T18:54:16.149-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54644 #209 (6 connections now open)
+2015-08-12T18:54:16.152-0300 I NETWORK  [conn208] end connection 127.0.0.1:54616 (4 connections now open)
+2015-08-12T18:54:16.153-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54646 #210 (5 connections now open)
+2015-08-12T18:54:46.161-0300 I NETWORK  [conn210] end connection 127.0.0.1:54646 (4 connections now open)
+2015-08-12T18:54:46.161-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54669 #211 (6 connections now open)
+2015-08-12T18:54:46.162-0300 I NETWORK  [conn209] end connection 127.0.0.1:54644 (4 connections now open)
+2015-08-12T18:54:46.162-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54671 #212 (5 connections now open)
+2015-08-12T18:55:16.168-0300 I NETWORK  [conn211] end connection 127.0.0.1:54669 (4 connections now open)
+2015-08-12T18:55:16.168-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54703 #213 (5 connections now open)
+2015-08-12T18:55:16.170-0300 I NETWORK  [conn212] end connection 127.0.0.1:54671 (4 connections now open)
+2015-08-12T18:55:16.170-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54704 #214 (5 connections now open)
+2015-08-12T18:55:46.175-0300 I NETWORK  [conn214] end connection 127.0.0.1:54704 (4 connections now open)
+2015-08-12T18:55:46.175-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54723 #215 (6 connections now open)
+2015-08-12T18:55:46.177-0300 I NETWORK  [conn213] end connection 127.0.0.1:54703 (4 connections now open)
+2015-08-12T18:55:46.177-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54725 #216 (6 connections now open)
+2015-08-12T18:56:16.186-0300 I NETWORK  [conn215] end connection 127.0.0.1:54723 (4 connections now open)
+2015-08-12T18:56:16.186-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54752 #217 (5 connections now open)
+2015-08-12T18:56:16.188-0300 I NETWORK  [conn216] end connection 127.0.0.1:54725 (4 connections now open)
+2015-08-12T18:56:16.188-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54754 #218 (6 connections now open)
+2015-08-12T18:56:46.195-0300 I NETWORK  [conn218] end connection 127.0.0.1:54754 (4 connections now open)
+2015-08-12T18:56:46.195-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54771 #219 (5 connections now open)
+2015-08-12T18:56:46.197-0300 I NETWORK  [conn217] end connection 127.0.0.1:54752 (4 connections now open)
+2015-08-12T18:56:46.197-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54773 #220 (5 connections now open)
+2015-08-12T18:57:16.206-0300 I NETWORK  [conn219] end connection 127.0.0.1:54771 (4 connections now open)
+2015-08-12T18:57:16.206-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54790 #221 (5 connections now open)
+2015-08-12T18:57:16.209-0300 I NETWORK  [conn220] end connection 127.0.0.1:54773 (4 connections now open)
+2015-08-12T18:57:16.209-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54792 #222 (5 connections now open)
+2015-08-12T18:57:46.219-0300 I NETWORK  [conn221] end connection 127.0.0.1:54790 (4 connections now open)
+2015-08-12T18:57:46.219-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54808 #223 (6 connections now open)
+2015-08-12T18:57:46.222-0300 I NETWORK  [conn222] end connection 127.0.0.1:54792 (4 connections now open)
+2015-08-12T18:57:46.222-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54810 #224 (5 connections now open)
+2015-08-12T18:58:16.232-0300 I NETWORK  [conn223] end connection 127.0.0.1:54808 (4 connections now open)
+2015-08-12T18:58:16.232-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54826 #225 (6 connections now open)
+2015-08-12T18:58:16.232-0300 I NETWORK  [conn224] end connection 127.0.0.1:54810 (4 connections now open)
+2015-08-12T18:58:16.232-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54827 #226 (5 connections now open)
+2015-08-12T18:58:46.239-0300 I NETWORK  [conn225] end connection 127.0.0.1:54826 (4 connections now open)
+2015-08-12T18:58:46.239-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54843 #227 (5 connections now open)
+2015-08-12T18:58:46.244-0300 I NETWORK  [conn226] end connection 127.0.0.1:54827 (4 connections now open)
+2015-08-12T18:58:46.244-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54846 #228 (6 connections now open)
+2015-08-12T18:59:16.251-0300 I NETWORK  [conn227] end connection 127.0.0.1:54843 (4 connections now open)
+2015-08-12T18:59:16.251-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54862 #229 (5 connections now open)
+2015-08-12T18:59:16.257-0300 I NETWORK  [conn228] end connection 127.0.0.1:54846 (4 connections now open)
+2015-08-12T18:59:16.257-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54863 #230 (5 connections now open)
+2015-08-12T18:59:46.261-0300 I NETWORK  [conn229] end connection 127.0.0.1:54862 (4 connections now open)
+2015-08-12T18:59:46.261-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54880 #231 (6 connections now open)
+2015-08-12T18:59:46.269-0300 I NETWORK  [conn230] end connection 127.0.0.1:54863 (4 connections now open)
+2015-08-12T18:59:46.269-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54883 #232 (5 connections now open)
+2015-08-12T19:00:16.273-0300 I NETWORK  [conn231] end connection 127.0.0.1:54880 (4 connections now open)
+2015-08-12T19:00:16.273-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54903 #233 (6 connections now open)
+2015-08-12T19:00:16.281-0300 I NETWORK  [conn232] end connection 127.0.0.1:54883 (4 connections now open)
+2015-08-12T19:00:16.282-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54906 #234 (5 connections now open)
+2015-08-12T19:00:46.285-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54922 #235 (6 connections now open)
+2015-08-12T19:00:46.285-0300 I NETWORK  [conn233] end connection 127.0.0.1:54903 (4 connections now open)
+2015-08-12T19:00:46.293-0300 I NETWORK  [conn234] end connection 127.0.0.1:54906 (4 connections now open)
+2015-08-12T19:00:46.297-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54923 #236 (5 connections now open)
+2015-08-12T19:01:16.290-0300 I NETWORK  [conn235] end connection 127.0.0.1:54922 (4 connections now open)
+2015-08-12T19:01:16.291-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54939 #237 (5 connections now open)
+2015-08-12T19:01:16.307-0300 I NETWORK  [conn236] end connection 127.0.0.1:54923 (4 connections now open)
+2015-08-12T19:01:16.307-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54942 #238 (6 connections now open)

@@ -1,0 +1,846 @@
+2015-08-12T18:02:35.830-0300 I JOURNAL  [initandlisten] journal dir=/data/shard2/rs0/journal
+2015-08-12T18:02:35.830-0300 I JOURNAL  [initandlisten] recover : no journal files present, no recovery needed
+2015-08-12T18:02:39.038-0300 I JOURNAL  [initandlisten] preallocateIsFaster=true 39.1
+2015-08-12T18:02:44.896-0300 I JOURNAL  [initandlisten] preallocateIsFaster=true 33.52
+2015-08-12T18:02:48.936-0300 I JOURNAL  [initandlisten] preallocateIsFaster=true 36.06
+2015-08-12T18:02:48.936-0300 I JOURNAL  [initandlisten] preallocateIsFaster check took 13.105 secs
+2015-08-12T18:02:48.936-0300 I JOURNAL  [initandlisten] preallocating a journal file /data/shard2/rs0/journal/prealloc.0
+2015-08-12T18:02:51.127-0300 I JOURNAL  [initandlisten] preallocating a journal file /data/shard2/rs0/journal/prealloc.1
+2015-08-12T18:02:53.106-0300 I JOURNAL  [initandlisten] preallocating a journal file /data/shard2/rs0/journal/prealloc.2
+2015-08-12T18:02:55.956-0300 I JOURNAL  [durability] Durability thread started
+2015-08-12T18:02:55.956-0300 I JOURNAL  [journal writer] Journal writer thread started
+2015-08-12T18:02:56.049-0300 I CONTROL  [initandlisten] MongoDB starting : pid=20586 port=57017 dbpath=/data/shard2/rs0 64-bit host=jordan
+2015-08-12T18:02:56.049-0300 I CONTROL  [initandlisten] 
+2015-08-12T18:02:56.049-0300 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2015-08-12T18:02:56.049-0300 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2015-08-12T18:02:56.049-0300 I CONTROL  [initandlisten] 
+2015-08-12T18:02:56.049-0300 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2015-08-12T18:02:56.049-0300 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2015-08-12T18:02:56.049-0300 I CONTROL  [initandlisten] 
+2015-08-12T18:02:56.049-0300 I CONTROL  [initandlisten] db version v3.0.5
+2015-08-12T18:02:56.049-0300 I CONTROL  [initandlisten] git version: 8bc4ae20708dbb493cb09338d9e7be6698e4a3a3
+2015-08-12T18:02:56.050-0300 I CONTROL  [initandlisten] build info: Linux build2.ny.cbi.10gen.cc 2.6.32-431.3.1.el6.x86_64 #1 SMP Fri Jan 3 21:39:27 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2015-08-12T18:02:56.050-0300 I CONTROL  [initandlisten] allocator: tcmalloc
+2015-08-12T18:02:56.050-0300 I CONTROL  [initandlisten] options: { net: { port: 57017 }, processManagement: { fork: true }, replication: { replSet: "s2" }, sharding: { clusterRole: "shardsvr" }, storage: { dbPath: "/data/shard2/rs0", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", path: "s2-r0.log" } }
+2015-08-12T18:02:56.050-0300 I INDEX    [initandlisten] allocating new ns file /data/shard2/rs0/local.ns, filling with zeroes...
+2015-08-12T18:02:56.612-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs0/local.0, filling with zeroes...
+2015-08-12T18:02:56.612-0300 I STORAGE  [FileAllocator] creating directory /data/shard2/rs0/_tmp
+2015-08-12T18:02:56.886-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs0/local.0, size: 16MB,  took 0.158 secs
+2015-08-12T18:02:56.971-0300 I REPL     [initandlisten] Did not find local replica set configuration document at startup;  NoMatchingDocument Did not find replica set configuration document in local.system.replset
+2015-08-12T18:02:56.987-0300 I NETWORK  [initandlisten] waiting for connections on port 57017
+2015-08-12T18:03:45.148-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56169 #1 (1 connection now open)
+2015-08-12T18:03:45.185-0300 I REPL     [conn1] replSetInitiate admin command received from client
+2015-08-12T18:03:45.192-0300 I REPL     [conn1] replSet replSetInitiate config object with 3 members parses ok
+2015-08-12T18:03:45.211-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56174 #2 (2 connections now open)
+2015-08-12T18:03:45.213-0300 I REPL     [ReplicationExecutor] New replica set config in use: { _id: "s2", version: 1, members: [ { _id: 0, host: "localhost:57017", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 1, host: "localhost:57018", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "localhost:57019", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatTimeoutSecs: 10, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 } } }
+2015-08-12T18:03:45.213-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56175 #3 (3 connections now open)
+2015-08-12T18:03:45.213-0300 I REPL     [ReplicationExecutor] This node is localhost:57017 in the config
+2015-08-12T18:03:45.213-0300 I REPL     [ReplicationExecutor] transition to STARTUP2
+2015-08-12T18:03:45.213-0300 I REPL     [conn1] ******
+2015-08-12T18:03:45.213-0300 I REPL     [conn1] creating replication oplog of size: 12732MB...
+2015-08-12T18:03:45.213-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs0/local.1, filling with zeroes...
+2015-08-12T18:03:45.213-0300 I REPL     [ReplicationExecutor] Member localhost:57019 is now in state STARTUP
+2015-08-12T18:03:45.214-0300 I REPL     [ReplicationExecutor] Member localhost:57018 is now in state STARTUP
+2015-08-12T18:03:45.215-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56176 #4 (4 connections now open)
+2015-08-12T18:03:45.216-0300 I NETWORK  [conn4] end connection 127.0.0.1:56176 (3 connections now open)
+2015-08-12T18:03:45.225-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56180 #5 (4 connections now open)
+2015-08-12T18:03:45.226-0300 I NETWORK  [conn5] end connection 127.0.0.1:56180 (3 connections now open)
+2015-08-12T18:03:45.246-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs0/local.1, size: 511MB,  took 0.032 secs
+2015-08-12T18:03:45.247-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs0/local.2, filling with zeroes...
+2015-08-12T18:03:45.347-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs0/local.2, size: 511MB,  took 0.099 secs
+2015-08-12T18:03:45.347-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs0/local.3, filling with zeroes...
+2015-08-12T18:03:45.394-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs0/local.3, size: 511MB,  took 0.046 secs
+2015-08-12T18:03:45.395-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs0/local.4, filling with zeroes...
+2015-08-12T18:03:45.473-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs0/local.4, size: 511MB,  took 0.076 secs
+2015-08-12T18:03:45.473-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs0/local.5, filling with zeroes...
+2015-08-12T18:03:45.552-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs0/local.5, size: 511MB,  took 0.078 secs
+2015-08-12T18:03:45.552-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs0/local.6, filling with zeroes...
+2015-08-12T18:03:45.597-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs0/local.6, size: 511MB,  took 0.044 secs
+2015-08-12T18:03:45.598-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs0/local.7, filling with zeroes...
+2015-08-12T18:03:45.665-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs0/local.7, size: 511MB,  took 0.066 secs
+2015-08-12T18:03:45.666-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs0/local.8, filling with zeroes...
+2015-08-12T18:03:45.711-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs0/local.8, size: 511MB,  took 0.044 secs
+2015-08-12T18:03:45.711-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs0/local.9, filling with zeroes...
+2015-08-12T18:03:45.790-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs0/local.9, size: 511MB,  took 0.078 secs
+2015-08-12T18:03:45.790-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs0/local.10, filling with zeroes...
+2015-08-12T18:03:45.835-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs0/local.10, size: 511MB,  took 0.044 secs
+2015-08-12T18:03:45.836-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs0/local.11, filling with zeroes...
+2015-08-12T18:03:45.914-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs0/local.11, size: 511MB,  took 0.078 secs
+2015-08-12T18:03:45.915-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs0/local.12, filling with zeroes...
+2015-08-12T18:03:45.961-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs0/local.12, size: 511MB,  took 0.046 secs
+2015-08-12T18:03:45.962-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs0/local.13, filling with zeroes...
+2015-08-12T18:03:46.029-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs0/local.13, size: 511MB,  took 0.066 secs
+2015-08-12T18:03:46.030-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs0/local.14, filling with zeroes...
+2015-08-12T18:03:46.075-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs0/local.14, size: 511MB,  took 0.044 secs
+2015-08-12T18:03:46.075-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs0/local.15, filling with zeroes...
+2015-08-12T18:03:46.287-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs0/local.15, size: 511MB,  took 0.211 secs
+2015-08-12T18:03:46.288-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs0/local.16, filling with zeroes...
+2015-08-12T18:03:46.333-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs0/local.16, size: 511MB,  took 0.044 secs
+2015-08-12T18:03:46.334-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs0/local.17, filling with zeroes...
+2015-08-12T18:03:46.401-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs0/local.17, size: 511MB,  took 0.067 secs
+2015-08-12T18:03:46.401-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs0/local.18, filling with zeroes...
+2015-08-12T18:03:46.546-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs0/local.18, size: 511MB,  took 0.144 secs
+2015-08-12T18:03:46.547-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs0/local.19, filling with zeroes...
+2015-08-12T18:03:46.614-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs0/local.19, size: 511MB,  took 0.066 secs
+2015-08-12T18:03:46.615-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs0/local.20, filling with zeroes...
+2015-08-12T18:03:46.683-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs0/local.20, size: 511MB,  took 0.068 secs
+2015-08-12T18:03:46.684-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs0/local.21, filling with zeroes...
+2015-08-12T18:03:46.729-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs0/local.21, size: 511MB,  took 0.044 secs
+2015-08-12T18:03:46.730-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs0/local.22, filling with zeroes...
+2015-08-12T18:03:46.786-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs0/local.22, size: 511MB,  took 0.055 secs
+2015-08-12T18:03:46.786-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs0/local.23, filling with zeroes...
+2015-08-12T18:03:46.832-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs0/local.23, size: 511MB,  took 0.045 secs
+2015-08-12T18:03:46.832-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs0/local.24, filling with zeroes...
+2015-08-12T18:03:46.900-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs0/local.24, size: 511MB,  took 0.067 secs
+2015-08-12T18:03:46.900-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs0/local.25, filling with zeroes...
+2015-08-12T18:03:46.945-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs0/local.25, size: 511MB,  took 0.044 secs
+2015-08-12T18:03:47.214-0300 I REPL     [ReplicationExecutor] Member localhost:57019 is now in state STARTUP2
+2015-08-12T18:03:47.214-0300 I REPL     [ReplicationExecutor] Member localhost:57018 is now in state STARTUP2
+2015-08-12T18:03:49.600-0300 I REPL     [conn1] ******
+2015-08-12T18:03:49.600-0300 I REPL     [conn1] Starting replication applier threads
+2015-08-12T18:03:49.601-0300 I COMMAND  [conn1] command admin.$cmd command: replSetInitiate { replSetInitiate: { _id: "s2", members: [ { _id: 0.0, host: "localhost:57017" }, { _id: 1.0, host: "localhost:57018" }, { _id: 2.0, host: "localhost:57019" } ] } } keyUpdates:0 writeConflicts:0 numYields:0 reslen:37 locks:{ Global: { acquireCount: { r: 5, w: 3, W: 2 }, acquireWaitCount: { W: 1 }, timeAcquiringMicros: { W: 70 } }, MMAPV1Journal: { acquireCount: { w: 7 }, acquireWaitCount: { w: 1 }, timeAcquiringMicros: { w: 131 } }, Database: { acquireCount: { w: 1, W: 2 } }, Metadata: { acquireCount: { W: 27 } }, oplog: { acquireCount: { w: 1 } } } 4416ms
+2015-08-12T18:03:49.601-0300 I REPL     [ReplicationExecutor] transition to RECOVERING
+2015-08-12T18:03:49.602-0300 I REPL     [ReplicationExecutor] transition to SECONDARY
+2015-08-12T18:03:49.605-0300 I NETWORK  [conn1] end connection 127.0.0.1:56169 (2 connections now open)
+2015-08-12T18:03:51.216-0300 I REPL     [ReplicationExecutor] Standing for election
+2015-08-12T18:03:51.216-0300 I REPL     [ReplicationExecutor] not electing self, localhost:57018 would veto with 'I don't think localhost:57017 is electable because the member is not currently a secondary (mask 0x8)'
+2015-08-12T18:03:51.216-0300 I REPL     [ReplicationExecutor] not electing self, we are not freshest
+2015-08-12T18:03:51.528-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56182 #6 (3 connections now open)
+2015-08-12T18:03:51.534-0300 I NETWORK  [conn6] end connection 127.0.0.1:56182 (2 connections now open)
+2015-08-12T18:03:53.216-0300 I REPL     [ReplicationExecutor] Member localhost:57018 is now in state SECONDARY
+2015-08-12T18:03:53.216-0300 I REPL     [ReplicationExecutor] Standing for election
+2015-08-12T18:03:53.217-0300 I REPL     [ReplicationExecutor] replSet info electSelf
+2015-08-12T18:03:53.218-0300 I REPL     [ReplicationExecutor] received vote: 1 votes from localhost:57019
+2015-08-12T18:03:53.218-0300 I REPL     [ReplicationExecutor] replSet election succeeded, assuming primary role
+2015-08-12T18:03:53.218-0300 I REPL     [ReplicationExecutor] transition to PRIMARY
+2015-08-12T18:03:53.603-0300 I REPL     [rsSync] transition to primary complete; database writes are now permitted
+2015-08-12T18:03:55.218-0300 I REPL     [ReplicationExecutor] Member localhost:57019 is now in state SECONDARY
+2015-08-12T18:04:15.225-0300 I NETWORK  [conn3] end connection 127.0.0.1:56175 (1 connection now open)
+2015-08-12T18:04:15.225-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56198 #7 (2 connections now open)
+2015-08-12T18:04:15.234-0300 I NETWORK  [conn2] end connection 127.0.0.1:56174 (1 connection now open)
+2015-08-12T18:04:15.234-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56200 #8 (2 connections now open)
+2015-08-12T18:04:45.230-0300 I NETWORK  [conn7] end connection 127.0.0.1:56198 (1 connection now open)
+2015-08-12T18:04:45.231-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56232 #9 (2 connections now open)
+2015-08-12T18:04:45.244-0300 I NETWORK  [conn8] end connection 127.0.0.1:56200 (1 connection now open)
+2015-08-12T18:04:45.244-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56235 #10 (3 connections now open)
+2015-08-12T18:05:15.237-0300 I NETWORK  [conn9] end connection 127.0.0.1:56232 (1 connection now open)
+2015-08-12T18:05:15.238-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56253 #11 (2 connections now open)
+2015-08-12T18:05:15.252-0300 I NETWORK  [conn10] end connection 127.0.0.1:56235 (1 connection now open)
+2015-08-12T18:05:15.253-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56256 #12 (2 connections now open)
+2015-08-12T18:05:45.245-0300 I NETWORK  [conn11] end connection 127.0.0.1:56253 (1 connection now open)
+2015-08-12T18:05:45.245-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56272 #13 (3 connections now open)
+2015-08-12T18:05:45.262-0300 I NETWORK  [conn12] end connection 127.0.0.1:56256 (1 connection now open)
+2015-08-12T18:05:45.263-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56276 #14 (2 connections now open)
+2015-08-12T18:05:50.265-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56282 #15 (3 connections now open)
+2015-08-12T18:05:50.265-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56283 #16 (4 connections now open)
+2015-08-12T18:05:51.003-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56284 #17 (5 connections now open)
+2015-08-12T18:05:51.003-0300 I INDEX    [conn17] allocating new ns file /data/shard2/rs0/school.ns, filling with zeroes...
+2015-08-12T18:05:51.313-0300 I STORAGE  [FileAllocator] allocating new datafile /data/shard2/rs0/school.0, filling with zeroes...
+2015-08-12T18:05:51.346-0300 I STORAGE  [FileAllocator] done allocating datafile /data/shard2/rs0/school.0, size: 16MB,  took 0.032 secs
+2015-08-12T18:05:51.370-0300 I INDEX    [conn17] build index on: school.students properties: { v: 1, key: { student_id: 1.0 }, name: "student_id_1", ns: "school.students" }
+2015-08-12T18:05:51.370-0300 I INDEX    [conn17] 	 building index using bulk method
+2015-08-12T18:05:51.371-0300 I INDEX    [conn17] build index done.  scanned 0 total records. 0 secs
+2015-08-12T18:05:51.371-0300 I WRITE    [conn17] insert school.system.indexes query: { ns: "school.students", key: { student_id: 1.0 }, name: "student_id_1" } ninserted:1 keyUpdates:0 writeConflicts:0 numYields:0 locks:{ Global: { acquireCount: { r: 3, w: 3 } }, MMAPV1Journal: { acquireCount: { w: 9 } }, Database: { acquireCount: { w: 2, W: 1 } }, Collection: { acquireCount: { W: 1 } }, Metadata: { acquireCount: { W: 5 } }, oplog: { acquireCount: { w: 2 } } } 367ms
+2015-08-12T18:05:51.371-0300 I COMMAND  [conn17] command school.$cmd command: insert { insert: "system.indexes", documents: [ { ns: "school.students", key: { student_id: 1.0 }, name: "student_id_1" } ], ordered: true, metadata: { shardName: "s2", shardVersion: [ Timestamp 0|0, ObjectId('000000000000000000000000') ], session: 0 } } ntoreturn:1 keyUpdates:0 writeConflicts:0 numYields:0 reslen:80 locks:{ Global: { acquireCount: { r: 3, w: 3 } }, MMAPV1Journal: { acquireCount: { w: 9 } }, Database: { acquireCount: { w: 2, W: 1 } }, Collection: { acquireCount: { W: 1 } }, Metadata: { acquireCount: { W: 5 } }, oplog: { acquireCount: { w: 2 } } } 367ms
+2015-08-12T18:05:51.858-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56285 #18 (6 connections now open)
+2015-08-12T18:05:51.858-0300 I SHARDING [conn18] first cluster operation detected, adding sharding hook to enable versioning and authentication to remote servers
+2015-08-12T18:05:51.859-0300 I SHARDING [conn18] remote client 127.0.0.1:56285 initialized this host (s2/localhost:57017,localhost:57018,localhost:57019) as shard s2
+2015-08-12T18:05:51.859-0300 I SHARDING [conn18] remotely refreshing metadata for school.students with requested shard version 1|0||55cbb52fc4dc6333e59c63aa, current shard version is 0|0||000000000000000000000000, current metadata version is 0|0||000000000000000000000000
+2015-08-12T18:05:51.859-0300 I NETWORK  [conn18] SyncClusterConnection connecting to [localhost:57040]
+2015-08-12T18:05:51.859-0300 I NETWORK  [conn18] SyncClusterConnection connecting to [localhost:57041]
+2015-08-12T18:05:51.859-0300 I NETWORK  [conn18] SyncClusterConnection connecting to [localhost:57042]
+2015-08-12T18:05:51.859-0300 I SHARDING [conn18] collection school.students was previously unsharded, new metadata loaded with shard version 1|0||55cbb52fc4dc6333e59c63aa
+2015-08-12T18:05:51.859-0300 I SHARDING [conn18] collection version was loaded at version 1|0||55cbb52fc4dc6333e59c63aa, took 0ms
+2015-08-12T18:05:54.247-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56294 #19 (7 connections now open)
+2015-08-12T18:05:54.248-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56295 #20 (8 connections now open)
+2015-08-12T18:05:54.257-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56296 #21 (9 connections now open)
+2015-08-12T18:05:54.257-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56297 #22 (10 connections now open)
+2015-08-12T18:06:15.253-0300 I NETWORK  [conn13] end connection 127.0.0.1:56272 (9 connections now open)
+2015-08-12T18:06:15.253-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56319 #23 (10 connections now open)
+2015-08-12T18:06:15.269-0300 I NETWORK  [conn14] end connection 127.0.0.1:56276 (9 connections now open)
+2015-08-12T18:06:15.269-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56323 #24 (10 connections now open)
+2015-08-12T18:06:45.265-0300 I NETWORK  [conn23] end connection 127.0.0.1:56319 (9 connections now open)
+2015-08-12T18:06:45.266-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56341 #25 (11 connections now open)
+2015-08-12T18:06:45.273-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56343 #26 (11 connections now open)
+2015-08-12T18:06:45.273-0300 I NETWORK  [conn24] end connection 127.0.0.1:56323 (10 connections now open)
+2015-08-12T18:07:15.273-0300 I NETWORK  [conn25] end connection 127.0.0.1:56341 (9 connections now open)
+2015-08-12T18:07:15.273-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56361 #27 (11 connections now open)
+2015-08-12T18:07:15.280-0300 I NETWORK  [conn26] end connection 127.0.0.1:56343 (9 connections now open)
+2015-08-12T18:07:15.280-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56362 #28 (10 connections now open)
+2015-08-12T18:07:45.278-0300 I NETWORK  [conn27] end connection 127.0.0.1:56361 (9 connections now open)
+2015-08-12T18:07:45.278-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56386 #29 (10 connections now open)
+2015-08-12T18:07:45.292-0300 I NETWORK  [conn28] end connection 127.0.0.1:56362 (9 connections now open)
+2015-08-12T18:07:45.292-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56388 #30 (10 connections now open)
+2015-08-12T18:08:15.289-0300 I NETWORK  [conn29] end connection 127.0.0.1:56386 (9 connections now open)
+2015-08-12T18:08:15.289-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56405 #31 (10 connections now open)
+2015-08-12T18:08:15.298-0300 I NETWORK  [conn30] end connection 127.0.0.1:56388 (9 connections now open)
+2015-08-12T18:08:15.298-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56407 #32 (10 connections now open)
+2015-08-12T18:08:18.275-0300 I SHARDING [conn16] request split points lookup for chunk school.students { : MinKey } -->> { : MaxKey }
+2015-08-12T18:08:18.302-0300 W SHARDING [conn16] chunk is larger than 1024 bytes because of key { student_id: 0.0 }
+2015-08-12T18:08:18.304-0300 I SHARDING [conn16] request split points lookup for chunk school.students { : MinKey } -->> { : MaxKey }
+2015-08-12T18:08:18.305-0300 W SHARDING [conn16] chunk is larger than 1024 bytes because of key { student_id: 0.0 }
+2015-08-12T18:08:18.305-0300 I SHARDING [conn16] request split points lookup for chunk school.students { : MinKey } -->> { : MaxKey }
+2015-08-12T18:08:18.306-0300 W SHARDING [conn16] chunk is larger than 1024 bytes because of key { student_id: 0.0 }
+2015-08-12T18:08:18.307-0300 I SHARDING [conn16] request split points lookup for chunk school.students { : MinKey } -->> { : MaxKey }
+2015-08-12T18:08:18.307-0300 W SHARDING [conn16] chunk is larger than 1024 bytes because of key { student_id: 0.0 }
+2015-08-12T18:08:18.308-0300 I SHARDING [conn16] request split points lookup for chunk school.students { : MinKey } -->> { : MaxKey }
+2015-08-12T18:08:18.308-0300 W SHARDING [conn16] chunk is larger than 1024 bytes because of key { student_id: 0.0 }
+2015-08-12T18:08:18.310-0300 I SHARDING [conn16] request split points lookup for chunk school.students { : MinKey } -->> { : MaxKey }
+2015-08-12T18:08:18.310-0300 W SHARDING [conn16] chunk is larger than 1024 bytes because of key { student_id: 0.0 }
+2015-08-12T18:08:18.311-0300 I SHARDING [conn16] request split points lookup for chunk school.students { : MinKey } -->> { : MaxKey }
+2015-08-12T18:08:18.311-0300 W SHARDING [conn16] chunk is larger than 1024 bytes because of key { student_id: 0.0 }
+2015-08-12T18:08:18.312-0300 I SHARDING [conn16] request split points lookup for chunk school.students { : MinKey } -->> { : MaxKey }
+2015-08-12T18:08:18.312-0300 W SHARDING [conn16] chunk is larger than 1024 bytes because of key { student_id: 0.0 }
+2015-08-12T18:08:18.313-0300 I SHARDING [conn16] request split points lookup for chunk school.students { : MinKey } -->> { : MaxKey }
+2015-08-12T18:08:18.313-0300 W SHARDING [conn16] chunk is larger than 1024 bytes because of key { student_id: 0.0 }
+2015-08-12T18:08:18.314-0300 I SHARDING [conn16] request split points lookup for chunk school.students { : MinKey } -->> { : MaxKey }
+2015-08-12T18:08:18.314-0300 W SHARDING [conn16] chunk is larger than 1024 bytes because of key { student_id: 0.0 }
+2015-08-12T18:08:18.314-0300 W SHARDING [conn16] chunk is larger than 1024 bytes because of key { student_id: 1.0 }
+2015-08-12T18:08:18.317-0300 I SHARDING [conn16] request split points lookup for chunk school.students { : MinKey } -->> { : MaxKey }
+2015-08-12T18:08:18.317-0300 W SHARDING [conn16] chunk is larger than 1024 bytes because of key { student_id: 0.0 }
+2015-08-12T18:08:18.317-0300 W SHARDING [conn16] chunk is larger than 1024 bytes because of key { student_id: 1.0 }
+2015-08-12T18:08:18.318-0300 I SHARDING [conn16] request split points lookup for chunk school.students { : MinKey } -->> { : MaxKey }
+2015-08-12T18:08:18.318-0300 W SHARDING [conn16] chunk is larger than 1024 bytes because of key { student_id: 0.0 }
+2015-08-12T18:08:18.318-0300 W SHARDING [conn16] chunk is larger than 1024 bytes because of key { student_id: 1.0 }
+2015-08-12T18:08:18.319-0300 I SHARDING [conn16] request split points lookup for chunk school.students { : MinKey } -->> { : MaxKey }
+2015-08-12T18:08:18.319-0300 W SHARDING [conn16] chunk is larger than 1024 bytes because of key { student_id: 0.0 }
+2015-08-12T18:08:18.319-0300 W SHARDING [conn16] chunk is larger than 1024 bytes because of key { student_id: 1.0 }
+2015-08-12T18:08:18.320-0300 I SHARDING [conn16] request split points lookup for chunk school.students { : MinKey } -->> { : MaxKey }
+2015-08-12T18:08:18.320-0300 W SHARDING [conn16] chunk is larger than 1024 bytes because of key { student_id: 0.0 }
+2015-08-12T18:08:18.320-0300 W SHARDING [conn16] chunk is larger than 1024 bytes because of key { student_id: 1.0 }
+2015-08-12T18:08:18.321-0300 I SHARDING [conn16] request split points lookup for chunk school.students { : MinKey } -->> { : MaxKey }
+2015-08-12T18:08:18.321-0300 W SHARDING [conn16] chunk is larger than 1024 bytes because of key { student_id: 0.0 }
+2015-08-12T18:08:18.321-0300 W SHARDING [conn16] chunk is larger than 1024 bytes because of key { student_id: 1.0 }
+2015-08-12T18:08:18.322-0300 I SHARDING [conn16] request split points lookup for chunk school.students { : MinKey } -->> { : MaxKey }
+2015-08-12T18:08:18.322-0300 W SHARDING [conn16] chunk is larger than 1024 bytes because of key { student_id: 0.0 }
+2015-08-12T18:08:18.322-0300 W SHARDING [conn16] chunk is larger than 1024 bytes because of key { student_id: 1.0 }
+2015-08-12T18:08:18.322-0300 I SHARDING [conn16] request split points lookup for chunk school.students { : MinKey } -->> { : MaxKey }
+2015-08-12T18:08:18.322-0300 W SHARDING [conn16] chunk is larger than 1024 bytes because of key { student_id: 0.0 }
+2015-08-12T18:08:18.322-0300 W SHARDING [conn16] chunk is larger than 1024 bytes because of key { student_id: 1.0 }
+2015-08-12T18:08:18.323-0300 I SHARDING [conn16] received splitChunk request: { splitChunk: "school.students", keyPattern: { student_id: 1.0 }, min: { student_id: MinKey }, max: { student_id: MaxKey }, from: "s2", splitKeys: [ { student_id: 0.0 }, { student_id: 2.0 } ], shardId: "school.students-student_id_MinKey", configdb: "localhost:57040,localhost:57041,localhost:57042", epoch: ObjectId('55cbb52fc4dc6333e59c63aa') }
+2015-08-12T18:08:18.327-0300 I SHARDING [LockPinger] creating distributed lock ping thread for localhost:57040,localhost:57041,localhost:57042 and process jordan:57017:1439413698:907481702 (sleeping for 30000ms)
+2015-08-12T18:08:18.327-0300 I NETWORK  [LockPinger] SyncClusterConnection connecting to [localhost:57040]
+2015-08-12T18:08:18.327-0300 I NETWORK  [LockPinger] SyncClusterConnection connecting to [localhost:57041]
+2015-08-12T18:08:18.327-0300 I NETWORK  [LockPinger] SyncClusterConnection connecting to [localhost:57042]
+2015-08-12T18:08:18.664-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:08:18 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:08:18.831-0300 I SHARDING [conn16] distributed lock 'school.students/jordan:57017:1439413698:907481702' acquired, ts : 55cbb5c2f7f2f9d723447bb1
+2015-08-12T18:08:18.831-0300 I SHARDING [conn16] remotely refreshing metadata for school.students based on current shard version 1|0||55cbb52fc4dc6333e59c63aa, current metadata version is 1|0||55cbb52fc4dc6333e59c63aa
+2015-08-12T18:08:18.832-0300 I SHARDING [conn16] metadata of collection school.students already up to date (shard version : 1|0||55cbb52fc4dc6333e59c63aa, took 0ms)
+2015-08-12T18:08:18.832-0300 I SHARDING [conn16] splitChunk accepted at version 1|0||55cbb52fc4dc6333e59c63aa
+2015-08-12T18:08:18.998-0300 I SHARDING [conn16] about to log metadata event: { _id: "jordan-2015-08-12T21:08:18-55cbb5c2f7f2f9d723447bb2", server: "jordan", clientAddr: "127.0.0.1:56283", time: new Date(1439413698997), what: "multi-split", ns: "school.students", details: { before: { min: { student_id: MinKey }, max: { student_id: MaxKey } }, number: 1, of: 3, chunk: { min: { student_id: MinKey }, max: { student_id: 0.0 }, lastmod: Timestamp 1000|1, lastmodEpoch: ObjectId('55cbb52fc4dc6333e59c63aa') } } }
+2015-08-12T18:08:19.622-0300 I SHARDING [conn16] about to log metadata event: { _id: "jordan-2015-08-12T21:08:19-55cbb5c3f7f2f9d723447bb3", server: "jordan", clientAddr: "127.0.0.1:56283", time: new Date(1439413699622), what: "multi-split", ns: "school.students", details: { before: { min: { student_id: MinKey }, max: { student_id: MaxKey } }, number: 2, of: 3, chunk: { min: { student_id: 0.0 }, max: { student_id: 2.0 }, lastmod: Timestamp 1000|2, lastmodEpoch: ObjectId('55cbb52fc4dc6333e59c63aa') } } }
+2015-08-12T18:08:19.921-0300 I SHARDING [conn16] about to log metadata event: { _id: "jordan-2015-08-12T21:08:19-55cbb5c3f7f2f9d723447bb4", server: "jordan", clientAddr: "127.0.0.1:56283", time: new Date(1439413699921), what: "multi-split", ns: "school.students", details: { before: { min: { student_id: MinKey }, max: { student_id: MaxKey } }, number: 3, of: 3, chunk: { min: { student_id: 2.0 }, max: { student_id: MaxKey }, lastmod: Timestamp 1000|3, lastmodEpoch: ObjectId('55cbb52fc4dc6333e59c63aa') } } }
+2015-08-12T18:08:20.196-0300 I NETWORK  [conn16] SyncClusterConnection connecting to [localhost:57040]
+2015-08-12T18:08:20.197-0300 I NETWORK  [conn16] SyncClusterConnection connecting to [localhost:57041]
+2015-08-12T18:08:20.197-0300 I NETWORK  [conn16] SyncClusterConnection connecting to [localhost:57042]
+2015-08-12T18:08:20.429-0300 I SHARDING [conn16] distributed lock 'school.students/jordan:57017:1439413698:907481702' unlocked. 
+2015-08-12T18:08:20.430-0300 I COMMAND  [conn16] command admin.$cmd command: splitChunk { splitChunk: "school.students", keyPattern: { student_id: 1.0 }, min: { student_id: MinKey }, max: { student_id: MaxKey }, from: "s2", splitKeys: [ { student_id: 0.0 }, { student_id: 2.0 } ], shardId: "school.students-student_id_MinKey", configdb: "localhost:57040,localhost:57041,localhost:57042", epoch: ObjectId('55cbb52fc4dc6333e59c63aa') } ntoreturn:1 keyUpdates:0 writeConflicts:0 numYields:0 reslen:169 locks:{ Global: { acquireCount: { r: 4, w: 2 } }, MMAPV1Journal: { acquireCount: { r: 1, w: 2 } }, Database: { acquireCount: { r: 1, w: 2 } }, Collection: { acquireCount: { R: 1, W: 2 } } } 2106ms
+2015-08-12T18:08:20.438-0300 I SHARDING [conn16] received moveChunk request: { moveChunk: "school.students", from: "s2/localhost:57017,localhost:57018,localhost:57019", to: "s0/localhost:37017,localhost:37018,localhost:37019", fromShard: "s2", toShard: "s0", min: { student_id: 2.0 }, max: { student_id: MaxKey }, maxChunkSizeBytes: 67108864, shardId: "school.students-student_id_2.0", configdb: "localhost:57040,localhost:57041,localhost:57042", secondaryThrottle: false, waitForDelete: false, maxTimeMS: 0, epoch: ObjectId('55cbb52fc4dc6333e59c63aa') }
+2015-08-12T18:08:20.718-0300 I SHARDING [conn16] distributed lock 'school.students/jordan:57017:1439413698:907481702' acquired, ts : 55cbb5c4f7f2f9d723447bb5
+2015-08-12T18:08:20.718-0300 I SHARDING [conn16] about to log metadata event: { _id: "jordan-2015-08-12T21:08:20-55cbb5c4f7f2f9d723447bb6", server: "jordan", clientAddr: "127.0.0.1:56283", time: new Date(1439413700718), what: "moveChunk.start", ns: "school.students", details: { min: { student_id: 2.0 }, max: { student_id: MaxKey }, from: "s2", to: "s0" } }
+2015-08-12T18:08:20.940-0300 I SHARDING [conn16] remotely refreshing metadata for school.students based on current shard version 1|3||55cbb52fc4dc6333e59c63aa, current metadata version is 1|3||55cbb52fc4dc6333e59c63aa
+2015-08-12T18:08:20.941-0300 I SHARDING [conn16] metadata of collection school.students already up to date (shard version : 1|3||55cbb52fc4dc6333e59c63aa, took 0ms)
+2015-08-12T18:08:20.941-0300 I SHARDING [conn16] moveChunk request accepted at version 1|3||55cbb52fc4dc6333e59c63aa
+2015-08-12T18:08:20.941-0300 I SHARDING [conn16] moveChunk number of documents: 1
+2015-08-12T18:08:20.941-0300 I NETWORK  [conn16] starting new replica set monitor for replica set s0 with seeds localhost:37017,localhost:37018,localhost:37019
+2015-08-12T18:08:20.941-0300 I NETWORK  [ReplicaSetMonitorWatcher] starting
+2015-08-12T18:08:20.946-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56429 #33 (11 connections now open)
+2015-08-12T18:08:20.946-0300 I SHARDING [conn16] moveChunk data transfer progress: { active: true, ns: "school.students", from: "s2/localhost:57017,localhost:57018,localhost:57019", min: { student_id: 2.0 }, max: { student_id: MaxKey }, shardKeyPattern: { student_id: 1.0 }, state: "ready", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0, $gleStats: { lastOpTime: Timestamp 0|0, electionId: ObjectId('55cbb42ba8e58bebfd82dbfd') } } my mem used: 0
+2015-08-12T18:08:20.947-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56430 #34 (12 connections now open)
+2015-08-12T18:08:20.949-0300 I SHARDING [conn16] moveChunk data transfer progress: { active: true, ns: "school.students", from: "s2/localhost:57017,localhost:57018,localhost:57019", min: { student_id: 2.0 }, max: { student_id: MaxKey }, shardKeyPattern: { student_id: 1.0 }, state: "ready", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0, $gleStats: { lastOpTime: Timestamp 0|0, electionId: ObjectId('55cbb42ba8e58bebfd82dbfd') } } my mem used: 0
+2015-08-12T18:08:20.953-0300 I SHARDING [conn16] moveChunk data transfer progress: { active: true, ns: "school.students", from: "s2/localhost:57017,localhost:57018,localhost:57019", min: { student_id: 2.0 }, max: { student_id: MaxKey }, shardKeyPattern: { student_id: 1.0 }, state: "ready", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0, $gleStats: { lastOpTime: Timestamp 0|0, electionId: ObjectId('55cbb42ba8e58bebfd82dbfd') } } my mem used: 0
+2015-08-12T18:08:20.961-0300 I SHARDING [conn16] moveChunk data transfer progress: { active: true, ns: "school.students", from: "s2/localhost:57017,localhost:57018,localhost:57019", min: { student_id: 2.0 }, max: { student_id: MaxKey }, shardKeyPattern: { student_id: 1.0 }, state: "ready", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0, $gleStats: { lastOpTime: Timestamp 0|0, electionId: ObjectId('55cbb42ba8e58bebfd82dbfd') } } my mem used: 0
+2015-08-12T18:08:20.978-0300 I SHARDING [conn16] moveChunk data transfer progress: { active: true, ns: "school.students", from: "s2/localhost:57017,localhost:57018,localhost:57019", min: { student_id: 2.0 }, max: { student_id: MaxKey }, shardKeyPattern: { student_id: 1.0 }, state: "ready", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0, $gleStats: { lastOpTime: Timestamp 0|0, electionId: ObjectId('55cbb42ba8e58bebfd82dbfd') } } my mem used: 0
+2015-08-12T18:08:21.010-0300 I SHARDING [conn16] moveChunk data transfer progress: { active: true, ns: "school.students", from: "s2/localhost:57017,localhost:57018,localhost:57019", min: { student_id: 2.0 }, max: { student_id: MaxKey }, shardKeyPattern: { student_id: 1.0 }, state: "ready", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0, $gleStats: { lastOpTime: Timestamp 0|0, electionId: ObjectId('55cbb42ba8e58bebfd82dbfd') } } my mem used: 0
+2015-08-12T18:08:21.074-0300 I SHARDING [conn16] moveChunk data transfer progress: { active: true, ns: "school.students", from: "s2/localhost:57017,localhost:57018,localhost:57019", min: { student_id: 2.0 }, max: { student_id: MaxKey }, shardKeyPattern: { student_id: 1.0 }, state: "ready", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0, $gleStats: { lastOpTime: Timestamp 0|0, electionId: ObjectId('55cbb42ba8e58bebfd82dbfd') } } my mem used: 0
+2015-08-12T18:08:21.203-0300 I SHARDING [conn16] moveChunk data transfer progress: { active: true, ns: "school.students", from: "s2/localhost:57017,localhost:57018,localhost:57019", min: { student_id: 2.0 }, max: { student_id: MaxKey }, shardKeyPattern: { student_id: 1.0 }, state: "ready", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0, $gleStats: { lastOpTime: Timestamp 0|0, electionId: ObjectId('55cbb42ba8e58bebfd82dbfd') } } my mem used: 0
+2015-08-12T18:08:21.459-0300 I SHARDING [conn16] moveChunk data transfer progress: { active: true, ns: "school.students", from: "s2/localhost:57017,localhost:57018,localhost:57019", min: { student_id: 2.0 }, max: { student_id: MaxKey }, shardKeyPattern: { student_id: 1.0 }, state: "ready", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0, $gleStats: { lastOpTime: Timestamp 0|0, electionId: ObjectId('55cbb42ba8e58bebfd82dbfd') } } my mem used: 0
+2015-08-12T18:08:21.972-0300 I SHARDING [conn16] moveChunk data transfer progress: { active: true, ns: "school.students", from: "s2/localhost:57017,localhost:57018,localhost:57019", min: { student_id: 2.0 }, max: { student_id: MaxKey }, shardKeyPattern: { student_id: 1.0 }, state: "ready", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0, $gleStats: { lastOpTime: Timestamp 0|0, electionId: ObjectId('55cbb42ba8e58bebfd82dbfd') } } my mem used: 0
+2015-08-12T18:08:22.996-0300 I SHARDING [conn16] moveChunk data transfer progress: { active: true, ns: "school.students", from: "s2/localhost:57017,localhost:57018,localhost:57019", min: { student_id: 2.0 }, max: { student_id: MaxKey }, shardKeyPattern: { student_id: 1.0 }, state: "ready", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0, $gleStats: { lastOpTime: Timestamp 0|0, electionId: ObjectId('55cbb42ba8e58bebfd82dbfd') } } my mem used: 0
+2015-08-12T18:08:24.021-0300 I SHARDING [conn16] moveChunk data transfer progress: { active: true, ns: "school.students", from: "s2/localhost:57017,localhost:57018,localhost:57019", min: { student_id: 2.0 }, max: { student_id: MaxKey }, shardKeyPattern: { student_id: 1.0 }, state: "catchup", counts: { cloned: 1, clonedBytes: 233, catchup: 0, steady: 0 }, ok: 1.0, $gleStats: { lastOpTime: Timestamp 0|0, electionId: ObjectId('55cbb42ba8e58bebfd82dbfd') } } my mem used: 0
+2015-08-12T18:08:25.045-0300 I SHARDING [conn16] moveChunk data transfer progress: { active: true, ns: "school.students", from: "s2/localhost:57017,localhost:57018,localhost:57019", min: { student_id: 2.0 }, max: { student_id: MaxKey }, shardKeyPattern: { student_id: 1.0 }, state: "steady", counts: { cloned: 1, clonedBytes: 233, catchup: 0, steady: 0 }, ok: 1.0, $gleStats: { lastOpTime: Timestamp 0|0, electionId: ObjectId('55cbb42ba8e58bebfd82dbfd') } } my mem used: 0
+2015-08-12T18:08:25.045-0300 I SHARDING [conn16] About to check if it is safe to enter critical section
+2015-08-12T18:08:25.046-0300 I SHARDING [conn16] About to enter migrate critical section
+2015-08-12T18:08:25.046-0300 I SHARDING [conn16] moveChunk setting version to: 2|0||55cbb52fc4dc6333e59c63aa
+2015-08-12T18:08:25.369-0300 I SHARDING [conn16] moveChunk migrate commit accepted by TO-shard: { active: false, ns: "school.students", from: "s2/localhost:57017,localhost:57018,localhost:57019", min: { student_id: 2.0 }, max: { student_id: MaxKey }, shardKeyPattern: { student_id: 1.0 }, state: "done", counts: { cloned: 1, clonedBytes: 233, catchup: 0, steady: 0 }, ok: 1.0, $gleStats: { lastOpTime: Timestamp 0|0, electionId: ObjectId('55cbb42ba8e58bebfd82dbfd') } }
+2015-08-12T18:08:25.369-0300 I SHARDING [conn16] moveChunk updating self version to: 2|1||55cbb52fc4dc6333e59c63aa through { student_id: MinKey } -> { student_id: 0.0 } for collection 'school.students'
+2015-08-12T18:08:25.369-0300 I NETWORK  [conn16] SyncClusterConnection connecting to [localhost:57040]
+2015-08-12T18:08:25.369-0300 I NETWORK  [conn16] SyncClusterConnection connecting to [localhost:57041]
+2015-08-12T18:08:25.369-0300 I NETWORK  [conn16] SyncClusterConnection connecting to [localhost:57042]
+2015-08-12T18:08:25.567-0300 I SHARDING [conn16] about to log metadata event: { _id: "jordan-2015-08-12T21:08:25-55cbb5c9f7f2f9d723447bb7", server: "jordan", clientAddr: "127.0.0.1:56283", time: new Date(1439413705567), what: "moveChunk.commit", ns: "school.students", details: { min: { student_id: 2.0 }, max: { student_id: MaxKey }, from: "s2", to: "s0", cloned: 1, clonedBytes: 233, catchup: 0, steady: 0 } }
+2015-08-12T18:08:25.804-0300 I SHARDING [conn16] MigrateFromStatus::done About to acquire global lock to exit critical section
+2015-08-12T18:08:25.804-0300 I SHARDING [conn16] forking for cleanup of chunk data
+2015-08-12T18:08:25.804-0300 I SHARDING [conn16] MigrateFromStatus::done About to acquire global lock to exit critical section
+2015-08-12T18:08:25.805-0300 I SHARDING [RangeDeleter] Deleter starting delete for: school.students from { student_id: 2.0 } -> { student_id: MaxKey }, with opId: 6
+2015-08-12T18:08:25.805-0300 I SHARDING [RangeDeleter] rangeDeleter deleted 1 documents for school.students from { student_id: 2.0 } -> { student_id: MaxKey }
+2015-08-12T18:08:25.827-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56448 #35 (13 connections now open)
+2015-08-12T18:08:26.022-0300 I SHARDING [conn16] distributed lock 'school.students/jordan:57017:1439413698:907481702' unlocked. 
+2015-08-12T18:08:26.022-0300 I SHARDING [conn16] about to log metadata event: { _id: "jordan-2015-08-12T21:08:26-55cbb5caf7f2f9d723447bb8", server: "jordan", clientAddr: "127.0.0.1:56283", time: new Date(1439413706022), what: "moveChunk.from", ns: "school.students", details: { min: { student_id: 2.0 }, max: { student_id: MaxKey }, step 1 of 6: 0, step 2 of 6: 502, step 3 of 6: 4, step 4 of 6: 4100, step 5 of 6: 759, step 6 of 6: 0, to: "s0", from: "s2", note: "success" } }
+2015-08-12T18:08:26.266-0300 I SHARDING [conn35] received moveChunk request: { moveChunk: "school.students", from: "s2/localhost:57017,localhost:57018,localhost:57019", to: "s1/localhost:47017,localhost:47018,localhost:47019", fromShard: "s2", toShard: "s1", min: { student_id: MinKey }, max: { student_id: 0.0 }, maxChunkSizeBytes: 67108864, shardId: "school.students-student_id_MinKey", configdb: "localhost:57040,localhost:57041,localhost:57042", secondaryThrottle: true, waitForDelete: false, maxTimeMS: 0, epoch: ObjectId('55cbb52fc4dc6333e59c63aa') }
+2015-08-12T18:08:26.304-0300 I COMMAND  [conn16] command admin.$cmd command: moveChunk { moveChunk: "school.students", from: "s2/localhost:57017,localhost:57018,localhost:57019", to: "s0/localhost:37017,localhost:37018,localhost:37019", fromShard: "s2", toShard: "s0", min: { student_id: 2.0 }, max: { student_id: MaxKey }, maxChunkSizeBytes: 67108864, shardId: "school.students-student_id_2.0", configdb: "localhost:57040,localhost:57041,localhost:57042", secondaryThrottle: false, waitForDelete: false, maxTimeMS: 0, epoch: ObjectId('55cbb52fc4dc6333e59c63aa') } ntoreturn:1 keyUpdates:0 writeConflicts:0 numYields:0 reslen:97 locks:{ Global: { acquireCount: { r: 9, w: 2, R: 3 } }, MMAPV1Journal: { acquireCount: { r: 5, w: 2 } }, Database: { acquireCount: { r: 2, w: 2 } }, Collection: { acquireCount: { R: 2, W: 2 } } } 5865ms
+2015-08-12T18:08:26.821-0300 I SHARDING [conn35] distributed lock 'school.students/jordan:57017:1439413698:907481702' acquired, ts : 55cbb5caf7f2f9d723447bb9
+2015-08-12T18:08:26.822-0300 I SHARDING [conn35] about to log metadata event: { _id: "jordan-2015-08-12T21:08:26-55cbb5caf7f2f9d723447bba", server: "jordan", clientAddr: "127.0.0.1:56448", time: new Date(1439413706821), what: "moveChunk.start", ns: "school.students", details: { min: { student_id: MinKey }, max: { student_id: 0.0 }, from: "s2", to: "s1" } }
+2015-08-12T18:08:27.147-0300 I SHARDING [conn35] remotely refreshing metadata for school.students based on current shard version 2|0||55cbb52fc4dc6333e59c63aa, current metadata version is 2|0||55cbb52fc4dc6333e59c63aa
+2015-08-12T18:08:27.148-0300 I SHARDING [conn35] updating metadata for school.students from shard version 2|0||55cbb52fc4dc6333e59c63aa to shard version 2|1||55cbb52fc4dc6333e59c63aa
+2015-08-12T18:08:27.148-0300 I SHARDING [conn35] collection version was loaded at version 2|1||55cbb52fc4dc6333e59c63aa, took 0ms
+2015-08-12T18:08:27.148-0300 I SHARDING [conn35] moveChunk request accepted at version 2|1||55cbb52fc4dc6333e59c63aa
+2015-08-12T18:08:27.148-0300 I SHARDING [conn35] moveChunk number of documents: 0
+2015-08-12T18:08:27.148-0300 I NETWORK  [conn35] starting new replica set monitor for replica set s1 with seeds localhost:47017,localhost:47018,localhost:47019
+2015-08-12T18:08:27.153-0300 I SHARDING [conn35] moveChunk data transfer progress: { active: true, ns: "school.students", from: "s2/localhost:57017,localhost:57018,localhost:57019", min: { student_id: MinKey }, max: { student_id: 0.0 }, shardKeyPattern: { student_id: 1.0 }, state: "ready", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0, $gleStats: { lastOpTime: Timestamp 0|0, electionId: ObjectId('55cbb46d1a6fc5f0d943625f') } } my mem used: 0
+2015-08-12T18:08:27.155-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56460 #36 (14 connections now open)
+2015-08-12T18:08:27.156-0300 I SHARDING [conn35] moveChunk data transfer progress: { active: true, ns: "school.students", from: "s2/localhost:57017,localhost:57018,localhost:57019", min: { student_id: MinKey }, max: { student_id: 0.0 }, shardKeyPattern: { student_id: 1.0 }, state: "ready", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0, $gleStats: { lastOpTime: Timestamp 0|0, electionId: ObjectId('55cbb46d1a6fc5f0d943625f') } } my mem used: 0
+2015-08-12T18:08:27.156-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56461 #37 (15 connections now open)
+2015-08-12T18:08:27.160-0300 I SHARDING [conn35] moveChunk data transfer progress: { active: true, ns: "school.students", from: "s2/localhost:57017,localhost:57018,localhost:57019", min: { student_id: MinKey }, max: { student_id: 0.0 }, shardKeyPattern: { student_id: 1.0 }, state: "ready", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0, $gleStats: { lastOpTime: Timestamp 0|0, electionId: ObjectId('55cbb46d1a6fc5f0d943625f') } } my mem used: 0
+2015-08-12T18:08:27.168-0300 I SHARDING [conn35] moveChunk data transfer progress: { active: true, ns: "school.students", from: "s2/localhost:57017,localhost:57018,localhost:57019", min: { student_id: MinKey }, max: { student_id: 0.0 }, shardKeyPattern: { student_id: 1.0 }, state: "ready", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0, $gleStats: { lastOpTime: Timestamp 0|0, electionId: ObjectId('55cbb46d1a6fc5f0d943625f') } } my mem used: 0
+2015-08-12T18:08:27.184-0300 I SHARDING [conn35] moveChunk data transfer progress: { active: true, ns: "school.students", from: "s2/localhost:57017,localhost:57018,localhost:57019", min: { student_id: MinKey }, max: { student_id: 0.0 }, shardKeyPattern: { student_id: 1.0 }, state: "ready", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0, $gleStats: { lastOpTime: Timestamp 0|0, electionId: ObjectId('55cbb46d1a6fc5f0d943625f') } } my mem used: 0
+2015-08-12T18:08:27.217-0300 I SHARDING [conn35] moveChunk data transfer progress: { active: true, ns: "school.students", from: "s2/localhost:57017,localhost:57018,localhost:57019", min: { student_id: MinKey }, max: { student_id: 0.0 }, shardKeyPattern: { student_id: 1.0 }, state: "ready", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0, $gleStats: { lastOpTime: Timestamp 0|0, electionId: ObjectId('55cbb46d1a6fc5f0d943625f') } } my mem used: 0
+2015-08-12T18:08:27.281-0300 I SHARDING [conn35] moveChunk data transfer progress: { active: true, ns: "school.students", from: "s2/localhost:57017,localhost:57018,localhost:57019", min: { student_id: MinKey }, max: { student_id: 0.0 }, shardKeyPattern: { student_id: 1.0 }, state: "ready", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0, $gleStats: { lastOpTime: Timestamp 0|0, electionId: ObjectId('55cbb46d1a6fc5f0d943625f') } } my mem used: 0
+2015-08-12T18:08:27.409-0300 I SHARDING [conn35] moveChunk data transfer progress: { active: true, ns: "school.students", from: "s2/localhost:57017,localhost:57018,localhost:57019", min: { student_id: MinKey }, max: { student_id: 0.0 }, shardKeyPattern: { student_id: 1.0 }, state: "ready", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0, $gleStats: { lastOpTime: Timestamp 0|0, electionId: ObjectId('55cbb46d1a6fc5f0d943625f') } } my mem used: 0
+2015-08-12T18:08:27.666-0300 I SHARDING [conn35] moveChunk data transfer progress: { active: true, ns: "school.students", from: "s2/localhost:57017,localhost:57018,localhost:57019", min: { student_id: MinKey }, max: { student_id: 0.0 }, shardKeyPattern: { student_id: 1.0 }, state: "ready", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0, $gleStats: { lastOpTime: Timestamp 0|0, electionId: ObjectId('55cbb46d1a6fc5f0d943625f') } } my mem used: 0
+2015-08-12T18:08:28.193-0300 I SHARDING [conn35] moveChunk data transfer progress: { active: true, ns: "school.students", from: "s2/localhost:57017,localhost:57018,localhost:57019", min: { student_id: MinKey }, max: { student_id: 0.0 }, shardKeyPattern: { student_id: 1.0 }, state: "ready", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0, $gleStats: { lastOpTime: Timestamp 0|0, electionId: ObjectId('55cbb46d1a6fc5f0d943625f') } } my mem used: 0
+2015-08-12T18:08:29.217-0300 I SHARDING [conn35] moveChunk data transfer progress: { active: true, ns: "school.students", from: "s2/localhost:57017,localhost:57018,localhost:57019", min: { student_id: MinKey }, max: { student_id: 0.0 }, shardKeyPattern: { student_id: 1.0 }, state: "ready", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0, $gleStats: { lastOpTime: Timestamp 0|0, electionId: ObjectId('55cbb46d1a6fc5f0d943625f') } } my mem used: 0
+2015-08-12T18:08:30.241-0300 I SHARDING [conn35] moveChunk data transfer progress: { active: true, ns: "school.students", from: "s2/localhost:57017,localhost:57018,localhost:57019", min: { student_id: MinKey }, max: { student_id: 0.0 }, shardKeyPattern: { student_id: 1.0 }, state: "ready", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0, $gleStats: { lastOpTime: Timestamp 0|0, electionId: ObjectId('55cbb46d1a6fc5f0d943625f') } } my mem used: 0
+2015-08-12T18:08:31.266-0300 I SHARDING [conn35] moveChunk data transfer progress: { active: true, ns: "school.students", from: "s2/localhost:57017,localhost:57018,localhost:57019", min: { student_id: MinKey }, max: { student_id: 0.0 }, shardKeyPattern: { student_id: 1.0 }, state: "steady", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0, $gleStats: { lastOpTime: Timestamp 0|0, electionId: ObjectId('55cbb46d1a6fc5f0d943625f') } } my mem used: 0
+2015-08-12T18:08:31.266-0300 I SHARDING [conn35] About to check if it is safe to enter critical section
+2015-08-12T18:08:31.266-0300 I SHARDING [conn35] About to enter migrate critical section
+2015-08-12T18:08:31.266-0300 I SHARDING [conn35] moveChunk setting version to: 3|0||55cbb52fc4dc6333e59c63aa
+2015-08-12T18:08:31.774-0300 I SHARDING [conn35] moveChunk migrate commit accepted by TO-shard: { active: false, ns: "school.students", from: "s2/localhost:57017,localhost:57018,localhost:57019", min: { student_id: MinKey }, max: { student_id: 0.0 }, shardKeyPattern: { student_id: 1.0 }, state: "done", counts: { cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 }, ok: 1.0, $gleStats: { lastOpTime: Timestamp 0|0, electionId: ObjectId('55cbb46d1a6fc5f0d943625f') } }
+2015-08-12T18:08:31.774-0300 I SHARDING [conn35] moveChunk updating self version to: 3|1||55cbb52fc4dc6333e59c63aa through { student_id: 0.0 } -> { student_id: 2.0 } for collection 'school.students'
+2015-08-12T18:08:32.178-0300 I SHARDING [conn35] about to log metadata event: { _id: "jordan-2015-08-12T21:08:32-55cbb5d0f7f2f9d723447bbb", server: "jordan", clientAddr: "127.0.0.1:56448", time: new Date(1439413712178), what: "moveChunk.commit", ns: "school.students", details: { min: { student_id: MinKey }, max: { student_id: 0.0 }, from: "s2", to: "s1", cloned: 0, clonedBytes: 0, catchup: 0, steady: 0 } }
+2015-08-12T18:08:32.757-0300 I SHARDING [conn35] MigrateFromStatus::done About to acquire global lock to exit critical section
+2015-08-12T18:08:32.757-0300 I SHARDING [conn35] forking for cleanup of chunk data
+2015-08-12T18:08:32.757-0300 I SHARDING [conn35] MigrateFromStatus::done About to acquire global lock to exit critical section
+2015-08-12T18:08:32.757-0300 I SHARDING [RangeDeleter] Deleter starting delete for: school.students from { student_id: MinKey } -> { student_id: 0.0 }, with opId: 6
+2015-08-12T18:08:32.758-0300 I SHARDING [RangeDeleter] Helpers::removeRangeUnlocked time spent waiting for replication: 0ms
+2015-08-12T18:08:32.758-0300 I SHARDING [RangeDeleter] rangeDeleter deleted 0 documents for school.students from { student_id: MinKey } -> { student_id: 0.0 }
+2015-08-12T18:08:33.187-0300 I SHARDING [conn35] distributed lock 'school.students/jordan:57017:1439413698:907481702' unlocked. 
+2015-08-12T18:08:33.187-0300 I SHARDING [conn35] about to log metadata event: { _id: "jordan-2015-08-12T21:08:33-55cbb5d1f7f2f9d723447bbc", server: "jordan", clientAddr: "127.0.0.1:56448", time: new Date(1439413713187), what: "moveChunk.from", ns: "school.students", details: { min: { student_id: MinKey }, max: { student_id: 0.0 }, step 1 of 6: 0, step 2 of 6: 881, step 3 of 6: 4, step 4 of 6: 4114, step 5 of 6: 1491, step 6 of 6: 0, to: "s1", from: "s2", note: "success" } }
+2015-08-12T18:08:33.550-0300 I COMMAND  [conn35] command admin.$cmd command: moveChunk { moveChunk: "school.students", from: "s2/localhost:57017,localhost:57018,localhost:57019", to: "s1/localhost:47017,localhost:47018,localhost:47019", fromShard: "s2", toShard: "s1", min: { student_id: MinKey }, max: { student_id: 0.0 }, maxChunkSizeBytes: 67108864, shardId: "school.students-student_id_MinKey", configdb: "localhost:57040,localhost:57041,localhost:57042", secondaryThrottle: true, waitForDelete: false, maxTimeMS: 0, epoch: ObjectId('55cbb52fc4dc6333e59c63aa') } ntoreturn:1 keyUpdates:0 writeConflicts:0 numYields:0 reslen:97 locks:{ Global: { acquireCount: { r: 9, w: 2, R: 3 } }, MMAPV1Journal: { acquireCount: { r: 5, w: 2 } }, Database: { acquireCount: { r: 2, w: 2 } }, Collection: { acquireCount: { R: 2, W: 2 } } } 7283ms
+2015-08-12T18:08:45.299-0300 I NETWORK  [conn31] end connection 127.0.0.1:56405 (14 connections now open)
+2015-08-12T18:08:45.299-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56481 #38 (15 connections now open)
+2015-08-12T18:08:45.305-0300 I NETWORK  [conn32] end connection 127.0.0.1:56407 (14 connections now open)
+2015-08-12T18:08:45.306-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56483 #39 (15 connections now open)
+2015-08-12T18:08:49.036-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:08:48 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:09:15.306-0300 I NETWORK  [conn38] end connection 127.0.0.1:56481 (14 connections now open)
+2015-08-12T18:09:15.307-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56499 #40 (15 connections now open)
+2015-08-12T18:09:15.310-0300 I NETWORK  [conn39] end connection 127.0.0.1:56483 (14 connections now open)
+2015-08-12T18:09:15.313-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56501 #41 (15 connections now open)
+2015-08-12T18:09:19.732-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:09:19 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:09:45.311-0300 I NETWORK  [conn40] end connection 127.0.0.1:56499 (14 connections now open)
+2015-08-12T18:09:45.312-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56535 #42 (15 connections now open)
+2015-08-12T18:09:45.316-0300 I NETWORK  [conn41] end connection 127.0.0.1:56501 (14 connections now open)
+2015-08-12T18:09:45.316-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56537 #43 (16 connections now open)
+2015-08-12T18:09:49.985-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:09:49 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:10:15.316-0300 I NETWORK  [conn42] end connection 127.0.0.1:56535 (14 connections now open)
+2015-08-12T18:10:15.316-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56553 #44 (15 connections now open)
+2015-08-12T18:10:15.322-0300 I NETWORK  [conn43] end connection 127.0.0.1:56537 (14 connections now open)
+2015-08-12T18:10:15.322-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56554 #45 (15 connections now open)
+2015-08-12T18:10:20.169-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:10:19 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:10:45.325-0300 I NETWORK  [conn44] end connection 127.0.0.1:56553 (14 connections now open)
+2015-08-12T18:10:45.325-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56575 #46 (15 connections now open)
+2015-08-12T18:10:45.331-0300 I NETWORK  [conn45] end connection 127.0.0.1:56554 (14 connections now open)
+2015-08-12T18:10:45.331-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56577 #47 (15 connections now open)
+2015-08-12T18:10:50.507-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:10:50 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:11:15.331-0300 I NETWORK  [conn46] end connection 127.0.0.1:56575 (14 connections now open)
+2015-08-12T18:11:15.332-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56593 #48 (15 connections now open)
+2015-08-12T18:11:15.336-0300 I NETWORK  [conn47] end connection 127.0.0.1:56577 (14 connections now open)
+2015-08-12T18:11:15.337-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56595 #49 (15 connections now open)
+2015-08-12T18:11:20.862-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:11:20 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:11:45.345-0300 I NETWORK  [conn48] end connection 127.0.0.1:56593 (14 connections now open)
+2015-08-12T18:11:45.345-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56611 #50 (15 connections now open)
+2015-08-12T18:11:45.348-0300 I NETWORK  [conn49] end connection 127.0.0.1:56595 (14 connections now open)
+2015-08-12T18:11:45.348-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56613 #51 (15 connections now open)
+2015-08-12T18:11:51.268-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:11:50 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:12:15.355-0300 I NETWORK  [conn50] end connection 127.0.0.1:56611 (14 connections now open)
+2015-08-12T18:12:15.356-0300 I NETWORK  [conn51] end connection 127.0.0.1:56613 (13 connections now open)
+2015-08-12T18:12:15.356-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56629 #52 (15 connections now open)
+2015-08-12T18:12:15.356-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56632 #53 (15 connections now open)
+2015-08-12T18:12:21.670-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:12:21 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:12:45.363-0300 I NETWORK  [conn52] end connection 127.0.0.1:56629 (14 connections now open)
+2015-08-12T18:12:45.364-0300 I NETWORK  [conn53] end connection 127.0.0.1:56632 (13 connections now open)
+2015-08-12T18:12:45.364-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56649 #54 (14 connections now open)
+2015-08-12T18:12:45.364-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56651 #55 (15 connections now open)
+2015-08-12T18:12:52.029-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:12:51 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:13:15.370-0300 I NETWORK  [conn55] end connection 127.0.0.1:56651 (14 connections now open)
+2015-08-12T18:13:15.370-0300 I NETWORK  [conn54] end connection 127.0.0.1:56649 (13 connections now open)
+2015-08-12T18:13:15.371-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56702 #56 (14 connections now open)
+2015-08-12T18:13:15.371-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56703 #57 (15 connections now open)
+2015-08-12T18:13:22.576-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:13:22 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:13:45.381-0300 I NETWORK  [conn57] end connection 127.0.0.1:56703 (14 connections now open)
+2015-08-12T18:13:45.381-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56735 #58 (15 connections now open)
+2015-08-12T18:13:45.382-0300 I NETWORK  [conn56] end connection 127.0.0.1:56702 (14 connections now open)
+2015-08-12T18:13:45.382-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56736 #59 (15 connections now open)
+2015-08-12T18:13:52.953-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:13:52 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:14:15.388-0300 I NETWORK  [conn58] end connection 127.0.0.1:56735 (14 connections now open)
+2015-08-12T18:14:15.388-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56753 #60 (16 connections now open)
+2015-08-12T18:14:15.389-0300 I NETWORK  [conn59] end connection 127.0.0.1:56736 (14 connections now open)
+2015-08-12T18:14:15.389-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56755 #61 (15 connections now open)
+2015-08-12T18:14:23.163-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:14:22 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:14:45.395-0300 I NETWORK  [conn60] end connection 127.0.0.1:56753 (14 connections now open)
+2015-08-12T18:14:45.395-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56771 #62 (15 connections now open)
+2015-08-12T18:14:45.405-0300 I NETWORK  [conn61] end connection 127.0.0.1:56755 (14 connections now open)
+2015-08-12T18:14:45.405-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56773 #63 (16 connections now open)
+2015-08-12T18:14:53.390-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:14:53 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:15:15.403-0300 I NETWORK  [conn62] end connection 127.0.0.1:56771 (14 connections now open)
+2015-08-12T18:15:15.403-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56788 #64 (15 connections now open)
+2015-08-12T18:15:15.415-0300 I NETWORK  [conn63] end connection 127.0.0.1:56773 (14 connections now open)
+2015-08-12T18:15:15.415-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56791 #65 (15 connections now open)
+2015-08-12T18:15:23.781-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:15:23 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:15:45.411-0300 I NETWORK  [conn64] end connection 127.0.0.1:56788 (14 connections now open)
+2015-08-12T18:15:45.412-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56806 #66 (15 connections now open)
+2015-08-12T18:15:45.424-0300 I NETWORK  [conn65] end connection 127.0.0.1:56791 (14 connections now open)
+2015-08-12T18:15:45.424-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56809 #67 (15 connections now open)
+2015-08-12T18:15:54.064-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:15:53 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:16:15.415-0300 I NETWORK  [conn66] end connection 127.0.0.1:56806 (14 connections now open)
+2015-08-12T18:16:15.415-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56822 #68 (15 connections now open)
+2015-08-12T18:16:15.436-0300 I NETWORK  [conn67] end connection 127.0.0.1:56809 (14 connections now open)
+2015-08-12T18:16:15.436-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56827 #69 (15 connections now open)
+2015-08-12T18:16:24.373-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:16:24 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:16:45.427-0300 I NETWORK  [conn68] end connection 127.0.0.1:56822 (14 connections now open)
+2015-08-12T18:16:45.427-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56840 #70 (16 connections now open)
+2015-08-12T18:16:45.446-0300 I NETWORK  [conn69] end connection 127.0.0.1:56827 (14 connections now open)
+2015-08-12T18:16:45.447-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56845 #71 (16 connections now open)
+2015-08-12T18:16:54.638-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:16:54 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:17:15.432-0300 I NETWORK  [conn70] end connection 127.0.0.1:56840 (14 connections now open)
+2015-08-12T18:17:15.432-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56858 #72 (15 connections now open)
+2015-08-12T18:17:15.456-0300 I NETWORK  [conn71] end connection 127.0.0.1:56845 (14 connections now open)
+2015-08-12T18:17:15.456-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56863 #73 (16 connections now open)
+2015-08-12T18:17:24.968-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:17:24 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:17:45.442-0300 I NETWORK  [conn72] end connection 127.0.0.1:56858 (14 connections now open)
+2015-08-12T18:17:45.443-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56878 #74 (15 connections now open)
+2015-08-12T18:17:45.466-0300 I NETWORK  [conn73] end connection 127.0.0.1:56863 (14 connections now open)
+2015-08-12T18:17:45.466-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56881 #75 (15 connections now open)
+2015-08-12T18:17:55.183-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:17:54 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:18:15.451-0300 I NETWORK  [conn74] end connection 127.0.0.1:56878 (14 connections now open)
+2015-08-12T18:18:15.451-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56896 #76 (16 connections now open)
+2015-08-12T18:18:15.475-0300 I NETWORK  [conn75] end connection 127.0.0.1:56881 (14 connections now open)
+2015-08-12T18:18:15.475-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56899 #77 (16 connections now open)
+2015-08-12T18:18:25.363-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:18:25 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:18:45.455-0300 I NETWORK  [conn76] end connection 127.0.0.1:56896 (14 connections now open)
+2015-08-12T18:18:45.455-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56913 #78 (15 connections now open)
+2015-08-12T18:18:45.485-0300 I NETWORK  [conn77] end connection 127.0.0.1:56899 (14 connections now open)
+2015-08-12T18:18:45.486-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56917 #79 (15 connections now open)
+2015-08-12T18:18:55.745-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:18:55 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:19:15.465-0300 I NETWORK  [conn78] end connection 127.0.0.1:56913 (14 connections now open)
+2015-08-12T18:19:15.465-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56933 #80 (15 connections now open)
+2015-08-12T18:19:15.495-0300 I NETWORK  [conn79] end connection 127.0.0.1:56917 (14 connections now open)
+2015-08-12T18:19:15.495-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56936 #81 (16 connections now open)
+2015-08-12T18:19:26.037-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:19:25 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:19:45.474-0300 I NETWORK  [conn80] end connection 127.0.0.1:56933 (14 connections now open)
+2015-08-12T18:19:45.474-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56949 #82 (15 connections now open)
+2015-08-12T18:19:45.504-0300 I NETWORK  [conn81] end connection 127.0.0.1:56936 (14 connections now open)
+2015-08-12T18:19:45.504-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56954 #83 (16 connections now open)
+2015-08-12T18:19:56.419-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:19:56 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:20:15.486-0300 I NETWORK  [conn82] end connection 127.0.0.1:56949 (14 connections now open)
+2015-08-12T18:20:15.486-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56967 #84 (15 connections now open)
+2015-08-12T18:20:15.512-0300 I NETWORK  [conn83] end connection 127.0.0.1:56954 (14 connections now open)
+2015-08-12T18:20:15.512-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56972 #85 (15 connections now open)
+2015-08-12T18:20:26.746-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:20:26 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:20:45.497-0300 I NETWORK  [conn84] end connection 127.0.0.1:56967 (14 connections now open)
+2015-08-12T18:20:45.497-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56987 #86 (15 connections now open)
+2015-08-12T18:20:45.523-0300 I NETWORK  [conn85] end connection 127.0.0.1:56972 (14 connections now open)
+2015-08-12T18:20:45.523-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56990 #87 (15 connections now open)
+2015-08-12T18:20:57.059-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:20:56 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:21:15.504-0300 I NETWORK  [conn86] end connection 127.0.0.1:56987 (14 connections now open)
+2015-08-12T18:21:15.504-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57004 #88 (15 connections now open)
+2015-08-12T18:21:15.535-0300 I NETWORK  [conn87] end connection 127.0.0.1:56990 (14 connections now open)
+2015-08-12T18:21:15.535-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57009 #89 (16 connections now open)
+2015-08-12T18:21:27.254-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:21:27 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:21:45.514-0300 I NETWORK  [conn88] end connection 127.0.0.1:57004 (14 connections now open)
+2015-08-12T18:21:45.514-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57023 #90 (16 connections now open)
+2015-08-12T18:21:45.544-0300 I NETWORK  [conn89] end connection 127.0.0.1:57009 (14 connections now open)
+2015-08-12T18:21:45.544-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57027 #91 (16 connections now open)
+2015-08-12T18:21:57.467-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:21:57 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:22:15.526-0300 I NETWORK  [conn90] end connection 127.0.0.1:57023 (14 connections now open)
+2015-08-12T18:22:15.526-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57043 #92 (15 connections now open)
+2015-08-12T18:22:15.554-0300 I NETWORK  [conn91] end connection 127.0.0.1:57027 (14 connections now open)
+2015-08-12T18:22:15.555-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57047 #93 (16 connections now open)
+2015-08-12T18:22:27.739-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:22:27 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:22:45.532-0300 I NETWORK  [conn92] end connection 127.0.0.1:57043 (14 connections now open)
+2015-08-12T18:22:45.532-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57062 #94 (15 connections now open)
+2015-08-12T18:22:45.566-0300 I NETWORK  [conn93] end connection 127.0.0.1:57047 (14 connections now open)
+2015-08-12T18:22:45.566-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57066 #95 (15 connections now open)
+2015-08-12T18:22:58.186-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:22:57 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:23:15.539-0300 I NETWORK  [conn94] end connection 127.0.0.1:57062 (14 connections now open)
+2015-08-12T18:23:15.540-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57079 #96 (15 connections now open)
+2015-08-12T18:23:15.570-0300 I NETWORK  [conn95] end connection 127.0.0.1:57066 (14 connections now open)
+2015-08-12T18:23:15.570-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57084 #97 (16 connections now open)
+2015-08-12T18:23:28.445-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:23:28 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:23:45.551-0300 I NETWORK  [conn96] end connection 127.0.0.1:57079 (14 connections now open)
+2015-08-12T18:23:45.551-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57101 #98 (16 connections now open)
+2015-08-12T18:23:45.580-0300 I NETWORK  [conn97] end connection 127.0.0.1:57084 (14 connections now open)
+2015-08-12T18:23:45.580-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57105 #99 (15 connections now open)
+2015-08-12T18:23:58.677-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:23:58 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:24:15.563-0300 I NETWORK  [conn98] end connection 127.0.0.1:57101 (14 connections now open)
+2015-08-12T18:24:15.563-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57118 #100 (16 connections now open)
+2015-08-12T18:24:15.590-0300 I NETWORK  [conn99] end connection 127.0.0.1:57105 (14 connections now open)
+2015-08-12T18:24:15.590-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57123 #101 (16 connections now open)
+2015-08-12T18:24:29.068-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:24:28 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:24:45.574-0300 I NETWORK  [conn100] end connection 127.0.0.1:57118 (14 connections now open)
+2015-08-12T18:24:45.575-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57136 #102 (16 connections now open)
+2015-08-12T18:24:45.603-0300 I NETWORK  [conn101] end connection 127.0.0.1:57123 (14 connections now open)
+2015-08-12T18:24:45.603-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57141 #103 (15 connections now open)
+2015-08-12T18:24:59.359-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:24:59 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:25:15.587-0300 I NETWORK  [conn102] end connection 127.0.0.1:57136 (14 connections now open)
+2015-08-12T18:25:15.587-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57154 #104 (15 connections now open)
+2015-08-12T18:25:15.612-0300 I NETWORK  [conn103] end connection 127.0.0.1:57141 (14 connections now open)
+2015-08-12T18:25:15.612-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57159 #105 (16 connections now open)
+2015-08-12T18:25:29.570-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:25:29 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:25:45.598-0300 I NETWORK  [conn104] end connection 127.0.0.1:57154 (14 connections now open)
+2015-08-12T18:25:45.598-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57174 #106 (16 connections now open)
+2015-08-12T18:25:45.625-0300 I NETWORK  [conn105] end connection 127.0.0.1:57159 (14 connections now open)
+2015-08-12T18:25:45.626-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57178 #107 (15 connections now open)
+2015-08-12T18:25:59.786-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:25:59 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:26:15.609-0300 I NETWORK  [conn106] end connection 127.0.0.1:57174 (14 connections now open)
+2015-08-12T18:26:15.609-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57193 #108 (15 connections now open)
+2015-08-12T18:26:15.635-0300 I NETWORK  [conn107] end connection 127.0.0.1:57178 (14 connections now open)
+2015-08-12T18:26:15.635-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57196 #109 (15 connections now open)
+2015-08-12T18:26:29.978-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:26:29 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:26:45.620-0300 I NETWORK  [conn108] end connection 127.0.0.1:57193 (14 connections now open)
+2015-08-12T18:26:45.620-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57212 #110 (15 connections now open)
+2015-08-12T18:26:45.645-0300 I NETWORK  [conn109] end connection 127.0.0.1:57196 (14 connections now open)
+2015-08-12T18:26:45.646-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57214 #111 (16 connections now open)
+2015-08-12T18:27:00.279-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:26:59 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:27:15.631-0300 I NETWORK  [conn110] end connection 127.0.0.1:57212 (14 connections now open)
+2015-08-12T18:27:15.632-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57229 #112 (15 connections now open)
+2015-08-12T18:27:15.657-0300 I NETWORK  [conn111] end connection 127.0.0.1:57214 (14 connections now open)
+2015-08-12T18:27:15.658-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57232 #113 (16 connections now open)
+2015-08-12T18:27:30.537-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:27:30 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:27:45.642-0300 I NETWORK  [conn112] end connection 127.0.0.1:57229 (14 connections now open)
+2015-08-12T18:27:45.642-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57248 #114 (15 connections now open)
+2015-08-12T18:27:45.667-0300 I NETWORK  [conn113] end connection 127.0.0.1:57232 (14 connections now open)
+2015-08-12T18:27:45.667-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57250 #115 (16 connections now open)
+2015-08-12T18:28:00.857-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:28:00 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:28:15.650-0300 I NETWORK  [conn114] end connection 127.0.0.1:57248 (14 connections now open)
+2015-08-12T18:28:15.650-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57266 #116 (15 connections now open)
+2015-08-12T18:28:15.677-0300 I NETWORK  [conn115] end connection 127.0.0.1:57250 (14 connections now open)
+2015-08-12T18:28:15.677-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57270 #117 (16 connections now open)
+2015-08-12T18:28:31.114-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:28:30 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:28:45.661-0300 I NETWORK  [conn116] end connection 127.0.0.1:57266 (14 connections now open)
+2015-08-12T18:28:45.661-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57284 #118 (15 connections now open)
+2015-08-12T18:28:45.689-0300 I NETWORK  [conn117] end connection 127.0.0.1:57270 (14 connections now open)
+2015-08-12T18:28:45.689-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57288 #119 (15 connections now open)
+2015-08-12T18:29:01.412-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:29:01 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:29:15.673-0300 I NETWORK  [conn118] end connection 127.0.0.1:57284 (14 connections now open)
+2015-08-12T18:29:15.673-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57304 #120 (15 connections now open)
+2015-08-12T18:29:15.704-0300 I NETWORK  [conn119] end connection 127.0.0.1:57288 (14 connections now open)
+2015-08-12T18:29:15.704-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57306 #121 (15 connections now open)
+2015-08-12T18:29:31.717-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:29:31 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:29:45.681-0300 I NETWORK  [conn120] end connection 127.0.0.1:57304 (14 connections now open)
+2015-08-12T18:29:45.682-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57320 #122 (15 connections now open)
+2015-08-12T18:29:45.715-0300 I NETWORK  [conn121] end connection 127.0.0.1:57306 (14 connections now open)
+2015-08-12T18:29:45.715-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57324 #123 (16 connections now open)
+2015-08-12T18:30:02.152-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:30:01 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:30:15.692-0300 I NETWORK  [conn122] end connection 127.0.0.1:57320 (14 connections now open)
+2015-08-12T18:30:15.692-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57339 #124 (15 connections now open)
+2015-08-12T18:30:15.721-0300 I NETWORK  [conn123] end connection 127.0.0.1:57324 (14 connections now open)
+2015-08-12T18:30:15.721-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57343 #125 (16 connections now open)
+2015-08-12T18:30:32.495-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:30:32 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:30:45.701-0300 I NETWORK  [conn124] end connection 127.0.0.1:57339 (14 connections now open)
+2015-08-12T18:30:45.702-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57359 #126 (15 connections now open)
+2015-08-12T18:30:45.731-0300 I NETWORK  [conn125] end connection 127.0.0.1:57343 (14 connections now open)
+2015-08-12T18:30:45.731-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57361 #127 (15 connections now open)
+2015-08-12T18:31:02.791-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:31:02 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:31:15.711-0300 I NETWORK  [conn126] end connection 127.0.0.1:57359 (14 connections now open)
+2015-08-12T18:31:15.712-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57377 #128 (15 connections now open)
+2015-08-12T18:31:15.742-0300 I NETWORK  [conn127] end connection 127.0.0.1:57361 (14 connections now open)
+2015-08-12T18:31:15.742-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57379 #129 (16 connections now open)
+2015-08-12T18:31:33.114-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:31:32 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:31:45.718-0300 I NETWORK  [conn128] end connection 127.0.0.1:57377 (14 connections now open)
+2015-08-12T18:31:45.719-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57393 #130 (15 connections now open)
+2015-08-12T18:31:45.748-0300 I NETWORK  [conn129] end connection 127.0.0.1:57379 (14 connections now open)
+2015-08-12T18:31:45.749-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57397 #131 (16 connections now open)
+2015-08-12T18:32:03.404-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:32:03 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:32:15.728-0300 I NETWORK  [conn130] end connection 127.0.0.1:57393 (14 connections now open)
+2015-08-12T18:32:15.728-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57410 #132 (15 connections now open)
+2015-08-12T18:32:15.757-0300 I NETWORK  [conn131] end connection 127.0.0.1:57397 (14 connections now open)
+2015-08-12T18:32:15.757-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57415 #133 (15 connections now open)
+2015-08-12T18:32:33.835-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:32:33 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:32:45.739-0300 I NETWORK  [conn132] end connection 127.0.0.1:57410 (14 connections now open)
+2015-08-12T18:32:45.739-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57429 #134 (15 connections now open)
+2015-08-12T18:32:45.763-0300 I NETWORK  [conn133] end connection 127.0.0.1:57415 (14 connections now open)
+2015-08-12T18:32:45.763-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57434 #135 (15 connections now open)
+2015-08-12T18:33:04.068-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:33:03 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:33:15.747-0300 I NETWORK  [conn134] end connection 127.0.0.1:57429 (14 connections now open)
+2015-08-12T18:33:15.747-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57451 #136 (15 connections now open)
+2015-08-12T18:33:15.771-0300 I NETWORK  [conn135] end connection 127.0.0.1:57434 (14 connections now open)
+2015-08-12T18:33:15.771-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57456 #137 (15 connections now open)
+2015-08-12T18:33:34.378-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:33:34 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:33:45.752-0300 I NETWORK  [conn136] end connection 127.0.0.1:57451 (14 connections now open)
+2015-08-12T18:33:45.753-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57475 #138 (15 connections now open)
+2015-08-12T18:33:45.779-0300 I NETWORK  [conn137] end connection 127.0.0.1:57456 (14 connections now open)
+2015-08-12T18:33:45.779-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57478 #139 (15 connections now open)
+2015-08-12T18:34:04.680-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:34:04 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:34:15.759-0300 I NETWORK  [conn138] end connection 127.0.0.1:57475 (14 connections now open)
+2015-08-12T18:34:15.759-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57493 #140 (15 connections now open)
+2015-08-12T18:34:15.789-0300 I NETWORK  [conn139] end connection 127.0.0.1:57478 (14 connections now open)
+2015-08-12T18:34:15.789-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57496 #141 (16 connections now open)
+2015-08-12T18:34:34.977-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:34:34 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:34:45.770-0300 I NETWORK  [conn140] end connection 127.0.0.1:57493 (14 connections now open)
+2015-08-12T18:34:45.770-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57511 #142 (15 connections now open)
+2015-08-12T18:34:45.801-0300 I NETWORK  [conn141] end connection 127.0.0.1:57496 (14 connections now open)
+2015-08-12T18:34:45.801-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57515 #143 (16 connections now open)
+2015-08-12T18:35:05.295-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:35:04 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:35:15.777-0300 I NETWORK  [conn142] end connection 127.0.0.1:57511 (14 connections now open)
+2015-08-12T18:35:15.777-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57528 #144 (15 connections now open)
+2015-08-12T18:35:15.809-0300 I NETWORK  [conn143] end connection 127.0.0.1:57515 (14 connections now open)
+2015-08-12T18:35:15.809-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57532 #145 (16 connections now open)
+2015-08-12T18:35:35.543-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:35:35 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:35:45.787-0300 I NETWORK  [conn144] end connection 127.0.0.1:57528 (14 connections now open)
+2015-08-12T18:35:45.787-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57547 #146 (16 connections now open)
+2015-08-12T18:35:45.820-0300 I NETWORK  [conn145] end connection 127.0.0.1:57532 (14 connections now open)
+2015-08-12T18:35:45.820-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57551 #147 (15 connections now open)
+2015-08-12T18:36:05.924-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:36:05 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:36:15.795-0300 I NETWORK  [conn146] end connection 127.0.0.1:57547 (14 connections now open)
+2015-08-12T18:36:15.795-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57565 #148 (15 connections now open)
+2015-08-12T18:36:15.826-0300 I NETWORK  [conn147] end connection 127.0.0.1:57551 (14 connections now open)
+2015-08-12T18:36:15.826-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57568 #149 (16 connections now open)
+2015-08-12T18:36:36.233-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:36:35 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:36:45.803-0300 I NETWORK  [conn148] end connection 127.0.0.1:57565 (14 connections now open)
+2015-08-12T18:36:45.803-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57582 #150 (15 connections now open)
+2015-08-12T18:36:45.838-0300 I NETWORK  [conn149] end connection 127.0.0.1:57568 (14 connections now open)
+2015-08-12T18:36:45.838-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57587 #151 (16 connections now open)
+2015-08-12T18:37:06.542-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:37:06 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:37:15.810-0300 I NETWORK  [conn150] end connection 127.0.0.1:57582 (14 connections now open)
+2015-08-12T18:37:15.810-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57600 #152 (15 connections now open)
+2015-08-12T18:37:15.847-0300 I NETWORK  [conn151] end connection 127.0.0.1:57587 (14 connections now open)
+2015-08-12T18:37:15.847-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57604 #153 (16 connections now open)
+2015-08-12T18:37:36.820-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:37:36 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:37:45.820-0300 I NETWORK  [conn152] end connection 127.0.0.1:57600 (14 connections now open)
+2015-08-12T18:37:45.820-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57619 #154 (15 connections now open)
+2015-08-12T18:37:45.859-0300 I NETWORK  [conn153] end connection 127.0.0.1:57604 (14 connections now open)
+2015-08-12T18:37:45.859-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57624 #155 (15 connections now open)
+2015-08-12T18:38:07.223-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:38:06 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:38:15.830-0300 I NETWORK  [conn154] end connection 127.0.0.1:57619 (14 connections now open)
+2015-08-12T18:38:15.830-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57637 #156 (15 connections now open)
+2015-08-12T18:38:15.868-0300 I NETWORK  [conn155] end connection 127.0.0.1:57624 (14 connections now open)
+2015-08-12T18:38:15.868-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57641 #157 (16 connections now open)
+2015-08-12T18:38:37.412-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:38:37 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:38:45.839-0300 I NETWORK  [conn156] end connection 127.0.0.1:57637 (14 connections now open)
+2015-08-12T18:38:45.840-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57656 #158 (15 connections now open)
+2015-08-12T18:38:45.877-0300 I NETWORK  [conn157] end connection 127.0.0.1:57641 (14 connections now open)
+2015-08-12T18:38:45.877-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57659 #159 (15 connections now open)
+2015-08-12T18:39:07.760-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:39:07 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:39:15.848-0300 I NETWORK  [conn158] end connection 127.0.0.1:57656 (14 connections now open)
+2015-08-12T18:39:15.848-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57675 #160 (16 connections now open)
+2015-08-12T18:39:15.890-0300 I NETWORK  [conn159] end connection 127.0.0.1:57659 (14 connections now open)
+2015-08-12T18:39:15.890-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57680 #161 (16 connections now open)
+2015-08-12T18:39:38.186-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:39:37 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:39:45.860-0300 I NETWORK  [conn160] end connection 127.0.0.1:57675 (14 connections now open)
+2015-08-12T18:39:45.860-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57730 #162 (15 connections now open)
+2015-08-12T18:39:45.899-0300 I NETWORK  [conn161] end connection 127.0.0.1:57680 (14 connections now open)
+2015-08-12T18:39:45.899-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57732 #163 (16 connections now open)
+2015-08-12T18:40:08.478-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:40:08 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:40:15.865-0300 I NETWORK  [conn162] end connection 127.0.0.1:57730 (14 connections now open)
+2015-08-12T18:40:15.865-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57747 #164 (15 connections now open)
+2015-08-12T18:40:15.905-0300 I NETWORK  [conn163] end connection 127.0.0.1:57732 (14 connections now open)
+2015-08-12T18:40:15.905-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57749 #165 (15 connections now open)
+2015-08-12T18:40:38.871-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:40:38 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:40:45.876-0300 I NETWORK  [conn164] end connection 127.0.0.1:57747 (14 connections now open)
+2015-08-12T18:40:45.876-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57763 #166 (15 connections now open)
+2015-08-12T18:40:45.913-0300 I NETWORK  [conn165] end connection 127.0.0.1:57749 (14 connections now open)
+2015-08-12T18:40:45.913-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57767 #167 (15 connections now open)
+2015-08-12T18:41:09.113-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:41:08 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:41:15.883-0300 I NETWORK  [conn166] end connection 127.0.0.1:57763 (14 connections now open)
+2015-08-12T18:41:15.889-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57822 #168 (15 connections now open)
+2015-08-12T18:41:15.925-0300 I NETWORK  [conn167] end connection 127.0.0.1:57767 (14 connections now open)
+2015-08-12T18:41:15.925-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57825 #169 (15 connections now open)
+2015-08-12T18:41:39.412-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:41:39 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:41:45.895-0300 I NETWORK  [conn168] end connection 127.0.0.1:57822 (14 connections now open)
+2015-08-12T18:41:45.896-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57853 #170 (15 connections now open)
+2015-08-12T18:41:45.934-0300 I NETWORK  [conn169] end connection 127.0.0.1:57825 (14 connections now open)
+2015-08-12T18:41:45.938-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57858 #171 (15 connections now open)
+2015-08-12T18:42:09.695-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:42:09 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:42:15.903-0300 I NETWORK  [conn170] end connection 127.0.0.1:57853 (14 connections now open)
+2015-08-12T18:42:15.903-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57878 #172 (15 connections now open)
+2015-08-12T18:42:15.944-0300 I NETWORK  [conn171] end connection 127.0.0.1:57858 (14 connections now open)
+2015-08-12T18:42:15.944-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57882 #173 (15 connections now open)
+2015-08-12T18:42:40.028-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:42:39 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:42:45.915-0300 I NETWORK  [conn172] end connection 127.0.0.1:57878 (14 connections now open)
+2015-08-12T18:42:45.915-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57896 #174 (15 connections now open)
+2015-08-12T18:42:45.950-0300 I NETWORK  [conn173] end connection 127.0.0.1:57882 (14 connections now open)
+2015-08-12T18:42:45.950-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57900 #175 (16 connections now open)
+2015-08-12T18:43:10.568-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:43:10 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:43:15.925-0300 I NETWORK  [conn174] end connection 127.0.0.1:57896 (14 connections now open)
+2015-08-12T18:43:15.925-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57915 #176 (15 connections now open)
+2015-08-12T18:43:15.960-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57920 #177 (16 connections now open)
+2015-08-12T18:43:15.960-0300 I NETWORK  [conn175] end connection 127.0.0.1:57900 (14 connections now open)
+2015-08-12T18:43:41.012-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:43:40 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:43:45.933-0300 I NETWORK  [conn176] end connection 127.0.0.1:57915 (14 connections now open)
+2015-08-12T18:43:45.933-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57933 #178 (15 connections now open)
+2015-08-12T18:43:45.968-0300 I NETWORK  [conn177] end connection 127.0.0.1:57920 (14 connections now open)
+2015-08-12T18:43:45.968-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57937 #179 (15 connections now open)
+2015-08-12T18:44:11.269-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:44:11 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:44:15.943-0300 I NETWORK  [conn178] end connection 127.0.0.1:57933 (14 connections now open)
+2015-08-12T18:44:15.943-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57951 #180 (15 connections now open)
+2015-08-12T18:44:15.976-0300 I NETWORK  [conn179] end connection 127.0.0.1:57937 (14 connections now open)
+2015-08-12T18:44:15.976-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57955 #181 (16 connections now open)
+2015-08-12T18:44:41.532-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:44:41 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:44:45.952-0300 I NETWORK  [conn180] end connection 127.0.0.1:57951 (14 connections now open)
+2015-08-12T18:44:45.953-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57993 #182 (15 connections now open)
+2015-08-12T18:44:45.987-0300 I NETWORK  [conn181] end connection 127.0.0.1:57955 (14 connections now open)
+2015-08-12T18:44:45.987-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57997 #183 (15 connections now open)
+2015-08-12T18:45:11.929-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:45:11 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:45:15.964-0300 I NETWORK  [conn182] end connection 127.0.0.1:57993 (14 connections now open)
+2015-08-12T18:45:15.964-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58011 #184 (15 connections now open)
+2015-08-12T18:45:15.996-0300 I NETWORK  [conn183] end connection 127.0.0.1:57997 (14 connections now open)
+2015-08-12T18:45:15.996-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58015 #185 (16 connections now open)
+2015-08-12T18:45:42.344-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:45:41 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:45:45.974-0300 I NETWORK  [conn184] end connection 127.0.0.1:58011 (14 connections now open)
+2015-08-12T18:45:45.974-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58030 #186 (15 connections now open)
+2015-08-12T18:45:46.004-0300 I NETWORK  [conn185] end connection 127.0.0.1:58015 (14 connections now open)
+2015-08-12T18:45:46.004-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58033 #187 (15 connections now open)
+2015-08-12T18:46:12.630-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:46:12 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:46:15.984-0300 I NETWORK  [conn186] end connection 127.0.0.1:58030 (14 connections now open)
+2015-08-12T18:46:15.985-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58047 #188 (15 connections now open)
+2015-08-12T18:46:16.012-0300 I NETWORK  [conn187] end connection 127.0.0.1:58033 (14 connections now open)
+2015-08-12T18:46:16.012-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58051 #189 (16 connections now open)
+2015-08-12T18:46:42.982-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:46:42 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:46:45.996-0300 I NETWORK  [conn188] end connection 127.0.0.1:58047 (14 connections now open)
+2015-08-12T18:46:45.996-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58067 #190 (16 connections now open)
+2015-08-12T18:46:46.023-0300 I NETWORK  [conn189] end connection 127.0.0.1:58051 (14 connections now open)
+2015-08-12T18:46:46.023-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58069 #191 (16 connections now open)
+2015-08-12T18:47:13.337-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:47:12 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:47:16.002-0300 I NETWORK  [conn190] end connection 127.0.0.1:58067 (14 connections now open)
+2015-08-12T18:47:16.002-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58083 #192 (15 connections now open)
+2015-08-12T18:47:16.026-0300 I NETWORK  [conn191] end connection 127.0.0.1:58069 (14 connections now open)
+2015-08-12T18:47:16.027-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58087 #193 (16 connections now open)
+2015-08-12T18:47:43.667-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:47:43 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:47:46.013-0300 I NETWORK  [conn192] end connection 127.0.0.1:58083 (14 connections now open)
+2015-08-12T18:47:46.013-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58101 #194 (15 connections now open)
+2015-08-12T18:47:46.040-0300 I NETWORK  [conn193] end connection 127.0.0.1:58087 (14 connections now open)
+2015-08-12T18:47:46.040-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58105 #195 (16 connections now open)
+2015-08-12T18:48:14.119-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:48:13 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:48:16.023-0300 I NETWORK  [conn194] end connection 127.0.0.1:58101 (14 connections now open)
+2015-08-12T18:48:16.023-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58138 #196 (15 connections now open)
+2015-08-12T18:48:16.051-0300 I NETWORK  [conn195] end connection 127.0.0.1:58105 (14 connections now open)
+2015-08-12T18:48:16.051-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58141 #197 (15 connections now open)
+2015-08-12T18:48:44.338-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:48:44 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:48:46.031-0300 I NETWORK  [conn196] end connection 127.0.0.1:58138 (14 connections now open)
+2015-08-12T18:48:46.031-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58176 #198 (15 connections now open)
+2015-08-12T18:48:46.062-0300 I NETWORK  [conn197] end connection 127.0.0.1:58141 (14 connections now open)
+2015-08-12T18:48:46.062-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58178 #199 (15 connections now open)
+2015-08-12T18:49:14.629-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:49:14 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:49:16.043-0300 I NETWORK  [conn198] end connection 127.0.0.1:58176 (14 connections now open)
+2015-08-12T18:49:16.043-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58199 #200 (15 connections now open)
+2015-08-12T18:49:16.072-0300 I NETWORK  [conn199] end connection 127.0.0.1:58178 (14 connections now open)
+2015-08-12T18:49:16.072-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58201 #201 (15 connections now open)
+2015-08-12T18:49:44.913-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:49:44 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:49:46.053-0300 I NETWORK  [conn200] end connection 127.0.0.1:58199 (14 connections now open)
+2015-08-12T18:49:46.053-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58216 #202 (15 connections now open)
+2015-08-12T18:49:46.082-0300 I NETWORK  [conn201] end connection 127.0.0.1:58201 (14 connections now open)
+2015-08-12T18:49:46.082-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58220 #203 (15 connections now open)
+2015-08-12T18:50:16.062-0300 I NETWORK  [conn202] end connection 127.0.0.1:58216 (14 connections now open)
+2015-08-12T18:50:16.062-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58244 #204 (16 connections now open)
+2015-08-12T18:50:16.089-0300 I NETWORK  [conn203] end connection 127.0.0.1:58220 (14 connections now open)
+2015-08-12T18:50:16.090-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58245 #205 (16 connections now open)
+2015-08-12T18:50:16.222-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:50:14 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:50:46.071-0300 I NETWORK  [conn204] end connection 127.0.0.1:58244 (14 connections now open)
+2015-08-12T18:50:46.072-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58276 #206 (15 connections now open)
+2015-08-12T18:50:46.098-0300 I NETWORK  [conn205] end connection 127.0.0.1:58245 (14 connections now open)
+2015-08-12T18:50:46.099-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58277 #207 (16 connections now open)
+2015-08-12T18:50:46.497-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:50:46 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:51:16.082-0300 I NETWORK  [conn206] end connection 127.0.0.1:58276 (14 connections now open)
+2015-08-12T18:51:16.082-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58295 #208 (15 connections now open)
+2015-08-12T18:51:16.103-0300 I NETWORK  [conn207] end connection 127.0.0.1:58277 (14 connections now open)
+2015-08-12T18:51:16.103-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58297 #209 (15 connections now open)
+2015-08-12T18:51:16.761-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:51:16 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:51:46.093-0300 I NETWORK  [conn208] end connection 127.0.0.1:58295 (14 connections now open)
+2015-08-12T18:51:46.093-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58328 #210 (15 connections now open)
+2015-08-12T18:51:46.108-0300 I NETWORK  [conn209] end connection 127.0.0.1:58297 (14 connections now open)
+2015-08-12T18:51:46.108-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58329 #211 (16 connections now open)
+2015-08-12T18:51:47.268-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:51:46 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:52:16.103-0300 I NETWORK  [conn210] end connection 127.0.0.1:58328 (14 connections now open)
+2015-08-12T18:52:16.103-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58346 #212 (15 connections now open)
+2015-08-12T18:52:16.117-0300 I NETWORK  [conn211] end connection 127.0.0.1:58329 (14 connections now open)
+2015-08-12T18:52:16.117-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58347 #213 (15 connections now open)
+2015-08-12T18:52:17.675-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:52:17 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:52:46.111-0300 I NETWORK  [conn212] end connection 127.0.0.1:58346 (14 connections now open)
+2015-08-12T18:52:46.112-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58365 #214 (15 connections now open)
+2015-08-12T18:52:46.124-0300 I NETWORK  [conn213] end connection 127.0.0.1:58347 (14 connections now open)
+2015-08-12T18:52:46.124-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58366 #215 (15 connections now open)
+2015-08-12T18:52:47.936-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:52:47 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:53:16.122-0300 I NETWORK  [conn214] end connection 127.0.0.1:58365 (14 connections now open)
+2015-08-12T18:53:16.123-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58384 #216 (15 connections now open)
+2015-08-12T18:53:16.131-0300 I NETWORK  [conn215] end connection 127.0.0.1:58366 (14 connections now open)
+2015-08-12T18:53:16.131-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58385 #217 (15 connections now open)
+2015-08-12T18:53:18.337-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:53:17 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:53:46.128-0300 I NETWORK  [conn216] end connection 127.0.0.1:58384 (14 connections now open)
+2015-08-12T18:53:46.129-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58418 #218 (15 connections now open)
+2015-08-12T18:53:46.139-0300 I NETWORK  [conn217] end connection 127.0.0.1:58385 (14 connections now open)
+2015-08-12T18:53:46.139-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58419 #219 (15 connections now open)
+2015-08-12T18:53:48.610-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:53:48 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:54:16.139-0300 I NETWORK  [conn218] end connection 127.0.0.1:58418 (14 connections now open)
+2015-08-12T18:54:16.140-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58444 #220 (15 connections now open)
+2015-08-12T18:54:16.149-0300 I NETWORK  [conn219] end connection 127.0.0.1:58419 (14 connections now open)
+2015-08-12T18:54:16.149-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58446 #221 (15 connections now open)
+2015-08-12T18:54:19.015-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:54:18 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:54:46.148-0300 I NETWORK  [conn220] end connection 127.0.0.1:58444 (14 connections now open)
+2015-08-12T18:54:46.149-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58469 #222 (15 connections now open)
+2015-08-12T18:54:46.162-0300 I NETWORK  [conn221] end connection 127.0.0.1:58446 (14 connections now open)
+2015-08-12T18:54:46.162-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58471 #223 (15 connections now open)
+2015-08-12T18:54:49.605-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:54:49 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:55:16.157-0300 I NETWORK  [conn222] end connection 127.0.0.1:58469 (14 connections now open)
+2015-08-12T18:55:16.157-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58501 #224 (16 connections now open)
+2015-08-12T18:55:16.168-0300 I NETWORK  [conn223] end connection 127.0.0.1:58471 (14 connections now open)
+2015-08-12T18:55:16.168-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58503 #225 (15 connections now open)
+2015-08-12T18:55:19.888-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:55:19 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:55:46.170-0300 I NETWORK  [conn224] end connection 127.0.0.1:58501 (14 connections now open)
+2015-08-12T18:55:46.170-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58523 #226 (15 connections now open)
+2015-08-12T18:55:46.175-0300 I NETWORK  [conn225] end connection 127.0.0.1:58503 (14 connections now open)
+2015-08-12T18:55:46.176-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58525 #227 (15 connections now open)
+2015-08-12T18:55:50.339-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:55:49 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:56:16.181-0300 I NETWORK  [conn226] end connection 127.0.0.1:58523 (14 connections now open)
+2015-08-12T18:56:16.181-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58552 #228 (15 connections now open)
+2015-08-12T18:56:16.186-0300 I NETWORK  [conn227] end connection 127.0.0.1:58525 (14 connections now open)
+2015-08-12T18:56:16.186-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58554 #229 (15 connections now open)
+2015-08-12T18:56:20.731-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:56:20 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:56:46.190-0300 I NETWORK  [conn228] end connection 127.0.0.1:58552 (14 connections now open)
+2015-08-12T18:56:46.190-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58571 #230 (15 connections now open)
+2015-08-12T18:56:46.195-0300 I NETWORK  [conn229] end connection 127.0.0.1:58554 (14 connections now open)
+2015-08-12T18:56:46.197-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58573 #231 (15 connections now open)
+2015-08-12T18:56:51.006-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:56:50 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:57:16.203-0300 I NETWORK  [conn230] end connection 127.0.0.1:58571 (14 connections now open)
+2015-08-12T18:57:16.203-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58590 #232 (15 connections now open)
+2015-08-12T18:57:16.209-0300 I NETWORK  [conn231] end connection 127.0.0.1:58573 (14 connections now open)
+2015-08-12T18:57:16.209-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58592 #233 (15 connections now open)
+2015-08-12T18:57:21.337-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:57:21 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:57:46.214-0300 I NETWORK  [conn232] end connection 127.0.0.1:58590 (14 connections now open)
+2015-08-12T18:57:46.214-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58608 #234 (15 connections now open)
+2015-08-12T18:57:46.222-0300 I NETWORK  [conn233] end connection 127.0.0.1:58592 (14 connections now open)
+2015-08-12T18:57:46.222-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58610 #235 (15 connections now open)
+2015-08-12T18:57:51.667-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:57:51 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:58:16.229-0300 I NETWORK  [conn234] end connection 127.0.0.1:58608 (14 connections now open)
+2015-08-12T18:58:16.229-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58626 #236 (15 connections now open)
+2015-08-12T18:58:16.232-0300 I NETWORK  [conn235] end connection 127.0.0.1:58610 (14 connections now open)
+2015-08-12T18:58:16.232-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58629 #237 (15 connections now open)
+2015-08-12T18:58:22.054-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:58:21 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:58:46.240-0300 I NETWORK  [conn236] end connection 127.0.0.1:58626 (14 connections now open)
+2015-08-12T18:58:46.240-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58645 #238 (15 connections now open)
+2015-08-12T18:58:46.244-0300 I NETWORK  [conn237] end connection 127.0.0.1:58629 (14 connections now open)
+2015-08-12T18:58:46.244-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58646 #239 (15 connections now open)
+2015-08-12T18:58:52.459-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:58:52 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:59:16.251-0300 I NETWORK  [conn238] end connection 127.0.0.1:58645 (14 connections now open)
+2015-08-12T18:59:16.251-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58662 #240 (15 connections now open)
+2015-08-12T18:59:16.257-0300 I NETWORK  [conn239] end connection 127.0.0.1:58646 (14 connections now open)
+2015-08-12T18:59:16.257-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58665 #241 (15 connections now open)
+2015-08-12T18:59:22.658-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:59:22 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T18:59:46.263-0300 I NETWORK  [conn240] end connection 127.0.0.1:58662 (14 connections now open)
+2015-08-12T18:59:46.263-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58682 #242 (15 connections now open)
+2015-08-12T18:59:46.269-0300 I NETWORK  [conn241] end connection 127.0.0.1:58665 (14 connections now open)
+2015-08-12T18:59:46.269-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58683 #243 (15 connections now open)
+2015-08-12T18:59:53.057-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:59:52 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T19:00:16.274-0300 I NETWORK  [conn242] end connection 127.0.0.1:58682 (14 connections now open)
+2015-08-12T19:00:16.274-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58705 #244 (15 connections now open)
+2015-08-12T19:00:16.281-0300 I NETWORK  [conn243] end connection 127.0.0.1:58683 (14 connections now open)
+2015-08-12T19:00:16.281-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58706 #245 (16 connections now open)
+2015-08-12T19:00:23.297-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 19:00:23 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T19:00:46.284-0300 I NETWORK  [conn244] end connection 127.0.0.1:58705 (14 connections now open)
+2015-08-12T19:00:46.285-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58722 #246 (15 connections now open)
+2015-08-12T19:00:46.294-0300 I NETWORK  [conn245] end connection 127.0.0.1:58706 (14 connections now open)
+2015-08-12T19:00:46.297-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58725 #247 (15 connections now open)
+2015-08-12T19:00:53.585-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 19:00:53 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:57017:1439413698:907481702', sleeping for 30000ms
+2015-08-12T19:01:16.293-0300 I NETWORK  [conn246] end connection 127.0.0.1:58722 (14 connections now open)
+2015-08-12T19:01:16.293-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58741 #248 (15 connections now open)
+2015-08-12T19:01:16.306-0300 I NETWORK  [conn247] end connection 127.0.0.1:58725 (14 connections now open)
+2015-08-12T19:01:16.307-0300 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58742 #249 (15 connections now open)

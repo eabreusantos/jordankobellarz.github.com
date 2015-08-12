@@ -1,0 +1,808 @@
+2015-08-12T18:04:43.413-0300 I SHARDING [mongosMain] MongoS version 3.0.5 starting: pid=22301 port=27017 64-bit host=jordan (--help for usage)
+2015-08-12T18:04:43.413-0300 I CONTROL  [mongosMain] db version v3.0.5
+2015-08-12T18:04:43.413-0300 I CONTROL  [mongosMain] git version: 8bc4ae20708dbb493cb09338d9e7be6698e4a3a3
+2015-08-12T18:04:43.413-0300 I CONTROL  [mongosMain] build info: Linux build2.ny.cbi.10gen.cc 2.6.32-431.3.1.el6.x86_64 #1 SMP Fri Jan 3 21:39:27 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2015-08-12T18:04:43.413-0300 I CONTROL  [mongosMain] allocator: tcmalloc
+2015-08-12T18:04:43.413-0300 I CONTROL  [mongosMain] options: { processManagement: { fork: true }, sharding: { configDB: "localhost:57040,localhost:57041,localhost:57042" }, systemLog: { destination: "file", path: "mongos-1.log" } }
+2015-08-12T18:04:43.418-0300 I NETWORK  [mongosMain] SyncClusterConnection connecting to [localhost:57040]
+2015-08-12T18:04:43.419-0300 I NETWORK  [mongosMain] SyncClusterConnection connecting to [localhost:57041]
+2015-08-12T18:04:43.419-0300 I NETWORK  [mongosMain] SyncClusterConnection connecting to [localhost:57042]
+2015-08-12T18:04:43.489-0300 I NETWORK  [mongosMain] scoped connection to localhost:57040,localhost:57041,localhost:57042 not being returned to the pool
+2015-08-12T18:04:43.493-0300 I NETWORK  [mongosMain] SyncClusterConnection connecting to [localhost:57040]
+2015-08-12T18:04:43.493-0300 I SHARDING [LockPinger] creating distributed lock ping thread for localhost:57040,localhost:57041,localhost:57042 and process jordan:27017:1439413483:1804289383 (sleeping for 30000ms)
+2015-08-12T18:04:43.493-0300 I NETWORK  [LockPinger] SyncClusterConnection connecting to [localhost:57040]
+2015-08-12T18:04:43.493-0300 I NETWORK  [mongosMain] SyncClusterConnection connecting to [localhost:57041]
+2015-08-12T18:04:43.493-0300 I NETWORK  [LockPinger] SyncClusterConnection connecting to [localhost:57041]
+2015-08-12T18:04:43.493-0300 I NETWORK  [mongosMain] SyncClusterConnection connecting to [localhost:57042]
+2015-08-12T18:04:43.493-0300 I NETWORK  [LockPinger] SyncClusterConnection connecting to [localhost:57042]
+2015-08-12T18:04:44.548-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:04:43 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:04:44.748-0300 I SHARDING [mongosMain] distributed lock 'configUpgrade/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb4ecc4dc6333e59c6395
+2015-08-12T18:04:44.749-0300 I SHARDING [mongosMain] starting upgrade of config server from v0 to v6
+2015-08-12T18:04:44.749-0300 I SHARDING [mongosMain] starting next upgrade step from v0 to v6
+2015-08-12T18:04:44.749-0300 I SHARDING [mongosMain] about to log new metadata event: { _id: "jordan-2015-08-12T21:04:44-55cbb4ecc4dc6333e59c6396", server: "jordan", clientAddr: "N/A", time: new Date(1439413484749), what: "starting upgrade of config database", ns: "config.version", details: { from: 0, to: 6 } }
+2015-08-12T18:04:45.380-0300 I SHARDING [mongosMain] writing initial config version at v6
+2015-08-12T18:04:45.583-0300 I SHARDING [mongosMain] about to log new metadata event: { _id: "jordan-2015-08-12T21:04:45-55cbb4edc4dc6333e59c6398", server: "jordan", clientAddr: "N/A", time: new Date(1439413485583), what: "finished upgrade of config database", ns: "config.version", details: { from: 0, to: 6 } }
+2015-08-12T18:04:45.886-0300 I SHARDING [mongosMain] upgrade of config server to v6 successful
+2015-08-12T18:04:45.886-0300 I NETWORK  [mongosMain] SyncClusterConnection connecting to [localhost:57040]
+2015-08-12T18:04:45.887-0300 I NETWORK  [mongosMain] SyncClusterConnection connecting to [localhost:57041]
+2015-08-12T18:04:45.887-0300 I NETWORK  [mongosMain] SyncClusterConnection connecting to [localhost:57042]
+2015-08-12T18:04:46.068-0300 I SHARDING [mongosMain] distributed lock 'configUpgrade/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:04:48.450-0300 I SHARDING [Balancer] about to contact config servers and shards
+2015-08-12T18:04:48.451-0300 I SHARDING [Balancer] config servers and shards contacted successfully
+2015-08-12T18:04:48.451-0300 I SHARDING [Balancer] balancer id: jordan:27017 started at Aug 12 18:04:48
+2015-08-12T18:04:48.505-0300 I NETWORK  [mongosMain] waiting for connections on port 27017
+2015-08-12T18:04:49.054-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb4f0c4dc6333e59c639a
+2015-08-12T18:04:50.008-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:05:00.621-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb4fcc4dc6333e59c639c
+2015-08-12T18:05:01.038-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:05:11.486-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb507c4dc6333e59c639e
+2015-08-12T18:05:11.868-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:05:14.969-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:05:14 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:05:22.265-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb511c4dc6333e59c63a0
+2015-08-12T18:05:22.598-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:05:32.918-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb51cc4dc6333e59c63a2
+2015-08-12T18:05:33.306-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:05:43.681-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb527c4dc6333e59c63a4
+2015-08-12T18:05:44.103-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:05:45.388-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:05:44 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:05:48.867-0300 I NETWORK  [mongosMain] connection accepted from 127.0.0.1:59229 #1 (1 connection now open)
+2015-08-12T18:05:48.867-0300 I SHARDING [conn1] couldn't find database [admin] in config db
+2015-08-12T18:05:49.147-0300 I SHARDING [conn1] 	 put [admin] on: config:localhost:57040,localhost:57041,localhost:57042
+2015-08-12T18:05:49.168-0300 I NETWORK  [conn1] starting new replica set monitor for replica set s0 with seeds localhost:37017
+2015-08-12T18:05:49.168-0300 I NETWORK  [ReplicaSetMonitorWatcher] starting
+2015-08-12T18:05:49.169-0300 I NETWORK  [conn1] changing hosts to s0/localhost:37017,localhost:37018,localhost:37019 from s0/localhost:37017
+2015-08-12T18:05:49.182-0300 I SHARDING [conn1] going to add shard: { _id: "s0", host: "s0/localhost:37017,localhost:37018,localhost:37019" }
+2015-08-12T18:05:49.568-0300 I SHARDING [conn1] about to log metadata event: { _id: "jordan-2015-08-12T21:05:49-55cbb52dc4dc6333e59c63a6", server: "jordan", clientAddr: "N/A", time: new Date(1439413549568), what: "addShard", ns: "", details: { name: "s0", host: "s0/localhost:37017" } }
+2015-08-12T18:05:49.890-0300 I NETWORK  [conn1] starting new replica set monitor for replica set s1 with seeds localhost:47017
+2015-08-12T18:05:49.891-0300 I NETWORK  [conn1] changing hosts to s1/localhost:47017,localhost:47018,localhost:47019 from s1/localhost:47017
+2015-08-12T18:05:49.892-0300 I SHARDING [conn1] going to add shard: { _id: "s1", host: "s1/localhost:47017,localhost:47018,localhost:47019" }
+2015-08-12T18:05:50.115-0300 I SHARDING [conn1] about to log metadata event: { _id: "jordan-2015-08-12T21:05:50-55cbb52ec4dc6333e59c63a7", server: "jordan", clientAddr: "N/A", time: new Date(1439413550115), what: "addShard", ns: "", details: { name: "s1", host: "s1/localhost:47017" } }
+2015-08-12T18:05:50.265-0300 I NETWORK  [conn1] starting new replica set monitor for replica set s2 with seeds localhost:57017
+2015-08-12T18:05:50.265-0300 I NETWORK  [conn1] changing hosts to s2/localhost:57017,localhost:57018,localhost:57019 from s2/localhost:57017
+2015-08-12T18:05:50.266-0300 I SHARDING [conn1] going to add shard: { _id: "s2", host: "s2/localhost:57017,localhost:57018,localhost:57019" }
+2015-08-12T18:05:50.437-0300 I SHARDING [conn1] about to log metadata event: { _id: "jordan-2015-08-12T21:05:50-55cbb52ec4dc6333e59c63a8", server: "jordan", clientAddr: "N/A", time: new Date(1439413550437), what: "addShard", ns: "", details: { name: "s2", host: "s2/localhost:57017" } }
+2015-08-12T18:05:50.620-0300 I SHARDING [conn1] couldn't find database [school] in config db
+2015-08-12T18:05:50.842-0300 I SHARDING [conn1] 	 put [school] on: s2:s2/localhost:57017,localhost:57018,localhost:57019
+2015-08-12T18:05:50.842-0300 I COMMAND  [conn1] enabling sharding on: school
+2015-08-12T18:05:51.371-0300 I COMMAND  [conn1] CMD: shardcollection: { shardCollection: "school.students", key: { student_id: 1.0 } }
+2015-08-12T18:05:51.371-0300 I SHARDING [conn1] enable sharding on: school.students with shard key: { student_id: 1.0 }
+2015-08-12T18:05:51.371-0300 I SHARDING [conn1] about to log metadata event: { _id: "jordan-2015-08-12T21:05:51-55cbb52fc4dc6333e59c63a9", server: "jordan", clientAddr: "N/A", time: new Date(1439413551371), what: "shardCollection.start", ns: "school.students", details: { shardKey: { student_id: 1.0 }, collection: "school.students", primary: "s2:s2/localhost:57017,localhost:57018,localhost:57019", initShards: [], numChunks: 1 } }
+2015-08-12T18:05:51.482-0300 I SHARDING [conn1] going to create 1 chunk(s) for: school.students using new epoch 55cbb52fc4dc6333e59c63aa
+2015-08-12T18:05:51.692-0300 I SHARDING [conn1] ChunkManager: time to load chunks for school.students: 0ms sequenceNumber: 2 version: 1|0||55cbb52fc4dc6333e59c63aa based on: (empty)
+2015-08-12T18:05:51.860-0300 I SHARDING [conn1] about to log metadata event: { _id: "jordan-2015-08-12T21:05:51-55cbb52fc4dc6333e59c63ab", server: "jordan", clientAddr: "N/A", time: new Date(1439413551860), what: "shardCollection", ns: "school.students", details: { version: "1|0||55cbb52fc4dc6333e59c63aa" } }
+2015-08-12T18:05:52.085-0300 I NETWORK  [conn1] end connection 127.0.0.1:59229 (0 connections now open)
+2015-08-12T18:05:54.921-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb532c4dc6333e59c63ac
+2015-08-12T18:05:55.477-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:06:05.763-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb53dc4dc6333e59c63ae
+2015-08-12T18:06:06.385-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:06:15.591-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:06:15 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:06:16.797-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb548c4dc6333e59c63b0
+2015-08-12T18:06:17.337-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:06:27.723-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb553c4dc6333e59c63b2
+2015-08-12T18:06:28.078-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:06:31.422-0300 I NETWORK  [mongosMain] connection accepted from 127.0.0.1:59285 #2 (1 connection now open)
+2015-08-12T18:06:38.342-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb55ec4dc6333e59c63b4
+2015-08-12T18:06:38.730-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:06:45.920-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:06:45 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:06:49.117-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb568c4dc6333e59c63b6
+2015-08-12T18:06:49.660-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:07:00.012-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb573c4dc6333e59c63b8
+2015-08-12T18:07:00.401-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:07:10.754-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb57ec4dc6333e59c63ba
+2015-08-12T18:07:11.109-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:07:16.117-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:07:15 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:07:21.407-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb589c4dc6333e59c63bc
+2015-08-12T18:07:21.828-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:07:32.237-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb593c4dc6333e59c63be
+2015-08-12T18:07:32.692-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:07:43.035-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb59ec4dc6333e59c63c0
+2015-08-12T18:07:43.423-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:07:46.472-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:07:46 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:07:53.753-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb5a9c4dc6333e59c63c2
+2015-08-12T18:07:54.142-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:08:04.517-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb5b4c4dc6333e59c63c4
+2015-08-12T18:08:05.149-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:08:15.491-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb5bfc4dc6333e59c63c6
+2015-08-12T18:08:15.824-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:08:16.772-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:08:16 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:08:20.431-0300 I SHARDING [conn2] ChunkManager: time to load chunks for school.students: 0ms sequenceNumber: 3 version: 1|3||55cbb52fc4dc6333e59c63aa based on: 1|0||55cbb52fc4dc6333e59c63aa
+2015-08-12T18:08:20.431-0300 I SHARDING [conn2] autosplitted school.students shard: ns: school.students, shard: s2:s2/localhost:57017,localhost:57018,localhost:57019, lastmod: 1|0||000000000000000000000000, min: { student_id: MinKey }, max: { student_id: MaxKey } into 3 (splitThreshold 921) (migrate suggested)
+2015-08-12T18:08:20.438-0300 I SHARDING [conn2] moving chunk (auto): ns: school.students, shard: s2:s2/localhost:57017,localhost:57018,localhost:57019, lastmod: 1|3||000000000000000000000000, min: { student_id: 2.0 }, max: { student_id: MaxKey } to: s0
+2015-08-12T18:08:20.438-0300 I SHARDING [conn2] moving chunk ns: school.students moving ( ns: school.students, shard: s2:s2/localhost:57017,localhost:57018,localhost:57019, lastmod: 1|3||000000000000000000000000, min: { student_id: 2.0 }, max: { student_id: MaxKey }) s2:s2/localhost:57017,localhost:57018,localhost:57019 -> s0:s0/localhost:37017,localhost:37018,localhost:37019
+2015-08-12T18:08:26.263-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb5c9c4dc6333e59c63c8
+2015-08-12T18:08:26.266-0300 I SHARDING [Balancer] ChunkManager: time to load chunks for school.students: 0ms sequenceNumber: 4 version: 2|1||55cbb52fc4dc6333e59c63aa based on: 1|3||55cbb52fc4dc6333e59c63aa
+2015-08-12T18:08:26.266-0300 I SHARDING [Balancer]  ns: school.students going to move { _id: "school.students-student_id_MinKey", ns: "school.students", min: { student_id: MinKey }, max: { student_id: 0.0 }, version: Timestamp 2000|1, versionEpoch: ObjectId('55cbb52fc4dc6333e59c63aa'), lastmod: Timestamp 2000|1, lastmodEpoch: ObjectId('55cbb52fc4dc6333e59c63aa'), shard: "s2" } from: s2 to: s1 tag []
+2015-08-12T18:08:26.266-0300 I SHARDING [Balancer] moving chunk ns: school.students moving ( ns: school.students, shard: s2:s2/localhost:57017,localhost:57018,localhost:57019, lastmod: 2|1||000000000000000000000000, min: { student_id: MinKey }, max: { student_id: 0.0 }) s2:s2/localhost:57017,localhost:57018,localhost:57019 -> s1:s1/localhost:47017,localhost:47018,localhost:47019
+2015-08-12T18:08:26.307-0300 I NETWORK  [conn2] SyncClusterConnection connecting to [localhost:57040]
+2015-08-12T18:08:26.307-0300 I NETWORK  [conn2] SyncClusterConnection connecting to [localhost:57041]
+2015-08-12T18:08:26.308-0300 I NETWORK  [conn2] SyncClusterConnection connecting to [localhost:57042]
+2015-08-12T18:08:26.308-0300 I SHARDING [conn2] ChunkManager: time to load chunks for school.students: 0ms sequenceNumber: 5 version: 2|1||55cbb52fc4dc6333e59c63aa based on: (empty)
+2015-08-12T18:08:26.308-0300 I SHARDING [conn2] ChunkManager: time to load chunks for school.students: 0ms sequenceNumber: 6 version: 2|1||55cbb52fc4dc6333e59c63aa based on: 2|1||55cbb52fc4dc6333e59c63aa
+2015-08-12T18:08:26.308-0300 W SHARDING [conn2] chunk manager reload forced for collection 'school.students', config version is 2|1||55cbb52fc4dc6333e59c63aa
+2015-08-12T18:08:33.551-0300 I SHARDING [Balancer] ChunkManager: time to load chunks for school.students: 0ms sequenceNumber: 7 version: 3|1||55cbb52fc4dc6333e59c63aa based on: 2|1||55cbb52fc4dc6333e59c63aa
+2015-08-12T18:08:34.210-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:08:35.706-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb5d3c4dc6333e59c63ca
+2015-08-12T18:08:36.731-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:08:47.261-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:08:46 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:08:47.261-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb5dec4dc6333e59c63cc
+2015-08-12T18:08:47.946-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:08:58.488-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb5e9c4dc6333e59c63ce
+2015-08-12T18:08:59.087-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:09:09.621-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb5f5c4dc6333e59c63d0
+2015-08-12T18:09:10.312-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:09:17.511-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:09:17 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:09:19.675-0300 I SHARDING [conn2] ChunkManager: time to load chunks for school.students: 0ms sequenceNumber: 8 version: 3|4||55cbb52fc4dc6333e59c63aa based on: 3|1||55cbb52fc4dc6333e59c63aa
+2015-08-12T18:09:19.676-0300 I SHARDING [conn2] autosplitted school.students shard: ns: school.students, shard: s0:s0/localhost:37017,localhost:37018,localhost:37019, lastmod: 2|0||000000000000000000000000, min: { student_id: 2.0 }, max: { student_id: MaxKey } into 3 (splitThreshold 15099494)
+2015-08-12T18:09:21.222-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb600c4dc6333e59c63d2
+2015-08-12T18:09:21.226-0300 I SHARDING [Balancer]  ns: school.students going to move { _id: "school.students-student_id_2.0", ns: "school.students", min: { student_id: 2.0 }, max: { student_id: 3497.0 }, version: Timestamp 3000|2, versionEpoch: ObjectId('55cbb52fc4dc6333e59c63aa'), lastmod: Timestamp 3000|2, lastmodEpoch: ObjectId('55cbb52fc4dc6333e59c63aa'), shard: "s0" } from: s0 to: s1 tag []
+2015-08-12T18:09:21.226-0300 I SHARDING [Balancer] moving chunk ns: school.students moving ( ns: school.students, shard: s0:s0/localhost:37017,localhost:37018,localhost:37019, lastmod: 3|2||000000000000000000000000, min: { student_id: 2.0 }, max: { student_id: 3497.0 }) s0:s0/localhost:37017,localhost:37018,localhost:37019 -> s1:s1/localhost:47017,localhost:47018,localhost:47019
+2015-08-12T18:09:47.770-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:09:47 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:10:18.028-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:10:17 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:10:25.902-0300 I SHARDING [Balancer] ChunkManager: time to load chunks for school.students: 0ms sequenceNumber: 9 version: 4|1||55cbb52fc4dc6333e59c63aa based on: 3|4||55cbb52fc4dc6333e59c63aa
+2015-08-12T18:10:26.620-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:10:29.046-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb643c4dc6333e59c63d4
+2015-08-12T18:10:29.845-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:10:40.457-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb64fc4dc6333e59c63d6
+2015-08-12T18:10:41.176-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:10:48.390-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:10:48 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:10:51.814-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb65bc4dc6333e59c63d8
+2015-08-12T18:10:52.561-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:11:03.078-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb666c4dc6333e59c63da
+2015-08-12T18:11:03.622-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:11:14.154-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb671c4dc6333e59c63dc
+2015-08-12T18:11:14.984-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:11:18.773-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:11:18 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:11:25.406-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb67cc4dc6333e59c63de
+2015-08-12T18:11:25.894-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:11:36.213-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb687c4dc6333e59c63e0
+2015-08-12T18:11:36.602-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:11:46.977-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb692c4dc6333e59c63e2
+2015-08-12T18:11:47.409-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:11:48.982-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:11:48 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:11:57.829-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb69dc4dc6333e59c63e4
+2015-08-12T18:11:58.217-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:12:08.504-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb6a8c4dc6333e59c63e6
+2015-08-12T18:12:08.985-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:12:19.271-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:12:18 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:12:19.345-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb6b2c4dc6333e59c63e8
+2015-08-12T18:12:19.766-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:12:30.086-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb6bdc4dc6333e59c63ea
+2015-08-12T18:12:30.508-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:12:41.116-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb6c8c4dc6333e59c63ec
+2015-08-12T18:12:41.604-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:12:49.487-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:12:49 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:12:51.957-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb6d3c4dc6333e59c63ee
+2015-08-12T18:12:52.312-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:13:02.565-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb6dec4dc6333e59c63f0
+2015-08-12T18:13:03.053-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:13:13.306-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb6e9c4dc6333e59c63f2
+2015-08-12T18:13:13.694-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:13:19.889-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:13:19 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:13:24.125-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb6f3c4dc6333e59c63f4
+2015-08-12T18:13:24.547-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:13:35.022-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb6fec4dc6333e59c63f6
+2015-08-12T18:13:35.698-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:13:45.973-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb709c4dc6333e59c63f8
+2015-08-12T18:13:46.462-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:13:50.123-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:13:49 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:13:57.902-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb714c4dc6333e59c63fa
+2015-08-12T18:13:58.290-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:14:08.599-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb720c4dc6333e59c63fc
+2015-08-12T18:14:09.087-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:14:19.373-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb72bc4dc6333e59c63fe
+2015-08-12T18:14:19.861-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:14:20.400-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:14:20 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:14:30.248-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb735c4dc6333e59c6400
+2015-08-12T18:14:30.669-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:14:41.044-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb740c4dc6333e59c6402
+2015-08-12T18:14:41.436-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:14:50.612-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:14:50 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:14:51.710-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb74bc4dc6333e59c6404
+2015-08-12T18:14:52.893-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:15:03.261-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb756c4dc6333e59c6406
+2015-08-12T18:15:03.749-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:15:14.091-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb761c4dc6333e59c6408
+2015-08-12T18:15:14.446-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:15:21.019-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:15:20 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:15:24.888-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb76cc4dc6333e59c640a
+2015-08-12T18:15:25.309-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:15:35.684-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb777c4dc6333e59c640c
+2015-08-12T18:15:36.128-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:15:46.620-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb782c4dc6333e59c640e
+2015-08-12T18:15:47.300-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:15:51.301-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:15:51 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:15:57.766-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb78dc4dc6333e59c6410
+2015-08-12T18:15:58.221-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:16:08.540-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb798c4dc6333e59c6412
+2015-08-12T18:16:08.902-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:16:19.182-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb7a2c4dc6333e59c6414
+2015-08-12T18:16:19.570-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:16:21.608-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:16:21 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:16:29.845-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb7adc4dc6333e59c6416
+2015-08-12T18:16:30.267-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:16:40.531-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb7b8c4dc6333e59c6418
+2015-08-12T18:16:40.953-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:16:51.239-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb7c2c4dc6333e59c641a
+2015-08-12T18:16:51.561-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:16:52.062-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:16:51 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:17:01.991-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb7cdc4dc6333e59c641c
+2015-08-12T18:17:02.472-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:17:12.821-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb7d8c4dc6333e59c641e
+2015-08-12T18:17:13.143-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:17:22.442-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:17:22 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:17:23.540-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb7e3c4dc6333e59c6420
+2015-08-12T18:17:23.984-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:17:34.359-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb7edc4dc6333e59c6422
+2015-08-12T18:17:34.747-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:17:45.233-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb7f8c4dc6333e59c6424
+2015-08-12T18:17:45.622-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:17:52.693-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:17:52 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:17:55.975-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb803c4dc6333e59c6426
+2015-08-12T18:17:56.297-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:18:06.627-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb80ec4dc6333e59c6428
+2015-08-12T18:18:07.049-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:18:17.425-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb819c4dc6333e59c642a
+2015-08-12T18:18:17.869-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:18:22.975-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:18:22 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:18:28.278-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb823c4dc6333e59c642c
+2015-08-12T18:18:28.622-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:18:38.986-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb82ec4dc6333e59c642e
+2015-08-12T18:18:39.474-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:18:49.771-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb839c4dc6333e59c6430
+2015-08-12T18:18:50.226-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:18:53.254-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:18:52 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:19:00.523-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb844c4dc6333e59c6432
+2015-08-12T18:19:01.045-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:19:11.729-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb84fc4dc6333e59c6434
+2015-08-12T18:19:12.052-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:19:22.505-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb85ac4dc6333e59c6436
+2015-08-12T18:19:23.054-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:19:23.546-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:19:23 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:19:33.491-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb865c4dc6333e59c6438
+2015-08-12T18:19:33.912-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:19:44.232-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb86fc4dc6333e59c643a
+2015-08-12T18:19:44.764-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:19:53.929-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:19:53 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:19:55.051-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb87ac4dc6333e59c643c
+2015-08-12T18:19:55.372-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:20:05.725-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb885c4dc6333e59c643e
+2015-08-12T18:20:06.047-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:20:16.455-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb890c4dc6333e59c6440
+2015-08-12T18:20:16.810-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:20:24.253-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:20:23 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:20:27.197-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb89ac4dc6333e59c6442
+2015-08-12T18:20:27.518-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:20:37.805-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb8a5c4dc6333e59c6444
+2015-08-12T18:20:38.260-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:20:48.557-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb8b0c4dc6333e59c6446
+2015-08-12T18:20:49.012-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:20:54.670-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:20:54 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:20:59.834-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb8bbc4dc6333e59c6448
+2015-08-12T18:21:00.282-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:21:10.661-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb8c6c4dc6333e59c644a
+2015-08-12T18:21:10.960-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:21:21.335-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb8d0c4dc6333e59c644c
+2015-08-12T18:21:21.657-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:21:25.001-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:21:24 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:21:31.955-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb8dbc4dc6333e59c644e
+2015-08-12T18:21:32.443-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:21:42.773-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb8e6c4dc6333e59c6450
+2015-08-12T18:21:43.228-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:21:53.605-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb8f1c4dc6333e59c6452
+2015-08-12T18:21:53.927-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:21:55.214-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:21:55 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:22:04.269-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb8fbc4dc6333e59c6454
+2015-08-12T18:22:04.601-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:22:15.021-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb906c4dc6333e59c6456
+2015-08-12T18:22:15.376-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:22:25.507-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:22:25 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:22:25.673-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb911c4dc6333e59c6458
+2015-08-12T18:22:26.062-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:22:36.315-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb91cc4dc6333e59c645a
+2015-08-12T18:22:36.670-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:22:47.011-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb926c4dc6333e59c645c
+2015-08-12T18:22:47.367-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:22:55.782-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:22:55 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:22:57.742-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb931c4dc6333e59c645e
+2015-08-12T18:22:58.138-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:23:08.561-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb93cc4dc6333e59c6460
+2015-08-12T18:23:09.015-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:23:19.379-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb947c4dc6333e59c6462
+2015-08-12T18:23:19.845-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:23:26.181-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:23:25 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:23:30.076-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb951c4dc6333e59c6464
+2015-08-12T18:23:30.465-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:23:41.284-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb95cc4dc6333e59c6466
+2015-08-12T18:23:41.616-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:23:51.936-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb967c4dc6333e59c6468
+2015-08-12T18:23:52.324-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:23:56.389-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:23:56 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:24:02.677-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb972c4dc6333e59c646a
+2015-08-12T18:24:03.032-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:24:13.385-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb97dc4dc6333e59c646c
+2015-08-12T18:24:13.707-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:24:24.082-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb987c4dc6333e59c646e
+2015-08-12T18:24:24.405-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:24:26.782-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:24:26 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:24:34.713-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb992c4dc6333e59c6470
+2015-08-12T18:24:35.145-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:24:45.520-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb99dc4dc6333e59c6472
+2015-08-12T18:24:46.008-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:24:56.361-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb9a8c4dc6333e59c6474
+2015-08-12T18:24:56.782-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:24:57.114-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:24:56 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:25:07.191-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb9b2c4dc6333e59c6476
+2015-08-12T18:25:07.513-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:25:17.766-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb9bdc4dc6333e59c6478
+2015-08-12T18:25:18.187-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:25:27.496-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:25:27 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:25:28.531-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb9c8c4dc6333e59c647a
+2015-08-12T18:25:28.963-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:25:39.272-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb9d2c4dc6333e59c647c
+2015-08-12T18:25:39.760-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:25:50.113-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb9ddc4dc6333e59c647e
+2015-08-12T18:25:50.435-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:25:57.739-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:25:57 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:26:00.832-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb9e8c4dc6333e59c6480
+2015-08-12T18:26:01.320-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:26:11.684-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb9f3c4dc6333e59c6482
+2015-08-12T18:26:12.006-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:26:22.381-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbb9fec4dc6333e59c6484
+2015-08-12T18:26:23.025-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:26:28.033-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:26:27 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:26:33.390-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbba09c4dc6333e59c6486
+2015-08-12T18:26:33.866-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:26:44.174-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbba13c4dc6333e59c6488
+2015-08-12T18:26:44.496-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:26:54.804-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbba1ec4dc6333e59c648a
+2015-08-12T18:26:55.226-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:26:58.357-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:26:58 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:27:05.779-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbba29c4dc6333e59c648c
+2015-08-12T18:27:06.095-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:27:16.415-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbba34c4dc6333e59c648e
+2015-08-12T18:27:16.770-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:27:27.145-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbba3ec4dc6333e59c6490
+2015-08-12T18:27:27.500-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:27:28.626-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:27:28 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:27:37.809-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbba49c4dc6333e59c6492
+2015-08-12T18:27:38.131-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:27:48.483-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbba54c4dc6333e59c6494
+2015-08-12T18:27:48.839-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:27:58.947-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:27:58 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:27:59.319-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbba5ec4dc6333e59c6496
+2015-08-12T18:27:59.846-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:28:10.099-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbba69c4dc6333e59c6498
+2015-08-12T18:28:10.532-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:28:21.406-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbba74c4dc6333e59c649a
+2015-08-12T18:28:21.706-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:28:29.237-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:28:28 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:28:32.081-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbba7fc4dc6333e59c649c
+2015-08-12T18:28:32.525-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:28:42.833-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbba8ac4dc6333e59c649e
+2015-08-12T18:28:43.255-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:28:53.541-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbba95c4dc6333e59c64a0
+2015-08-12T18:28:53.929-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:28:59.519-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:28:59 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:29:04.293-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbba9fc4dc6333e59c64a2
+2015-08-12T18:29:04.649-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:29:15.024-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbaaac4dc6333e59c64a4
+2015-08-12T18:29:15.445-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:29:25.789-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbab5c4dc6333e59c64a6
+2015-08-12T18:29:26.110-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:29:29.806-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:29:29 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:29:36.474-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbac0c4dc6333e59c64a8
+2015-08-12T18:29:36.796-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:29:47.182-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbacac4dc6333e59c64aa
+2015-08-12T18:29:47.504-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:29:57.779-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbad5c4dc6333e59c64ac
+2015-08-12T18:29:58.234-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:30:00.206-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:29:59 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:30:08.620-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbae0c4dc6333e59c64ae
+2015-08-12T18:30:09.142-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:30:19.517-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbaebc4dc6333e59c64b0
+2015-08-12T18:30:20.038-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:30:30.458-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbaf6c4dc6333e59c64b2
+2015-08-12T18:30:30.530-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:30:30 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:30:30.846-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:30:41.244-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbb00c4dc6333e59c64b4
+2015-08-12T18:30:41.743-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:30:52.040-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbb0bc4dc6333e59c64b6
+2015-08-12T18:30:52.362-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:31:00.851-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:31:00 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:31:02.749-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbb16c4dc6333e59c64b8
+2015-08-12T18:31:03.281-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:31:13.656-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbb21c4dc6333e59c64ba
+2015-08-12T18:31:13.977-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:31:24.330-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbb2bc4dc6333e59c64bc
+2015-08-12T18:31:24.847-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:31:31.100-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:31:30 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:31:35.171-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbb36c4dc6333e59c64be
+2015-08-12T18:31:35.526-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:31:45.802-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbb41c4dc6333e59c64c0
+2015-08-12T18:31:46.223-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:31:56.565-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbb4cc4dc6333e59c64c2
+2015-08-12T18:31:56.887-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:32:01.391-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:32:01 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:32:07.273-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbb56c4dc6333e59c64c4
+2015-08-12T18:32:07.595-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:32:17.947-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbb61c4dc6333e59c64c6
+2015-08-12T18:32:18.269-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:32:28.544-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbb6cc4dc6333e59c64c8
+2015-08-12T18:32:28.899-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:32:31.788-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:32:31 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:32:39.275-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbb76c4dc6333e59c64ca
+2015-08-12T18:32:39.818-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:32:50.204-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbb81c4dc6333e59c64cc
+2015-08-12T18:32:50.726-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:33:01.047-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbb8cc4dc6333e59c64ce
+2015-08-12T18:33:01.679-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:33:02.040-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:33:01 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:33:12.188-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbb97c4dc6333e59c64d0
+2015-08-12T18:33:12.908-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:33:24.848-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbba2c4dc6333e59c64d2
+2015-08-12T18:33:25.602-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:33:32.322-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:33:32 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:33:35.934-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbbafc4dc6333e59c64d4
+2015-08-12T18:33:36.422-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:33:46.797-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbbbac4dc6333e59c64d6
+2015-08-12T18:33:47.285-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:33:57.762-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbbc5c4dc6333e59c64d8
+2015-08-12T18:33:58.082-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:34:02.803-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:34:02 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:34:08.512-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbbd0c4dc6333e59c64da
+2015-08-12T18:34:09.034-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:34:19.420-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbbdbc4dc6333e59c64dc
+2015-08-12T18:34:19.886-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:34:30.228-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbbe5c4dc6333e59c64de
+2015-08-12T18:34:30.549-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:34:33.100-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:34:32 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:34:40.958-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbbf0c4dc6333e59c64e0
+2015-08-12T18:34:41.258-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:34:51.633-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbbfbc4dc6333e59c64e2
+2015-08-12T18:34:52.099-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:35:02.421-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbc06c4dc6333e59c64e4
+2015-08-12T18:35:02.917-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:35:03.418-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:35:03 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:35:13.304-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbc10c4dc6333e59c64e6
+2015-08-12T18:35:13.836-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:35:24.356-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbc1bc4dc6333e59c64e8
+2015-08-12T18:35:24.766-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:35:33.643-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:35:33 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:35:35.086-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbc26c4dc6333e59c64ea
+2015-08-12T18:35:35.407-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:35:45.893-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbc31c4dc6333e59c64ec
+2015-08-12T18:35:46.382-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:35:56.701-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbc3cc4dc6333e59c64ee
+2015-08-12T18:35:57.123-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:36:03.944-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:36:03 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:36:07.509-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbc47c4dc6333e59c64f0
+2015-08-12T18:36:07.831-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:36:18.172-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbc51c4dc6333e59c64f2
+2015-08-12T18:36:18.561-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:36:28.858-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbc5cc4dc6333e59c64f4
+2015-08-12T18:36:29.280-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:36:34.222-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:36:33 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:36:39.567-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbc67c4dc6333e59c64f6
+2015-08-12T18:36:39.923-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:36:50.298-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbc71c4dc6333e59c64f8
+2015-08-12T18:36:50.753-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:37:01.128-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbc7cc4dc6333e59c64fa
+2015-08-12T18:37:01.549-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:37:04.493-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:37:04 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:37:11.913-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbc87c4dc6333e59c64fc
+2015-08-12T18:37:12.302-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:37:22.643-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbc92c4dc6333e59c64fe
+2015-08-12T18:37:23.032-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:37:33.440-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbc9dc4dc6333e59c6500
+2015-08-12T18:37:33.762-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:37:34.773-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:37:34 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:37:43.993-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbca7c4dc6333e59c6502
+2015-08-12T18:37:44.481-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:37:54.878-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbcb2c4dc6333e59c6504
+2015-08-12T18:37:55.462-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:38:05.064-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:38:04 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:38:05.752-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbcbdc4dc6333e59c6506
+2015-08-12T18:38:06.074-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:38:16.427-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbcc8c4dc6333e59c6508
+2015-08-12T18:38:16.849-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:38:27.224-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbcd2c4dc6333e59c650a
+2015-08-12T18:38:27.667-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:38:35.262-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:38:35 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:38:38.076-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbcddc4dc6333e59c650c
+2015-08-12T18:38:38.564-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:38:49.087-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbce8c4dc6333e59c650e
+2015-08-12T18:38:49.416-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:38:59.725-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbcf3c4dc6333e59c6510
+2015-08-12T18:39:00.146-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:39:05.667-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:39:05 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:39:10.433-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbcfec4dc6333e59c6512
+2015-08-12T18:39:10.888-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:39:21.229-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbd08c4dc6333e59c6514
+2015-08-12T18:39:21.617-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:39:32.232-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbd13c4dc6333e59c6516
+2015-08-12T18:39:33.360-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:39:36.072-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:39:35 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:39:44.176-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbd1fc4dc6333e59c6518
+2015-08-12T18:39:44.498-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:39:54.884-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbd2ac4dc6333e59c651a
+2015-08-12T18:39:55.317-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:40:05.658-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbd35c4dc6333e59c651c
+2015-08-12T18:40:06.147-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:40:06.394-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:40:06 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:40:16.478-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbd40c4dc6333e59c651e
+2015-08-12T18:40:16.799-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:40:27.349-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbd4ac4dc6333e59c6520
+2015-08-12T18:40:27.708-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:40:36.742-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:40:36 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:40:38.117-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbd55c4dc6333e59c6522
+2015-08-12T18:40:38.572-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:40:48.947-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbd60c4dc6333e59c6524
+2015-08-12T18:40:49.413-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:41:00.165-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbd6bc4dc6333e59c6526
+2015-08-12T18:41:00.487-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:41:06.997-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:41:06 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:41:10.884-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbd76c4dc6333e59c6528
+2015-08-12T18:41:11.445-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:41:21.792-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbd81c4dc6333e59c652a
+2015-08-12T18:41:22.235-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:41:32.663-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbd8cc4dc6333e59c652c
+2015-08-12T18:41:33.418-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:41:37.286-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:41:36 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:41:43.884-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbd97c4dc6333e59c652e
+2015-08-12T18:41:44.206-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:41:54.503-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbda2c4dc6333e59c6530
+2015-08-12T18:41:55.054-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:42:05.378-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbdadc4dc6333e59c6532
+2015-08-12T18:42:05.810-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:42:07.543-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:42:07 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:42:16.197-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbdb7c4dc6333e59c6534
+2015-08-12T18:42:16.552-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:42:26.905-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbdc2c4dc6333e59c6536
+2015-08-12T18:42:27.304-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:42:37.634-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbdcdc4dc6333e59c6538
+2015-08-12T18:42:37.911-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:42:37 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:42:38.123-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:42:48.476-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbdd8c4dc6333e59c653a
+2015-08-12T18:42:48.930-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:42:59.306-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbde2c4dc6333e59c653c
+2015-08-12T18:42:59.763-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:43:08.122-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:43:07 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:43:10.113-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbdedc4dc6333e59c653e
+2015-08-12T18:43:10.502-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:43:20.855-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbdf8c4dc6333e59c6540
+2015-08-12T18:43:21.354-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:43:31.729-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbe03c4dc6333e59c6542
+2015-08-12T18:43:32.084-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:43:38.488-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:43:38 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:43:42.492-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbe0ec4dc6333e59c6544
+2015-08-12T18:43:42.992-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:43:53.422-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbe18c4dc6333e59c6546
+2015-08-12T18:43:53.744-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:44:04.052-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbe23c4dc6333e59c6548
+2015-08-12T18:44:04.574-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:44:08.834-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:44:08 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:44:15.029-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbe2ec4dc6333e59c654a
+2015-08-12T18:44:15.560-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:44:26.390-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbe39c4dc6333e59c654c
+2015-08-12T18:44:26.804-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:44:37.154-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbe44c4dc6333e59c654e
+2015-08-12T18:44:37.575-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:44:39.245-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:44:38 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:44:47.995-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbe4fc4dc6333e59c6550
+2015-08-12T18:44:48.317-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:44:58.681-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbe5ac4dc6333e59c6552
+2015-08-12T18:44:59.180-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:45:09.499-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbe65c4dc6333e59c6554
+2015-08-12T18:45:09.574-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:45:09 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:45:09.999-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:45:20.363-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbe6fc4dc6333e59c6556
+2015-08-12T18:45:20.817-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:45:31.074-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbe7ac4dc6333e59c6558
+2015-08-12T18:45:31.425-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:45:39.794-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:45:39 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:45:41.712-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbe85c4dc6333e59c655a
+2015-08-12T18:45:42.233-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:45:52.575-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbe90c4dc6333e59c655c
+2015-08-12T18:45:52.997-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:46:03.438-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbe9ac4dc6333e59c655e
+2015-08-12T18:46:03.826-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:46:10.104-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:46:09 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:46:14.213-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbea5c4dc6333e59c6560
+2015-08-12T18:46:14.601-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:46:25.086-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbeb0c4dc6333e59c6562
+2015-08-12T18:46:25.575-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:46:35.917-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbebbc4dc6333e59c6564
+2015-08-12T18:46:36.438-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:46:40.424-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:46:40 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:46:46.969-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbec6c4dc6333e59c6566
+2015-08-12T18:46:47.335-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:46:57.677-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbed1c4dc6333e59c6568
+2015-08-12T18:46:58.065-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:47:08.451-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbedcc4dc6333e59c656a
+2015-08-12T18:47:09.035-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:47:10.774-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:47:10 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:47:19.392-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbee7c4dc6333e59c656c
+2015-08-12T18:47:19.714-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:47:30.089-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbef1c4dc6333e59c656e
+2015-08-12T18:47:30.444-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:47:40.719-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbefcc4dc6333e59c6570
+2015-08-12T18:47:41.064-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:47:41.108-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:47:40 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:47:51.361-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbf07c4dc6333e59c6572
+2015-08-12T18:47:52.105-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:48:02.625-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbf12c4dc6333e59c6574
+2015-08-12T18:48:03.013-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:48:11.362-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:48:11 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:48:13.399-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbf1dc4dc6333e59c6576
+2015-08-12T18:48:13.821-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:48:25.162-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbf27c4dc6333e59c6578
+2015-08-12T18:48:25.751-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:48:36.258-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbf33c4dc6333e59c657a
+2015-08-12T18:48:36.990-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:48:41.608-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:48:41 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:48:47.287-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbf3ec4dc6333e59c657c
+2015-08-12T18:48:47.776-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:48:58.206-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbf49c4dc6333e59c657e
+2015-08-12T18:48:59.326-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:49:09.735-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbf55c4dc6333e59c6580
+2015-08-12T18:49:10.260-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:49:11.932-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:49:11 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:49:20.609-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbf60c4dc6333e59c6582
+2015-08-12T18:49:21.131-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:49:31.517-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbf6bc4dc6333e59c6584
+2015-08-12T18:49:31.936-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:49:42.314-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:49:41 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:49:42.314-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbf75c4dc6333e59c6586
+2015-08-12T18:49:42.864-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:49:53.188-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbf80c4dc6333e59c6588
+2015-08-12T18:49:53.643-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:50:04.051-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbf8bc4dc6333e59c658a
+2015-08-12T18:50:04.739-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:50:12.890-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:50:12 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:50:16.222-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbf96c4dc6333e59c658c
+2015-08-12T18:50:16.713-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:50:27.157-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbfa2c4dc6333e59c658e
+2015-08-12T18:50:27.620-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:50:37.973-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbfadc4dc6333e59c6590
+2015-08-12T18:50:38.505-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:50:43.111-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:50:42 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:50:48.825-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbfb8c4dc6333e59c6592
+2015-08-12T18:50:49.357-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:50:59.666-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbfc3c4dc6333e59c6594
+2015-08-12T18:51:00.283-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:51:10.607-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbfcec4dc6333e59c6596
+2015-08-12T18:51:11.583-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:51:13.415-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:51:13 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:51:21.903-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbfd9c4dc6333e59c6598
+2015-08-12T18:51:22.521-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:51:33.831-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbfe4c4dc6333e59c659a
+2015-08-12T18:51:34.719-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:51:43.728-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:51:43 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:51:45.038-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbff0c4dc6333e59c659c
+2015-08-12T18:51:45.495-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:51:55.815-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbbffbc4dc6333e59c659e
+2015-08-12T18:51:56.169-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:52:06.633-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc006c4dc6333e59c65a0
+2015-08-12T18:52:07.121-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:52:14.143-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:52:13 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:52:17.497-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc011c4dc6333e59c65a2
+2015-08-12T18:52:17.929-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:52:28.204-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc01bc4dc6333e59c65a4
+2015-08-12T18:52:28.559-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:52:39.012-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc026c4dc6333e59c65a6
+2015-08-12T18:52:39.544-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:52:44.441-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:52:44 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:52:49.853-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc031c4dc6333e59c65a8
+2015-08-12T18:52:50.308-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:53:00.650-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc03cc4dc6333e59c65aa
+2015-08-12T18:53:01.171-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:53:11.591-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc047c4dc6333e59c65ac
+2015-08-12T18:53:12.023-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:53:14.684-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:53:14 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:53:22.539-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc052c4dc6333e59c65ae
+2015-08-12T18:53:23.031-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:53:33.350-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc05dc4dc6333e59c65b0
+2015-08-12T18:53:33.739-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:53:44.069-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc067c4dc6333e59c65b2
+2015-08-12T18:53:44.391-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:53:44.926-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:53:44 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:53:54.819-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc072c4dc6333e59c65b4
+2015-08-12T18:53:55.221-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:54:05.530-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc07dc4dc6333e59c65b6
+2015-08-12T18:54:05.885-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:54:15.202-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:54:14 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:54:16.271-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc087c4dc6333e59c65b8
+2015-08-12T18:54:16.770-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:54:27.512-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc093c4dc6333e59c65ba
+2015-08-12T18:54:27.911-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:54:38.286-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc09dc4dc6333e59c65bc
+2015-08-12T18:54:38.774-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:54:45.600-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:54:45 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:54:49.127-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc0a8c4dc6333e59c65be
+2015-08-12T18:54:49.715-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:55:00.190-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc0b3c4dc6333e59c65c0
+2015-08-12T18:55:00.656-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:55:11.209-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc0bec4dc6333e59c65c2
+2015-08-12T18:55:11.564-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:55:15.984-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:55:15 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:55:22.205-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc0c9c4dc6333e59c65c4
+2015-08-12T18:55:22.871-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:55:33.225-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc0d4c4dc6333e59c65c6
+2015-08-12T18:55:33.647-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:55:44.033-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc0dfc4dc6333e59c65c8
+2015-08-12T18:55:44.432-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:55:46.276-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:55:45 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:55:54.752-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc0eac4dc6333e59c65ca
+2015-08-12T18:55:55.174-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:56:05.471-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc0f5c4dc6333e59c65cc
+2015-08-12T18:56:05.959-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:56:16.323-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc0ffc4dc6333e59c65ce
+2015-08-12T18:56:16.745-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:56:16 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:56:16.811-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:56:27.142-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc10ac4dc6333e59c65d0
+2015-08-12T18:56:27.497-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:56:37.839-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc115c4dc6333e59c65d2
+2015-08-12T18:56:38.394-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:56:47.060-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:56:46 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:56:48.669-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc120c4dc6333e59c65d4
+2015-08-12T18:56:49.224-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:56:59.888-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc12bc4dc6333e59c65d6
+2015-08-12T18:57:00.353-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:57:10.662-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc136c4dc6333e59c65d8
+2015-08-12T18:57:11.177-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:57:17.424-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:57:17 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:57:21.447-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc141c4dc6333e59c65da
+2015-08-12T18:57:21.936-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:57:32.429-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc14bc4dc6333e59c65dc
+2015-08-12T18:57:32.721-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:57:43.074-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc156c4dc6333e59c65de
+2015-08-12T18:57:43.396-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:57:47.672-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:57:47 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:57:53.760-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc161c4dc6333e59c65e0
+2015-08-12T18:57:54.215-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:58:04.512-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc16cc4dc6333e59c65e2
+2015-08-12T18:58:04.834-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:58:15.176-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc176c4dc6333e59c65e4
+2015-08-12T18:58:15.620-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:58:18.401-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:58:17 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:58:26.161-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc181c4dc6333e59c65e6
+2015-08-12T18:58:26.494-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:58:36.847-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc18cc4dc6333e59c65e8
+2015-08-12T18:58:37.313-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:58:47.777-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc197c4dc6333e59c65ea
+2015-08-12T18:58:48.231-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:58:48.806-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:58:48 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:58:58.573-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc1a2c4dc6333e59c65ec
+2015-08-12T18:58:58.928-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:59:09.349-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc1acc4dc6333e59c65ee
+2015-08-12T18:59:09.738-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:59:19.084-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:59:18 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:59:20.290-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc1b7c4dc6333e59c65f0
+2015-08-12T18:59:20.612-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:59:30.965-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc1c2c4dc6333e59c65f2
+2015-08-12T18:59:31.320-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:59:41.717-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc1cdc4dc6333e59c65f4
+2015-08-12T18:59:42.039-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T18:59:49.399-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 18:59:49 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T18:59:52.625-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc1d8c4dc6333e59c65f6
+2015-08-12T18:59:52.947-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T19:00:03.333-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc1e2c4dc6333e59c65f8
+2015-08-12T19:00:03.654-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T19:00:14.107-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc1edc4dc6333e59c65fa
+2015-08-12T19:00:14.529-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T19:00:19.777-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 19:00:19 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T19:00:22.324-0300 I NETWORK  [conn2] end connection 127.0.0.1:59285 (0 connections now open)
+2015-08-12T19:00:24.816-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc1f8c4dc6333e59c65fc
+2015-08-12T19:00:25.137-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T19:00:35.837-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc203c4dc6333e59c65fe
+2015-08-12T19:00:36.566-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T19:00:47.074-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc20ec4dc6333e59c6600
+2015-08-12T19:00:47.764-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T19:00:50.174-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 19:00:49 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T19:00:58.773-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc219c4dc6333e59c6602
+2015-08-12T19:00:59.326-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T19:01:09.932-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc225c4dc6333e59c6604
+2015-08-12T19:01:10.934-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 
+2015-08-12T19:01:20.492-0300 I SHARDING [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Wed Aug 12 19:01:20 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/jordan:27017:1439413483:1804289383', sleeping for 30000ms
+2015-08-12T19:01:21.262-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' acquired, ts : 55cbc230c4dc6333e59c6606
+2015-08-12T19:01:21.675-0300 I SHARDING [Balancer] distributed lock 'balancer/jordan:27017:1439413483:1804289383' unlocked. 

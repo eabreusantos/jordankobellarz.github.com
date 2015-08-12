@@ -8,7 +8,15 @@
     <title>Jordan Kobellarz</title>
     <link>http://jordankobellarz.github.com</link>
     <description>open innovation developer</description>
-    <pubDate>Sat, 08 Aug 2015 21:00:00 -0300</pubDate>
+    <pubDate>Mon, 10 Aug 2015 21:00:00 -0300</pubDate>
+    <item>
+      <title>#7 MongoDB - Sharding</title>
+      <link>http://jordankobellarz.github.com/mongodb/2015/08/10/2015-08-11-mongodb-sharding.html</link>
+      <description>&lt;p&gt;Quando a quantidade de processamento e/ou memória de um único nó é excedida a ponto de não ser mais possível escalar seus recursos verticalmente, temos a opção de particionar os dados de uma ou mais coleções através de uma técnica chamada &lt;em&gt;sharding&lt;/em&gt; ou escalonamento horizontal.&lt;/p&gt;
+</description>
+      <pubDate>Mon, 10 Aug 2015 21:00:00 -0300</pubDate>
+      <dc:date>2015-08-10T21:00:00-03:00</dc:date>
+    </item>
     <item>
       <title>#6 MongoDB - Replicação</title>
       <link>http://jordankobellarz.github.com/mongodb/2015/08/08/mongodb-replicacao.html</link>
@@ -139,6 +147,6 @@ para vender as ideias que irei propor aqui.&lt;/p&gt;
       <pubDate>Wed, 14 Jan 2015 10:25:00 -0200</pubDate>
       <dc:date>2015-01-14T10:25:00-02:00</dc:date>
     </item>
-    <dc:date>2015-08-08T21:00:00-03:00</dc:date>
+    <dc:date>2015-08-10T21:00:00-03:00</dc:date>
   </channel>
 </rss>
