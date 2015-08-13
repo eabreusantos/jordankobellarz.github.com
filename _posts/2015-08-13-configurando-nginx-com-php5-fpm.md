@@ -45,10 +45,10 @@ location ~ \.php$ {
 }
 {% endhighlight %}
 
-Agora, no mesmo arquivo, configure as variáveis `root` e `server_name` como achar melhor. `root` é a pasta a partir da qual os arquivos serão servidos (vamos usar `/var/www/`) e `server_name` é a URL para acessar seu servidor (vamos usar `meusite.com`, que permitirá acesso pela URL `http://meusite.com`):
+Agora, no mesmo arquivo, configure as variáveis `root` e `server_name` como achar melhor. `root` é a pasta a partir da qual os arquivos serão servidos (vamos usar `/var/www/meusite.com/public`) e `server_name` é a URL para acessar seu servidor (vamos usar `meusite.com`, que permitirá acesso pela URL `http://meusite.com`):
 
 {% highlight sh linenos=table %}
-root /var/www;
+root /var/www/meusite.com/public;
 
 # ...
 
@@ -91,4 +91,19 @@ Pronto! Agora você pode acessar seu novo *server block* a partir da URL `http:/
 
 {% highlight sh linenos=table %}
 curl meusite.com
+{% endhighlight %}
+
+###E se não funcionar?
+O primeiro motivo pode ser que a configuração padrão esteja atrapalhando. Tente executar esses comandos:
+
+{% highlight sh linenos=table %}
+sudo rm /etc/nginx/sites-enabled/default
+sudo service nginx restart
+sudo service php5-fpm restart
+{% endhighlight %}
+
+Outro motivo pode ser a permissão da pasta do projeto. Tente modificá-la da seguinte forma:
+
+{% highlight sh linenos=table %}
+sudo chmod -R /var/www/meusite.com/public
 {% endhighlight %}
