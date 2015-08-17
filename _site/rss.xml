@@ -8,7 +8,23 @@
     <title>Jordan Kobellarz</title>
     <link>http://jordankobellarz.github.com</link>
     <description>open innovation developer</description>
-    <pubDate>Thu, 13 Aug 2015 21:00:00 -0300</pubDate>
+    <pubDate>Mon, 17 Aug 2015 21:00:00 -0300</pubDate>
+    <item>
+      <title>Verdades que não lhe contaram sobre o MongoDB</title>
+      <link>http://jordankobellarz.github.com/mongodb/2015/08/17/2015-08-19-verdades-que-nao-lhe-contaram-sobre-o-mongodb.html</link>
+      <description>&lt;h2&gt;O MongoDB tenta abraçar o mundo, por isso não é performático em todas as tarefas&lt;/h2&gt;
+</description>
+      <pubDate>Mon, 17 Aug 2015 21:00:00 -0300</pubDate>
+      <dc:date>2015-08-17T21:00:00-03:00</dc:date>
+    </item>
+    <item>
+      <title>Mentiras que lhe contaram sobre MongoDB</title>
+      <link>http://jordankobellarz.github.com/mongodb/2015/08/14/mentiras-que-lhe-contaram-sobre-o-mongodb.html</link>
+      <description>&lt;p&gt;O MongoDB surgiu em 2007 e só teve seu código aberto em 2009. É claro que o tempo para ele amadurecer foi bem menor do que os seus concorrentes indiretos do mundo relacional vindos dos anos 70. Nesse meio tempo foram feitas diversas melhorias, principalmente com a versão 3.0 lançada nesse ano.&lt;/p&gt;
+</description>
+      <pubDate>Fri, 14 Aug 2015 21:00:00 -0300</pubDate>
+      <dc:date>2015-08-14T21:00:00-03:00</dc:date>
+    </item>
     <item>
       <title>Usando o driver do MongoDB com PHP</title>
       <link>http://jordankobellarz.github.com/php/mongodb/2015/08/13/usando-driver-mongodb-php.html</link>
@@ -163,6 +179,6 @@ para vender as ideias que irei propor aqui.&lt;/p&gt;
       <pubDate>Wed, 14 Jan 2015 10:25:00 -0200</pubDate>
       <dc:date>2015-01-14T10:25:00-02:00</dc:date>
     </item>
-    <dc:date>2015-08-13T21:00:00-03:00</dc:date>
+    <dc:date>2015-08-17T21:00:00-03:00</dc:date>
   </channel>
 </rss>
