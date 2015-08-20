@@ -49,6 +49,8 @@ A discussão de MongoDB vs MySql está mais para SQL vs NoSQL, dois universos  d
 ##MongoDB possui poucos clientes
 Há três anos isso era verdade, contudo essa ideia não se perpetuou, justamente pelo motivo de grandes players terem entrado no mercado usando o MongoDB e, por necessidade, acabaram sendo desenvolvidas ferramentas de monitoramento e manutenção, plataformas em nuvem (DBaaS), ferramentas de suporte visual, ...
 
+Conheça o [ecossistema do MongoDB](http://docs.mongodb.org/ecosystem/).
+
 ##MongoDB não permite JOIN
 Essa é outra meia verdade. O MongoDB permite que sejam armazenadas referências de um documento para o outro, contudo é uma técnica pouco sustentável e vai de maneira contrária à ideia de encadear documentos no MongoDB.
 
