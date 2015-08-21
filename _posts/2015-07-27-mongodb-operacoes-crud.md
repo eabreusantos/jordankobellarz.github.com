@@ -8,7 +8,7 @@ categories: ['mongodb']
 
 <img src="/assets/images/mongo-2.png" alt="Operações CRUD" style="width: 60%; margin:0 auto">
 
-Trabalhar com o MongoDB é uma tarefa muito mais simples para o desenvolvedor, já que não é necessário se preocupar em manter uma estrutura rígida nos documetos de uma coleção. Temos aqui uma flexibilidade muito grande, que só é possível graças à sua estrutura orientada a documentos.
+Trabalhar com o MongoDB é uma tarefa muito mais simples para o desenvolvedor, já que não é necessário se preocupar em manter uma estrutura rígida nos documetos de uma coleção. Temos aqui uma flexibilidade muito grande, que só é possível graças a sua estrutura orientada a documentos.
 
 As operações de criar, buscar, modificar ou remover documentos ocorrem somente sobre uma coleção ao mesmo tempo. Essa é uma característica comum aos bancos orientados a documentos, principalmente por terem eliminado o conceito de JOINS para permitir alta escalabilidade.
 
@@ -132,7 +132,7 @@ db.test.find().addOption(DBQuery.Option.noTimeout);
 
 ###Isolamento do cursor
 
-O mótodo `find` pode retornar o mesmo documento mais de uma vez, caso este seja modificado antes de terminar seu ciclo de vida por exaustão ou por *timeout*. Isso ocorre devido à natureza não isolada do cursor.
+O mótodo `find` pode retornar o mesmo documento mais de uma vez, caso este seja modificado antes de terminar seu ciclo de vida por exaustão ou por *timeout*. Isso ocorre devido a natureza não isolada do cursor.
 
 Para evitar que isso aconteça, podemos usar o método [snapshot](http://docs.mongodb.org/manual/faq/developers/#faq-developers-isolate-cursors). Dessa forma, apenas uma versão de cada documento será retornada no cursor.
 
