@@ -84,4 +84,6 @@ No entanto há um problema muito grande ainda: há quem defenda ferrenhamente o 
 
 Esses engenheiros não sabem que os dois modelos convivem bem juntos e que um completa o outro - eles inclusive lacraram a porta da caverna achando que essa é uma conspiração para a utopia que o modelo relacional representa para eles. É uma pena que vários engenheiros morrem de fome na própria caverna... seria tão melhor se eles experimentassem pelo menos uma vez na vida esse novo modelo.
 
+>> “Uma mente que se abre a uma nova ideia jamais voltará ao seu tamanho original.” – Albert Einstein
+
 Mesmo assim, a cidade cresce cada vez mais, e tem boas perspectivas futuras, principalmente com o crescimento exponencial que a população terá nos próximos anos.
