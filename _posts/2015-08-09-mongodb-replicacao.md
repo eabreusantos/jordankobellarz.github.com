@@ -198,4 +198,4 @@ Com esses testes já é possível se ter uma noção de como a replicação func
 
 <hr/>
 
-No próximo post, será apresentada a funcionalidade mais proeminete do MongoDB, o *sharding*, que permite a distribuição automática dos dados entre os nós de um *cluster*.
+No próximo post, será apresentada a funcionalidade mais proeminete do MongoDB, o *sharding*, que permite a distribuição automática dos dados entre os nós de um *cluster*. Aprenda [como particionar seus dados com sharding](http://jordankobellarz.github.io/mongodb/2015/08/11/mongodb-sharding.html).

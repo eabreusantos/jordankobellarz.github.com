@@ -101,3 +101,5 @@ bulk.execute({w: 0, j: 0});
 Usando esse método, o número de inserções passou para, em média, 46000 inserções por segundo.
 
 <hr/>
+
+O próximo tópico também deve fazer parte do repertório de quem quer se aventurar com o MongoDB em ambiente de produção: [criando um replica set para aumentar a disponibilidade](http://jordankobellarz.github.io/mongodb/2015/08/09/mongodb-replicacao.html).

@@ -523,3 +523,7 @@ db.test.find({
 {% endhighlight %}
 
 Criarei um post exclusivamente para falar sobre os índices de texto.
+
+<hr/>
+
+Vamos agora para o próximo post, que acho uma das coisas mais importantes a se aprender antes de se aventurar em um projeto de verdade com o MongoDB: [write concern](http://jordankobellarz.github.io/mongodb/2015/08/07/mongodb-write-concern.html).

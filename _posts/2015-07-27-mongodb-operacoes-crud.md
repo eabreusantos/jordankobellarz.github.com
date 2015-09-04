@@ -848,3 +848,11 @@ db.test.drop()
 {% highlight javascript linenos=table %}
 db.test.remove({}, 1)
 {% endhighlight %}
+
+</hr>
+
+O próximo tópico seria sobre modelagem, mas pela sua complexidade deixei para escrevê-lo mais para frente. Existem ótimos materiais falando sobre modelagem com o MongoDB, contudo nenhum deles fornece uma forma padrão para arquitetar o banco - é na tentativa e erro que se aprende mais, por isso, mão na massa!
+
+Há algum tempo eu postei algo sobre [modelagem com o MongoDB](http://jordankobellarz.github.io/mongodb/2015/03/07/arquitetura-mongodb.html), acho interessante dar uma olhada nesse conteúdo.
+
+Siga para o próximo post: [otimização das coleções com índices](http://jordankobellarz.github.io/mongodb/2015/07/31/mongodb-otimizando-com-indices.html).
