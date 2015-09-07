@@ -8,7 +8,15 @@
     <title>Jordan Kobellarz</title>
     <link>http://jordankobellarz.github.com</link>
     <description>open innovation developer</description>
-    <pubDate>Wed, 02 Sep 2015 21:00:00 -0300</pubDate>
+    <pubDate>Sun, 06 Sep 2015 21:00:00 -0300</pubDate>
+    <item>
+      <title>Intalando o LAMP Stack: Linux, Apache, MongoDB e PHP5</title>
+      <link>http://jordankobellarz.github.com/linux/apache/mongodb/php5/2015/09/06/instalando-lampp-stack-linux-apache2.html</link>
+      <description>&lt;p&gt;Hora de mudar um pouco seu LAMP Stack: trocando o M para MongoDB. Esse totorial mostrará como instalar o servidor Apache 2 para rodar PHP5 junto com MongoDB no Debian ou Ubuntu.&lt;/p&gt;
+</description>
+      <pubDate>Sun, 06 Sep 2015 21:00:00 -0300</pubDate>
+      <dc:date>2015-09-06T21:00:00-03:00</dc:date>
+    </item>
     <item>
       <title>Workshop sobre MongoDB no FTSL 2015</title>
       <link>http://jordankobellarz.github.com/mongodb/ftsl/2015/09/02/workshop-ftsl-utfpr-2015.html</link>
@@ -187,6 +195,6 @@ para vender as ideias que irei propor aqui.&lt;/p&gt;
       <pubDate>Wed, 14 Jan 2015 10:25:00 -0200</pubDate>
       <dc:date>2015-01-14T10:25:00-02:00</dc:date>
     </item>
-    <dc:date>2015-09-02T21:00:00-03:00</dc:date>
+    <dc:date>2015-09-06T21:00:00-03:00</dc:date>
   </channel>
 </rss>
