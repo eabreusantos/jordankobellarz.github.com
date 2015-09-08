@@ -31,7 +31,7 @@ Além do PHP5 é necessário ter instalado o PEAR, php5-dev e o php5-cli para po
 >>Não instale o driver através do pacote `php5-mongo`, sob risco de obter uma versão desatualizada do driver.
 
 {% highlight sh linenos=table %}
-sudo apt-get install php5 php5-dev php5-cli php5-pear
+sudo apt-get install php5 php5-dev php5-cli php-pear
 {% endhighlight %}
 
 **5 - Instale a extensão do MongoDB através do PEAR:**
