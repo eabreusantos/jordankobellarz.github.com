@@ -10,6 +10,14 @@
     <description>open innovation developer</description>
     <pubDate>Sun, 06 Sep 2015 21:00:00 -0300</pubDate>
     <item>
+      <title>MySQL vs MongoDB: um exemplo usando a base de dados do IMDB</title>
+      <link>http://jordankobellarz.github.com/mongodb/mysql/2015/09/06/mysql-vs-mongodb-using-imdb-database.html</link>
+      <description>&lt;p&gt;O IMDB é um repositório de filmes gigantesco. Surgiu em 1990 e hoje é a maior e mais popular fonte de dados sobre filmes, TV e dados sobre celebridades. A parte mais interessante disso é que disponibilizam alguns arquivos de sua base de dados gratuitamente para uso pessoal. Essa é uma ótima oportunidade para usá-los para explorar tecnologias em bancos de dados.&lt;/p&gt;
+</description>
+      <pubDate>Sun, 06 Sep 2015 21:00:00 -0300</pubDate>
+      <dc:date>2015-09-06T21:00:00-03:00</dc:date>
+    </item>
+    <item>
       <title>Intalando o LAMP Stack: Linux, Apache, MongoDB e PHP5</title>
       <link>http://jordankobellarz.github.com/linux/apache/mongodb/php5/2015/09/06/instalando-lampp-stack-linux-apache2.html</link>
       <description>&lt;p&gt;Hora de mudar um pouco seu LAMP Stack: trocando o M para MongoDB. Esse totorial mostrará como instalar o servidor Apache 2 para rodar PHP5 junto com MongoDB no Debian ou Ubuntu.&lt;/p&gt;
@@ -18,12 +26,61 @@
       <dc:date>2015-09-06T21:00:00-03:00</dc:date>
     </item>
     <item>
+      <title>teste</title>
+      <link>http://jordankobellarz.github.com/mongodb/ftsl/2015/09/03/2015-09-04-teste.html</link>
+      <description>&lt;p&gt;<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><code class="language-javascript" data-lang="javascript"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</code></pre></div></td><td class="code"><div class="highlight"><pre><span class="p">{</span>
+  <span class="nx">_id</span> <span class="o">:</span> <span class="nx">ObjectId</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span><span class="nx">quot</span><span class="p">;</span><span class="mi">55</span><span class="nx">e6209332cdb66b1f8cd707</span><span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span><span class="nx">quot</span><span class="p">;),</span>
+  <span class="nx">nome</span> <span class="o">:</span> <span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span><span class="nx">quot</span><span class="p">;</span><span class="nx">Fulano</span> <span class="nx">Foo</span><span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span><span class="nx">quot</span><span class="p">;,</span>
+  <span class="nx">idade</span> <span class="o">:</span> <span class="mi">47</span><span class="p">,</span>
+  <span class="nx">tags</span> <span class="o">:</span> <span class="p">[</span><span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span><span class="nx">quot</span><span class="p">;</span><span class="nx">amigo</span><span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span><span class="nx">quot</span><span class="p">;,</span> <span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span><span class="nx">quot</span><span class="p">;</span><span class="nx">universidade</span><span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span><span class="nx">quot</span><span class="p">;],</span>
+  <span class="nx">endereco</span> <span class="o">:</span> <span class="p">{</span>
+    <span class="nx">logradouro</span> <span class="o">:</span> <span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span><span class="nx">quot</span><span class="p">;</span><span class="nx">Avenida</span> <span class="mi">7</span> <span class="nx">de</span> <span class="nx">Setembro</span><span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span><span class="nx">quot</span><span class="p">;,</span>
+    <span class="nx">numero</span> <span class="o">:</span> <span class="mi">89989</span><span class="p">,</span>
+    <span class="nx">cidade</span> <span class="o">:</span> <span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span><span class="nx">quot</span><span class="p">;</span><span class="nx">Curitiba</span><span class="o">&amp;</span><span class="nx">amp</span><span class="p">;</span><span class="nx">quot</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table>&lt;/p&gt;
+</description>
+      <pubDate>Thu, 03 Sep 2015 21:00:00 -0300</pubDate>
+      <dc:date>2015-09-03T21:00:00-03:00</dc:date>
+    </item>
+    <item>
       <title>Workshop sobre MongoDB no FTSL 2015</title>
-      <link>http://jordankobellarz.github.com/mongodb/ftsl/2015/09/02/workshop-ftsl-utfpr-2015.html</link>
+      <link>http://jordankobellarz.github.com/mongodb/ftsl/2015/09/02/2015-09-03-workshop-ftsl-utfpr-2015.html</link>
       <description>&lt;p&gt;&lt;strong&gt;Bem-vindo ao tutorial do MongoDB!&lt;/strong&gt;&lt;/p&gt;
 </description>
       <pubDate>Wed, 02 Sep 2015 21:00:00 -0300</pubDate>
       <dc:date>2015-09-02T21:00:00-03:00</dc:date>
+    </item>
+    <item>
+      <title>Workshop sobre MongoDB no grupo Coders</title>
+      <link>http://jordankobellarz.github.com/mongodb/2015/08/30/2015-08-31-workshop-mongodb-no-grupo-coders-utfpr.html</link>
+      <description>&lt;p&gt;&lt;strong&gt;iniciando o servidor&lt;/strong&gt;
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><code class="language-javascript" data-lang="javascript">1</code></pre></div></td><td class="code"><div class="highlight"><pre><span class="nx">mongod</span>
+</pre></div>
+</td></tr></table>&lt;/p&gt;
+</description>
+      <pubDate>Sun, 30 Aug 2015 21:00:00 -0300</pubDate>
+      <dc:date>2015-08-30T21:00:00-03:00</dc:date>
+    </item>
+    <item>
+      <title>Workshop sobre MongoDB no FTSL 2015</title>
+      <link>http://jordankobellarz.github.com/mongodb/php/java/python/2015/08/21/2015-08-22-workshop-mongodb-ftsl-2015.html</link>
+      <description>&lt;p&gt;não se esquecer de pular linhas no Shell para novos comandos&lt;/p&gt;
+</description>
+      <pubDate>Fri, 21 Aug 2015 21:00:00 -0300</pubDate>
+      <dc:date>2015-08-21T21:00:00-03:00</dc:date>
     </item>
     <item>
       <title>Conectando o PHP ao Replica Set</title>
@@ -40,6 +97,14 @@
 </description>
       <pubDate>Wed, 19 Aug 2015 21:00:00 -0300</pubDate>
       <dc:date>2015-08-19T21:00:00-03:00</dc:date>
+    </item>
+    <item>
+      <title>Verdades que não lhe contaram sobre o MongoDB</title>
+      <link>http://jordankobellarz.github.com/mongodb/2015/08/17/2015-08-19-verdades-que-nao-lhe-contaram-sobre-o-mongodb.html</link>
+      <description>&lt;h2&gt;O MongoDB tenta abraçar o mundo, por isso não é performático em todas as tarefas&lt;/h2&gt;
+</description>
+      <pubDate>Mon, 17 Aug 2015 21:00:00 -0300</pubDate>
+      <dc:date>2015-08-17T21:00:00-03:00</dc:date>
     </item>
     <item>
       <title>Mentiras que lhe contaram sobre MongoDB</title>
@@ -106,6 +171,14 @@
       <dc:date>2015-07-30T21:00:00-03:00</dc:date>
     </item>
     <item>
+      <title>#3 MongoDB - Modelagem</title>
+      <link>http://jordankobellarz.github.com/mongodb/2015/07/27/2015-07-28-mongodb-modelagem.html</link>
+      <description>&lt;p&gt;A maioria dos autores coloca essa seção depois das operações de CRUD, mas particularmente acho ela muito mais importante, pois quem está acostumado com o modelo relacional não tem uma concepção do modelo orientado a documentos consistente. É como pilotar um Boeing 737 tendo apenas a carteira de habilitação para motos.&lt;/p&gt;
+</description>
+      <pubDate>Mon, 27 Jul 2015 21:00:00 -0300</pubDate>
+      <dc:date>2015-07-27T21:00:00-03:00</dc:date>
+    </item>
+    <item>
       <title>#2 MongoDB - Operações CRUD</title>
       <link>http://jordankobellarz.github.com/mongodb/2015/07/26/mongodb-operacoes-crud.html</link>
       <description>&lt;p&gt;&lt;img src=&quot;/assets/images/mongo-2.png&quot; alt=&quot;Operações CRUD&quot; style=&quot;width: 60%; margin:0 auto&quot;&gt;&lt;/p&gt;
@@ -136,6 +209,14 @@
 </description>
       <pubDate>Sat, 07 Mar 2015 04:02:00 -0300</pubDate>
       <dc:date>2015-03-07T04:02:00-03:00</dc:date>
+    </item>
+    <item>
+      <title>Sua informação não tem valor!</title>
+      <link>http://jordankobellarz.github.com/informacao/2015/02/20/2014-02-20-sua-informacao-nao-tem-valor.html</link>
+      <description>&lt;p&gt;Estamos aqui trabalhando com níveis de abstração distintos: um &lt;strong&gt;dado&lt;/strong&gt; passa a ser &lt;strong&gt;informação&lt;/strong&gt;, que, por sua vez, passa a ser &lt;strong&gt;conhecimento&lt;/strong&gt;. Mas será que cada um desses níveis possui algum valor significativo? &lt;/p&gt;
+</description>
+      <pubDate>Fri, 20 Feb 2015 07:01:00 -0200</pubDate>
+      <dc:date>2015-02-20T07:01:00-02:00</dc:date>
     </item>
     <item>
       <title>Guia rápido de padrões de projeto Javascript</title>
