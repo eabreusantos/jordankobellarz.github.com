@@ -11,6 +11,10 @@
 body p {
   text-align: justify !important; }
 
+.text-center {
+  text-align: center;
+  width: 100%; }
+
 .highlighttable {
   font-size: 0.85em; }
   .highlighttable tr td.code {
