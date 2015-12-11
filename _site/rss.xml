@@ -8,14 +8,17 @@
     <title>Jordan Kobellarz</title>
     <link>http://jordankobellarz.github.com</link>
     <description>open innovation developer</description>
-    <pubDate>Sun, 06 Sep 2015 21:00:00 -0300</pubDate>
+    <pubDate>Fri, 11 Dec 2015 05:48:00 -0200</pubDate>
     <item>
-      <title>MySQL vs MongoDB: um exemplo usando a base de dados do IMDB</title>
-      <link>http://jordankobellarz.github.com/mongodb/mysql/2015/09/06/mysql-vs-mongodb-using-imdb-database.html</link>
-      <description>&lt;p&gt;O IMDB é um repositório de filmes gigantesco. Surgiu em 1990 e hoje é a maior e mais popular fonte de dados sobre filmes, TV e dados sobre celebridades. A parte mais interessante disso é que disponibilizam alguns arquivos de sua base de dados gratuitamente para uso pessoal. Essa é uma ótima oportunidade para usá-los para explorar tecnologias em bancos de dados.&lt;/p&gt;
+      <title>Conhecimento aberto, colaborativo e acessível - o futuro do aprendizado online</title>
+      <link>http://jordankobellarz.github.com/conhecimento/2015/12/11/2015-12-11-conhecimento-aberto-colaborativo.html</link>
+      <description>&lt;p&gt;Há um bom tempo anoto os problemas da educação online e dentre os principais 
+estão a falta de engajamento dos alunos, elevada taxa de evasão, baixa qualidade, conteúdo entediante,
+pouca proximidade com a dinâmica de uma sala de aula física, pouca adoção pelos professores que encontram 
+dificuldades no uso das ferramentas disponíveis, [...], é uma lista bem GRANDE.&lt;/p&gt;
 </description>
-      <pubDate>Sun, 06 Sep 2015 21:00:00 -0300</pubDate>
-      <dc:date>2015-09-06T21:00:00-03:00</dc:date>
+      <pubDate>Fri, 11 Dec 2015 05:48:00 -0200</pubDate>
+      <dc:date>2015-12-11T05:48:00-02:00</dc:date>
     </item>
     <item>
       <title>Intalando o LAMP Stack: Linux, Apache, MongoDB e PHP5</title>
@@ -32,14 +35,6 @@
 </description>
       <pubDate>Thu, 20 Aug 2015 21:00:00 -0300</pubDate>
       <dc:date>2015-08-20T21:00:00-03:00</dc:date>
-    </item>
-    <item>
-      <title>NoSQL para crianças</title>
-      <link>http://jordankobellarz.github.com/nosql/2015/08/19/historia-dos-bancos-nosql.html</link>
-      <description>&lt;p&gt;Tive muita dificuldade em encontrar uma maneira simples de explicar como surgiu o NoSQL e quais são as principais diferenças para o modelo relacional para quem ainda não o conhece. Então tentei criar uma história para facilitar sua compreensão:&lt;/p&gt;
-</description>
-      <pubDate>Wed, 19 Aug 2015 21:00:00 -0300</pubDate>
-      <dc:date>2015-08-19T21:00:00-03:00</dc:date>
     </item>
     <item>
       <title>Mentiras que lhe contaram sobre MongoDB</title>
@@ -195,6 +190,6 @@ para vender as ideias que irei propor aqui.&lt;/p&gt;
       <pubDate>Wed, 14 Jan 2015 10:25:00 -0200</pubDate>
       <dc:date>2015-01-14T10:25:00-02:00</dc:date>
     </item>
-    <dc:date>2015-09-06T21:00:00-03:00</dc:date>
+    <dc:date>2015-12-11T05:48:00-02:00</dc:date>
   </channel>
 </rss>
