@@ -1,7 +1,7 @@
 name: Jordan Kobellarz
 description: open innovation developer
 
-markdown: redcarpet
+markdown: kramdown
 highlighter: pygments
 paginate: 15
 baseurl: /
