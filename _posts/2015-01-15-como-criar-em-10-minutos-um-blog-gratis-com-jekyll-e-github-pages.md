@@ -6,7 +6,7 @@ date:   2015-01-14 15:00:00
 categories: ['jekyll','GitHub']
 ---
 
-Para hospedar esse site usei o [GitHub Pages](https://pages.github.com/) e para gerar a estrutura 
+Para hospedar esse site usei o [GitHub Pages](https://pages.github.com/) e para gerar a estrutura
 em forma de blog usei o [Jekyll](http://jekyllrb.com/), um gerador de sites estáticos, com as mesmas funcionalidades de um CMS.
 
 **O que é o Jekyll?**
@@ -36,7 +36,7 @@ $ git clone https://github.com/username/username.github.io
 ##2. Escolha um tema para seu website <small>[opcional]</small>
 * entre no [respositório de temas do Jekyll](http://jekyllthemes.org/) e escolha o seu favorito.
 Recomendo o tema [Kasper](https://github.com/rosario/kasper), que é o que eu uso nesse site.
-* clone o tema 
+* clone o tema
 * coloque o tema em seu repositório (não se esqueça que **username** é o seu nome de
 usuário no GitHub).
 {% highlight bash linenos=table %}
@@ -50,7 +50,7 @@ ele vai pedir seu nome de usuário e sua senha
 {% highlight bash linenos=table %}
 $ git add --all
 $ git commit -m "novo post: Hello World!"
-$ git pull origin master
+$ git push origin master
 {% endhighlight %}
 
 ##4. Acesse seu novo site
@@ -61,13 +61,13 @@ A URL é exatamente o nome do repositório que você criou. Então, acesse:
 Agora que você tem um site funcionando, é preciso aprender a criar novos posts. É aí que entra o Jekyll.
 
 Para criar um novo post é necessário criar um arquivo dentro da pasta `_posts` com
-nome obedecendo o seguinte formato: `YYYY-MM-DD-titulo-do-post.html`, por exemplo, 
+nome obedecendo o seguinte formato: `YYYY-MM-DD-titulo-do-post.html`, por exemplo,
 `2015-01-14-hello-world.html`. Se não for obedecido, o Jekyll não saberá como
 organizar seus posts.
 
 ###Mãos à obra:
 
-* instale o Jekyll 
+* instale o Jekyll
 {% highlight bash linenos=table %}
 $ gem install jekyll
 {% endhighlight %}
@@ -77,7 +77,7 @@ $ gem install jekyll
 $ touch \_posts\2015-01-14-hello-world.html
 {% endhighlight %}
 
-* adicione as seguintes linhas no arquivo criado: 
+* adicione as seguintes linhas no arquivo criado:
 {% highlight html linenos=table %}
 ---
 layout: post
@@ -87,7 +87,7 @@ date:   2015-01-14 15:00:00
 <h2>Jekyllti</h2>
 <p>Y Love You World s3</p>
 {% endhighlight %}
-* para visualizar como sua página ficará online, inicie um servidor Jekyll 
+* para visualizar como sua página ficará online, inicie um servidor Jekyll
 {% highlight bash linenos=table %}
 $ jekyll serve
 {% endhighlight %}
@@ -95,8 +95,8 @@ $ jekyll serve
 * acesse [localhost:4000](http://localhost:4000)
 
 ##6. Conquiste o mundo!
-repita o passo #3 e veja seu novo post online. Caso queira aprender mais sobre o Jekyll, acesse a sua 
+repita o passo #3 e veja seu novo post online. Caso queira aprender mais sobre o Jekyll, acesse a sua
 [documentação oficial](http://jekyllrb.com/docs/home/). Ela é bem completa e fácil de
 compreender. Vale a pena dar uma olhada.
 
-Comente abaixo sua experiência com o Jekyll e com o tutorial. 
+Comente abaixo sua experiência com o Jekyll e com o tutorial.
