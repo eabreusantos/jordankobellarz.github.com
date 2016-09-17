@@ -2,7 +2,7 @@ name: Jordan Kobellarz
 description: open innovation developer
 
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 paginate: 15
 baseurl: /
 domain_name: 'http://jordankobellarz.github.com'
