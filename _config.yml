@@ -1,5 +1,5 @@
 name: Jordan Kobellarz
-description: open innovation developer
+description: Web Developer
 
 markdown: kramdown
 highlighter: rouge
@@ -14,8 +14,9 @@ url: 'http://jordankobellarz.github.com'
 author:
     name: Jordan Kobellarz
     thumb: /assets/images/profile.jpg
-    bio: Desenvolvedor web usando tecnologias Open Source para criar soluções inovadoras. Ciclista, corredor e amante. De vez enquando durmo um pouco.
+    bio: Web Developer e estudante de Sistemas de Informação. De vez enquando durmo um pouco.
     url:
+        site: 'http://jordank.me'
         facebook: 'https://www.facebook.com/jordan.kobellarz'
         twitter: 'https://twitter.com/jordankobellarz'
         linkedin: 'http://br.linkedin.com/in/jordankobellarz'

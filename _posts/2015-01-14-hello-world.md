@@ -10,8 +10,7 @@ Como todo site pessoal, é de costume darmos as boas vindas ao público e aprove
 para vender as ideias que irei propor aqui.
 
 Comecei a escrever pela necessidade de espalhar conhecimento em língua portuguesa para
-a área de desenvolvimento e, também, para melhorar minhas habilidades pessoais, pois consigo 
-absorver conteúdos complexos com maior facilidade quando escrevo.
+a área de desenvolvimento e, também, para melhorar minhas habilidades pessoais.
 
 > reter conhecimento em meio a tantas tecnologias requer um esforço cada vez maior. Melhor
 começar agora do que tarde!
@@ -29,7 +28,7 @@ Gosto de **PHP** e **javascript**, mas não me limito a essas linguagens. Não s
 em nossa área.
 
 ## Apenas sobre desenvolvimento?
-Não. Sobre tudo! Até sobre minha vida, mas sempre voltado aos desenvolvedores. Caso queira 
+Não. Sobre tudo! Até sobre minha vida, mas sempre voltado aos desenvolvedores. Caso queira
 conhecer melhor quem eu sou, leia [sobre Jordan Kobellarz](/sobre)
 
 Enfim, sejam todos bem vindos!

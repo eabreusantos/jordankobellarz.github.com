@@ -7,25 +7,16 @@
   <channel>
     <title>Jordan Kobellarz</title>
     <link>http://jordankobellarz.github.com</link>
-    <description>open innovation developer</description>
-    <pubDate>Sun, 13 Dec 2015 06:08:00 -0200</pubDate>
-    <item>
-      <title>Com imagino o futuro do ensino online</title>
-      <link>http://jordankobellarz.github.com/conhecimento/2015/12/13/como-imagino-o-novo-ensino.html</link>
-      <description>&lt;p&gt;Mostrei no &lt;a href=&quot;http://jordankobellarz.github.io/conhecimento/2015/12/11/conhecimento-aberto-colaborativo.html&quot;&gt;último post&lt;/a&gt; 
-alguns problemas recorrentes no ensino online. Nesse post quero dar 
-corpo a uma possível solução a eles.&lt;/p&gt;
-</description>
-      <pubDate>Sun, 13 Dec 2015 06:08:00 -0200</pubDate>
-      <dc:date>2015-12-13T06:08:00-02:00</dc:date>
-    </item>
+    <description>Web Developer</description>
+    <pubDate>Fri, 11 Dec 2015 05:48:00 -0200</pubDate>
     <item>
       <title>Conhecimento aberto, colaborativo e acessível - o futuro do aprendizado online</title>
       <link>http://jordankobellarz.github.com/conhecimento/2015/12/11/conhecimento-aberto-colaborativo.html</link>
       <description>&lt;p&gt;Há um bom tempo anoto os problemas da educação online e dentre eles 
 estão a falta de engajamento dos alunos, elevada taxa de evasão, baixa qualidade, conteúdo entediante,
 pouca proximidade com a dinâmica de uma sala de aula física, pouca adoção pelos professores que encontram 
-dificuldades no uso das ferramentas disponíveis, [...], é uma lista bem GRANDE.&lt;/p&gt;
+dificuldades no uso das ferramentas disponíveis, […], é uma lista bem GRANDE.&lt;/p&gt;
+
 </description>
       <pubDate>Fri, 11 Dec 2015 05:48:00 -0200</pubDate>
       <dc:date>2015-12-11T05:48:00-02:00</dc:date>
@@ -34,6 +25,7 @@ dificuldades no uso das ferramentas disponíveis, [...], é uma lista bem GRANDE
       <title>Intalando o LAMP Stack: Linux, Apache, MongoDB e PHP5</title>
       <link>http://jordankobellarz.github.com/linux/apache/mongodb/php5/2015/09/06/instalando-lampp-stack-linux-apache2.html</link>
       <description>&lt;p&gt;Hora de mudar um pouco seu LAMP Stack: trocando o M para MongoDB. Esse totorial mostrará como instalar o servidor Apache 2 para rodar PHP5 junto com MongoDB no Debian ou Ubuntu.&lt;/p&gt;
+
 </description>
       <pubDate>Sun, 06 Sep 2015 21:00:00 -0300</pubDate>
       <dc:date>2015-09-06T21:00:00-03:00</dc:date>
@@ -42,6 +34,7 @@ dificuldades no uso das ferramentas disponíveis, [...], é uma lista bem GRANDE
       <title>Conectando o PHP ao Replica Set</title>
       <link>http://jordankobellarz.github.com/mongodb/php/2015/08/20/driver-php-e-replica-set-mongodb.html</link>
       <description>&lt;p&gt;Nesse post será explicado como usar o driver do MongoDB com PHP conectado a um &lt;em&gt;replica set&lt;/em&gt;. Caso não saiba como funciona um &lt;em&gt;replica set&lt;/em&gt;, sugiro que leia primeiro o artigo sobre &lt;a href=&quot;http://jordankobellarz.github.io/mongodb/2015/08/09/mongodb-replicacao.html&quot;&gt;replicação com MongoDB&lt;/a&gt;.&lt;/p&gt;
+
 </description>
       <pubDate>Thu, 20 Aug 2015 21:00:00 -0300</pubDate>
       <dc:date>2015-08-20T21:00:00-03:00</dc:date>
@@ -50,6 +43,7 @@ dificuldades no uso das ferramentas disponíveis, [...], é uma lista bem GRANDE
       <title>Mentiras que lhe contaram sobre MongoDB</title>
       <link>http://jordankobellarz.github.com/mongodb/2015/08/14/mentiras-que-lhe-contaram-sobre-o-mongodb.html</link>
       <description>&lt;p&gt;O MongoDB surgiu em 2007 e só teve seu código aberto em 2009. É claro que o tempo para ele amadurecer foi bem menor do que os seus concorrentes indiretos do mundo relacional vindos dos anos 70. Nesse meio tempo foram feitas diversas melhorias, principalmente com a versão 3.0 lançada nesse ano.&lt;/p&gt;
+
 </description>
       <pubDate>Fri, 14 Aug 2015 21:00:00 -0300</pubDate>
       <dc:date>2015-08-14T21:00:00-03:00</dc:date>
@@ -58,6 +52,7 @@ dificuldades no uso das ferramentas disponíveis, [...], é uma lista bem GRANDE
       <title>Usando o driver do MongoDB com PHP</title>
       <link>http://jordankobellarz.github.com/php/mongodb/2015/08/13/usando-driver-mongodb-php.html</link>
       <description>&lt;p&gt;Conhecendo-se como usar o MongoDB pelo Mongo shell, podemos partir para uma aventura mais interessante através dos &lt;em&gt;drivers&lt;/em&gt; oficiais para várias linguagens de programação. Nesse &lt;em&gt;post&lt;/em&gt; será mostrado como realizar as principais operações através do &lt;em&gt;driver&lt;/em&gt; feito para PHP.&lt;/p&gt;
+
 </description>
       <pubDate>Thu, 13 Aug 2015 21:00:00 -0300</pubDate>
       <dc:date>2015-08-13T21:00:00-03:00</dc:date>
@@ -66,6 +61,7 @@ dificuldades no uso das ferramentas disponíveis, [...], é uma lista bem GRANDE
       <title>Configurando um server block no NGINX com PHP5-FPM</title>
       <link>http://jordankobellarz.github.com/php/nginx/2015/08/12/configurando-nginx-com-php5-fpm.html</link>
       <description>&lt;p&gt;No NGIX, um &lt;em&gt;server block&lt;/em&gt; é exatamente igual a um VHOST no servidor Apache. Vamos direto ao assunto:&lt;/p&gt;
+
 </description>
       <pubDate>Wed, 12 Aug 2015 21:00:00 -0300</pubDate>
       <dc:date>2015-08-12T21:00:00-03:00</dc:date>
@@ -73,7 +69,8 @@ dificuldades no uso das ferramentas disponíveis, [...], é uma lista bem GRANDE
     <item>
       <title>#8 MongoDB - Framework de agregação</title>
       <link>http://jordankobellarz.github.com/mongodb/2015/08/11/framework-agregacao.html</link>
-      <description>&lt;h2&gt;Pipeline&lt;/h2&gt;
+      <description>&lt;h2 id=&quot;pipeline&quot;&gt;Pipeline&lt;/h2&gt;
+
 </description>
       <pubDate>Tue, 11 Aug 2015 21:00:00 -0300</pubDate>
       <dc:date>2015-08-11T21:00:00-03:00</dc:date>
@@ -82,6 +79,7 @@ dificuldades no uso das ferramentas disponíveis, [...], é uma lista bem GRANDE
       <title>#7 MongoDB - Sharding</title>
       <link>http://jordankobellarz.github.com/mongodb/2015/08/10/mongodb-sharding.html</link>
       <description>&lt;p&gt;Quando a quantidade de processamento e/ou memória de um único nó é excedida a ponto de não ser mais possível escalar seus recursos verticalmente, temos a opção de particionar os dados de uma ou mais coleções através de uma técnica chamada &lt;em&gt;sharding&lt;/em&gt; ou escalonamento horizontal.&lt;/p&gt;
+
 </description>
       <pubDate>Mon, 10 Aug 2015 21:00:00 -0300</pubDate>
       <dc:date>2015-08-10T21:00:00-03:00</dc:date>
@@ -90,6 +88,7 @@ dificuldades no uso das ferramentas disponíveis, [...], é uma lista bem GRANDE
       <title>#6 MongoDB - Replicação</title>
       <link>http://jordankobellarz.github.com/mongodb/2015/08/08/mongodb-replicacao.html</link>
       <description>&lt;p&gt;Até agora trabalhamos apenas com uma instância do MongoDB, mas será que essa é uma forma segura de manter uma aplicação em produção? Se a base de dados estiver sendo operada por uma equipe Kamikaze, tudo bem, mas caso não, aí devemos pensar em replicar os dados.&lt;/p&gt;
+
 </description>
       <pubDate>Sat, 08 Aug 2015 21:00:00 -0300</pubDate>
       <dc:date>2015-08-08T21:00:00-03:00</dc:date>
@@ -98,6 +97,7 @@ dificuldades no uso das ferramentas disponíveis, [...], é uma lista bem GRANDE
       <title>#5 MongoDB - Write concern</title>
       <link>http://jordankobellarz.github.com/mongodb/2015/08/06/mongodb-write-concern.html</link>
       <description>&lt;p&gt;Seus dados são duráveis? A garantia de que uma operação de escrita ocorra com sucesso e os dados realmente sejam persistidos no disco, é verificada através do &lt;em&gt;write concern&lt;/em&gt;. Essa configuração pode obrigar que uma operação de inserção, modificação ou remoção de um documento retorne ao cliente se a operação realmente foi persistida ou não.&lt;/p&gt;
+
 </description>
       <pubDate>Thu, 06 Aug 2015 21:00:00 -0300</pubDate>
       <dc:date>2015-08-06T21:00:00-03:00</dc:date>
@@ -106,6 +106,7 @@ dificuldades no uso das ferramentas disponíveis, [...], é uma lista bem GRANDE
       <title>#4 MongoDB - Otimizando com Índices</title>
       <link>http://jordankobellarz.github.com/mongodb/2015/07/30/mongodb-otimizando-com-indices.html</link>
       <description>&lt;p&gt;Criar índices no MongoDB é uma maneira muito fácil de otimizar as consultas. Podemos comparar um índice no MongoDB à um índice em um livro. Já imaginou ter de procurar do começo ao fim de um livro por uma informação? Nesse caso usaríamos o seu índice, que nos indicaria a posição onde encontrar a informação de forma eficiente.&lt;/p&gt;
+
 </description>
       <pubDate>Thu, 30 Jul 2015 21:00:00 -0300</pubDate>
       <dc:date>2015-07-30T21:00:00-03:00</dc:date>
@@ -113,7 +114,8 @@ dificuldades no uso das ferramentas disponíveis, [...], é uma lista bem GRANDE
     <item>
       <title>#2 MongoDB - Operações CRUD</title>
       <link>http://jordankobellarz.github.com/mongodb/2015/07/26/mongodb-operacoes-crud.html</link>
-      <description>&lt;p&gt;&lt;img src=&quot;/assets/images/mongo-2.png&quot; alt=&quot;Operações CRUD&quot; style=&quot;width: 60%; margin:0 auto&quot;&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&quot;/assets/images/mongo-2.png&quot; alt=&quot;Operações CRUD&quot; style=&quot;width: 60%; margin:0 auto&quot; /&gt;&lt;/p&gt;
+
 </description>
       <pubDate>Sun, 26 Jul 2015 21:00:00 -0300</pubDate>
       <dc:date>2015-07-26T21:00:00-03:00</dc:date>
@@ -121,7 +123,8 @@ dificuldades no uso das ferramentas disponíveis, [...], é uma lista bem GRANDE
     <item>
       <title>#1 MongoDB - Pensando em documentos</title>
       <link>http://jordankobellarz.github.com/mongodb/2015/07/23/mongodb-pensando-em-documentos.html</link>
-      <description>&lt;p&gt;&lt;img src=&quot;/assets/images/mongo-1.png&quot; alt=&quot;Pensando em documentos&quot; style=&quot;width: 60%; margin:0 auto&quot;&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&quot;/assets/images/mongo-1.png&quot; alt=&quot;Pensando em documentos&quot; style=&quot;width: 60%; margin:0 auto&quot; /&gt;&lt;/p&gt;
+
 </description>
       <pubDate>Thu, 23 Jul 2015 21:00:00 -0300</pubDate>
       <dc:date>2015-07-23T21:00:00-03:00</dc:date>
@@ -129,7 +132,8 @@ dificuldades no uso das ferramentas disponíveis, [...], é uma lista bem GRANDE
     <item>
       <title>#0 MongoDB - Introdução ao Armazenamento do Futuro</title>
       <link>http://jordankobellarz.github.com/mongodb/2015/07/22/mongodb-introducao-ao-armazenamento-do-futuro.html</link>
-      <description>&lt;p&gt;&lt;img src=&quot;/assets/images/mongo-0.png&quot; alt=&quot;Armazenamento do futuro&quot; style=&quot;width: 60%; margin:0 auto&quot;&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&quot;/assets/images/mongo-0.png&quot; alt=&quot;Armazenamento do futuro&quot; style=&quot;width: 60%; margin:0 auto&quot; /&gt;&lt;/p&gt;
+
 </description>
       <pubDate>Wed, 22 Jul 2015 21:00:00 -0300</pubDate>
       <dc:date>2015-07-22T21:00:00-03:00</dc:date>
@@ -138,6 +142,7 @@ dificuldades no uso das ferramentas disponíveis, [...], é uma lista bem GRANDE
       <title>Arquitetando com MongoDB - Overview</title>
       <link>http://jordankobellarz.github.com/mongodb/2015/03/07/arquitetura-mongodb.html</link>
       <description>&lt;p&gt;Arquitetar um banco com o MongoDB é fácil, no entanto a flexibilidade que ele nos dá sobre a estrutura pode ser um grande problema, pois um projeto pode priorizar a consistência sobre a performance ou vice-versa. Nesse artigo demonstrarei os conceitos necessários para arquitetar um banco usando o MongoDB.&lt;/p&gt;
+
 </description>
       <pubDate>Sat, 07 Mar 2015 04:02:00 -0300</pubDate>
       <dc:date>2015-03-07T04:02:00-03:00</dc:date>
@@ -149,6 +154,7 @@ dificuldades no uso das ferramentas disponíveis, [...], é uma lista bem GRANDE
 ser multiparadigma, ou seja, podemos trabalhar com o paradigma orientado a objetos, procedural e 
 imperativo, tudo ao mesmo tempo. Isso pode dificultar a manutenção do código e, também, limitar o
 programador iniciante que não conhece as características dessa linguagem.&lt;/p&gt;
+
 </description>
       <pubDate>Fri, 30 Jan 2015 12:00:00 -0200</pubDate>
       <dc:date>2015-01-30T12:00:00-02:00</dc:date>
@@ -159,7 +165,8 @@ programador iniciante que não conhece as características dessa linguagem.&lt;/
       <description>&lt;p&gt;O modelo não-relacional entrou com força no mercado e hoje é uma tendência, pois
 suportam de forma eficaz a demanda por escalabilidade de aplicações como redes sociais, 
 redes de compartilhamento de imagens e videos, messengers, APIs e conceitos como IOT,
-BigData, aplicações web soft real time, ... &lt;/p&gt;
+BigData, aplicações web soft real time, …&lt;/p&gt;
+
 </description>
       <pubDate>Tue, 27 Jan 2015 06:30:00 -0200</pubDate>
       <dc:date>2015-01-27T06:30:00-02:00</dc:date>
@@ -170,6 +177,7 @@ BigData, aplicações web soft real time, ... &lt;/p&gt;
       <description>&lt;p&gt;Todos os adeptos ao MySql, Oracle, SqlServer ou a outros bancos de dados relacionais ouviram pelo menos
 uma vez sobre bancos NoSQL orientados a documentos. Nesse post irei fazer uma introdução ao
 MongoDB e, também, comparar as duas tecnologias.&lt;/p&gt;
+
 </description>
       <pubDate>Sat, 17 Jan 2015 06:30:00 -0200</pubDate>
       <dc:date>2015-01-17T06:30:00-02:00</dc:date>
@@ -178,6 +186,7 @@ MongoDB e, também, comparar as duas tecnologias.&lt;/p&gt;
       <title>Coding standard rápido para javascript</title>
       <link>http://jordankobellarz.github.com/javascript/2015/01/16/coding-standards-rapido-para-javascript.html</link>
       <description>&lt;p&gt;Manter um estilo consistente ao escrever código pode ser um fator decisivo para a manutenibilidade de um sistema por uma grande equipe, principalmente se o projeto for Open Source. Nesse artigo vou mostrar o padrão usado em meus projetos.&lt;/p&gt;
+
 </description>
       <pubDate>Fri, 16 Jan 2015 03:30:00 -0200</pubDate>
       <dc:date>2015-01-16T03:30:00-02:00</dc:date>
@@ -185,8 +194,9 @@ MongoDB e, também, comparar as duas tecnologias.&lt;/p&gt;
     <item>
       <title>Como criar um blog grátis com Jekyll e GitHub Pages em 10 minutos</title>
       <link>http://jordankobellarz.github.com/jekyll/github/2015/01/14/como-criar-em-10-minutos-um-blog-gratis-com-jekyll-e-github-pages.html</link>
-      <description>&lt;p&gt;Para hospedar esse site usei o &lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt; e para gerar a estrutura 
+      <description>&lt;p&gt;Para hospedar esse site usei o &lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt; e para gerar a estrutura
 em forma de blog usei o &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;, um gerador de sites estáticos, com as mesmas funcionalidades de um CMS.&lt;/p&gt;
+
 </description>
       <pubDate>Wed, 14 Jan 2015 13:00:00 -0200</pubDate>
       <dc:date>2015-01-14T13:00:00-02:00</dc:date>
@@ -196,10 +206,11 @@ em forma de blog usei o &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt
       <link>http://jordankobellarz.github.com/jordan/2015/01/14/hello-world.html</link>
       <description>&lt;p&gt;Como todo site pessoal, é de costume darmos as boas vindas ao público e aproveitar
 para vender as ideias que irei propor aqui.&lt;/p&gt;
+
 </description>
       <pubDate>Wed, 14 Jan 2015 10:25:00 -0200</pubDate>
       <dc:date>2015-01-14T10:25:00-02:00</dc:date>
     </item>
-    <dc:date>2015-12-13T06:08:00-02:00</dc:date>
+    <dc:date>2015-12-11T05:48:00-02:00</dc:date>
   </channel>
 </rss>
